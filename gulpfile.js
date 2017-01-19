@@ -14,6 +14,21 @@ require('laravel-elixir-vue-2');
  */
 
 elixir(mix => {
-    mix.sass('app.scss')
-       .webpack('app.js');
+    mix
+    	.styles([
+    		'preload.min.css',
+    		'plugins.min.css',
+    		'style.blue-500.min.css'
+    	])
+    	.scripts([
+    		'plugins.min.js',
+    		'app.min.js',
+    		'index.js'
+    	])
+    	.copy('resources/assets/img', 'public/img')
+    	.copy('resources/assets/fonts', 'public/fonts')
+    	.copy('resources/assets/media', 'public/media')
+    	.version('css/all.css');
+    	// .sass('app.scss')
+       // .webpack('app.js');
 });
