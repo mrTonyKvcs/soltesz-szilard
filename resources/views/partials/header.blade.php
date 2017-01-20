@@ -121,6 +121,20 @@
         <li>
           <a href="">Kapcsolat</a>
         </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">Nyelv
+            <i class="zmdi zmdi-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu language_bar_chooser">
+              @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                  <li>
+                      <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
+                          {{ $properties['native'] }}
+                      </a>
+                  </li>
+              @endforeach
+          </ul>
+        </li>
         <!-- <li class="btn-navbar-menu"><a href="javascript:void(0)" class="sb-toggle-left"><i class="zmdi zmdi-menu"></i></a></li> -->
       </ul>
     </div>
