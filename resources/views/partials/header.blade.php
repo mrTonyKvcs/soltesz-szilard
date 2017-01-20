@@ -61,68 +61,68 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-          <a href="">Home</a>
+          <a href="">{{ trans('navbar.home') }}</a>
         </li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-5" data-toggle="dropdown" data-hover="dropdown" data-name="page">Pages
+          <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-5" data-toggle="dropdown" data-hover="dropdown" data-name="page">{{ trans('navbar.introduction') }}
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
             <li class="dropdown-submenu">
-              <a href="javascript:void(0)" class="has_children">About us &amp; Team</a>
+              <a href="javascript:void(0)" class="has_children">{{ trans('navbar.activity') }}</a>
               <ul class="dropdown-menu dropdown-menu-left">
                 <li>
-                  <a href="page-about.html">About us Option 1</a>
+                  <a href="page-about.html">{{ trans('navbar.selfless-coaching')}}</a>
                 </li>
                 <li>
-                  <a href="page-about2.html">About us Option 2</a>
+                  <a href="page-about2.html">{{ trans('navbar.guidance')}}</a>
                 </li>
                 <li>
-                  <a href="page-about3.html">About us Option 3</a>
+                  <a href="page-about3.html">{{ trans('navbar.group-training')}}</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#">Form</a>
+              <a href="#">{{ trans('navbar.motivation') }}</a>
             </li>
             <li>
-              <a href="#">Profiles</a>
+              <a href="#">{{ trans('navbar.about') }}</a>
             </li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">E-Commerce
+          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">{{ trans('navbar.topic') }}
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="ecommerce-filters.html">E-Commerce Sidebar</a>
+              <a href="ecommerce-filters.html">{{ trans('navbar.communication-techniques') }}</a>
             </li>
             <li>
-              <a href="ecommerce-filters-full.html">E-Commerce Sidebar Full</a>
+              <a href="ecommerce-filters-full.html">{{ trans('navbar.developing-competencies') }}</a>
             </li>
             <li>
-              <a href="ecommerce-filters-full2.html">E-Commerce Topbar Full</a>
+              <a href="ecommerce-filters-full2.html">{{ trans('navbar.stress-sticking') }}</a>
             </li>
             <li>
-              <a href="ecommerce-cart.html">E-Commerce Cart</a>
+              <a href="ecommerce-cart.html">{{ trans('navbar.life-crises') }}</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="">Hirek</a>
+          <a href="">{{ trans('navbar.blog') }}</a>
         </li>
         <li>
-          <a href="">Aktualis kepzesek</a>
+          <a href="">{{ trans('navbar.traning') }}</a>
         </li>
         <li>
-          <a href="">Arak</a>
+          <a href="">{{ trans('navbar.price') }}</a>
         </li>
         <li>
-          <a href="">Kapcsolat</a>
+          <a href="">{{ trans('navbar.contact') }}</a>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">Nyelv
+          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">{{ trans('navbar.language') }}
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
           <ul class="dropdown-menu language_bar_chooser">
