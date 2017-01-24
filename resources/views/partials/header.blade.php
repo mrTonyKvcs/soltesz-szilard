@@ -61,7 +61,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-          <a href="">{{ trans('navbar.home') }}</a>
+          <a href="">{{ trans('navbar.home') }}a</a>
         </li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-5" data-toggle="dropdown" data-hover="dropdown" data-name="page">{{ trans('navbar.introduction') }}
