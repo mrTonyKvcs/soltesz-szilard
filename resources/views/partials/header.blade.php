@@ -116,10 +116,10 @@
           <a href="#">{{ trans('navbar.traning') }}</a>
         </li>
         <li>
-          <a href="#">{{ trans('navbar.price') }}</a>
+          <a href="{{ route('pages.price') }}">{{ trans('navbar.price') }}</a>
         </li>
         <li>
-          <a href="#">{{ trans('navbar.contact') }}</a>
+          <a href="{{ route('pages.contact') }}">{{ trans('navbar.contact') }}</a>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">{{ trans('navbar.language') }}

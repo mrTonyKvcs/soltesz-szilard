@@ -10,4 +10,12 @@ class PagesController extends Controller
     {
     	return view('pages.home');
     }
+    public function price()
+    {
+    	return view('pages.price');
+    }
+    public function contact()
+    {
+    	return view('pages.contact');
+    }
 }
