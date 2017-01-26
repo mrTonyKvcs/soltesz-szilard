@@ -23,7 +23,7 @@
   </header>
   <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
     <li>
-      <a class="link" href="#">
+      <a class="link" href="{{ route('pages.home') }}">
         <i class="zmdi zmdi-home"></i> {{ trans('navbar.home') }}</a>
     </li>
     <li class="panel" role="tab" id="sch1">
@@ -68,7 +68,7 @@
       </ul>
     </li>
     <li>
-      <a class="link" href="#">
+      <a class="link" href="{{ route('blog.index') }}">
         <i class="zmdi zmdi-edit"></i> {{ trans('navbar.blog') }}</a>
     </li>
     <li>
@@ -76,11 +76,11 @@
         <i class="zmdi zmdi-calendar-note"></i> {{ trans('navbar.traning') }}</a>
     </li>
     <li>
-      <a class="link" href="#">
+      <a class="link" href="{{ route('pages.price') }}">
         <i class="zmdi zmdi-money"></i> {{ trans('navbar.price') }}</a>
     </li>
     <li>
-      <a class="link" href="#">
+      <a class="link" href="{{ route('pages.contact') }}">
         <i class="zmdi zmdi-email"></i> {{ trans('navbar.contact') }}</a>
     </li>
   </ul>
@@ -91,7 +91,7 @@
         <i class="zmdi zmdi-facebook"></i>
         <div class="ripple-container"></div>
       </a>
-      <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-twitter">
+      {{-- <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-twitter">
         <i class="zmdi zmdi-twitter"></i>
         <div class="ripple-container"></div>
       </a>
@@ -102,7 +102,7 @@
       <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
         <i class="zmdi zmdi-instagram"></i>
         <div class="ripple-container"></div>
-      </a>
+      </a> --}}
     </div>
   </div>
 </div>
