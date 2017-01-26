@@ -1,7 +1,7 @@
 <header class="ms-header ms-header-white">
   <div class="container container-full">
     <div class="ms-title">
-      <a href="#">
+      <a href="{{ route('pages.home') }}">
         <!-- <img src="/img/demo/logo-header.png" alt=""> -->
         <span class="ms-logo animated zoomInDown animation-delay-5">S</span>
         <h1 class="animated fadeInRight animation-delay-6">Soltesz
@@ -61,7 +61,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="active">
-          <a href="#">{{ trans('navbar.home') }}</a>
+          <a href="{{ route('pages.home') }}">{{ trans('navbar.home') }}</a>
         </li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-5" data-toggle="dropdown" data-hover="dropdown" data-name="page">{{ trans('navbar.introduction') }}
@@ -110,7 +110,7 @@
           </ul>
         </li>
         <li>
-          <a href="#">{{ trans('navbar.blog') }}</a>
+          <a href="{{ route('blog.index') }}">{{ trans('navbar.blog') }}</a>
         </li>
         <li>
           <a href="#">{{ trans('navbar.traning') }}</a>
