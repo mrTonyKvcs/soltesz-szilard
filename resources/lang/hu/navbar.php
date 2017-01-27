@@ -10,7 +10,7 @@ return [
 	// activity
 	'selfless-coaching'	=> 'Selfless coaching',
 	'guidance'			=> 'Értékesítés- stratégia tanácsadás',
-	'group-training'	=> 'Csoportos képzések',
+	'group-trainings'	=> 'Csoportos képzések',
 
 	// topic
 	'topic'						=> 'Kiemelt témáim',
@@ -20,7 +20,7 @@ return [
 	'life-crises'				=> 'Munkahelyi, magánéleti krízishelyzetek',
 
 	'blog'			=> 'Blog',
-	'traning'		=> 'Aktuális képzések',
+	'trainings'		=> 'Aktuális képzések',
 	'price'			=> 'Árak',
 	'contact'		=> 'Kapcsolat',
 	'language'		=> 'Nyelv'

@@ -10,6 +10,14 @@ class PagesController extends Controller
     {
     	return view('pages.home');
     }
+    public function motivation()
+    {
+        return view('pages.motivation');
+    }
+    public function about()
+    {
+        return view('pages.about');
+    }
     public function price()
     {
     	return view('pages.price');

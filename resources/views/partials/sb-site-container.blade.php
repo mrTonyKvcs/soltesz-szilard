@@ -37,16 +37,16 @@
           <a href="#">{{ trans('navbar.guidance')}}</a>
         </li>
         <li>
-          <a href="#">{{ trans('navbar.group-training')}}</a>
+          <a href="#">{{ trans('navbar.group-trainings')}}</a>
         </li>
       </ul>
     </li>
     <li>
-      <a class="link" href="#">
+      <a class="link" href="{{ route('pages.motivation') }}">
         <i class="zmdi zmdi-run"></i> {{ trans('navbar.motivation') }}</a>
     </li>
     <li>
-      <a class="link" href="#">
+      <a class="link" href="{{ route('pages.about') }}">
         <i class="zmdi zmdi-face"></i> {{ trans('navbar.about') }}</a>
     </li>
     <li class="panel" role="tab" id="sch2">
@@ -72,8 +72,8 @@
         <i class="zmdi zmdi-edit"></i> {{ trans('navbar.blog') }}</a>
     </li>
     <li>
-      <a class="link" href="#">
-        <i class="zmdi zmdi-calendar-note"></i> {{ trans('navbar.traning') }}</a>
+      <a class="link" href="{{ route('trainings.index') }}">
+        <i class="zmdi zmdi-calendar-note"></i> {{ trans('navbar.trainings') }}</a>
     </li>
     <li>
       <a class="link" href="{{ route('pages.price') }}">

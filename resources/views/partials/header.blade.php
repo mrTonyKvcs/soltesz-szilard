@@ -78,15 +78,15 @@
                   <a href="#">{{ trans('navbar.guidance')}}</a>
                 </li>
                 <li>
-                  <a href="#">{{ trans('navbar.group-training')}}</a>
+                  <a href="#">{{ trans('navbar.group-trainings')}}</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#">{{ trans('navbar.motivation') }}</a>
+              <a href="{{ route('pages.motivation') }}">{{ trans('navbar.motivation') }}</a>
             </li>
             <li>
-              <a href="#">{{ trans('navbar.about') }}</a>
+              <a href="{{ route('pages.about') }}">{{ trans('navbar.about') }}</a>
             </li>
           </ul>
         </li>
@@ -113,7 +113,7 @@
           <a href="{{ route('blog.index') }}">{{ trans('navbar.blog') }}</a>
         </li>
         <li>
-          <a href="#">{{ trans('navbar.traning') }}</a>
+          <a href="{{ route('trainings.index') }}">{{ trans('navbar.trainings') }}</a>
         </li>
         <li>
           <a href="{{ route('pages.price') }}">{{ trans('navbar.price') }}</a>
