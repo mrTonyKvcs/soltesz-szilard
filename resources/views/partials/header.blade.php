@@ -72,13 +72,13 @@
               <a href="javascript:void(0)" class="has_children">{{ trans('navbar.activity') }}</a>
               <ul class="dropdown-menu dropdown-menu-left">
                 <li>
-                  <a href="#">{{ trans('navbar.selfless-coaching')}}</a>
+                  <a href="{{ route('activities.selfless-coaching') }}">{{ trans('navbar.selfless-coaching')}}</a>
                 </li>
                 <li>
-                  <a href="#">{{ trans('navbar.guidance')}}</a>
+                  <a href="{{ route('activities.guidance') }}">{{ trans('navbar.guidance')}}</a>
                 </li>
                 <li>
-                  <a href="#">{{ trans('navbar.group-trainings')}}</a>
+                  <a href="{{ route('activities.group-trainings') }}">{{ trans('navbar.group-trainings')}}</a>
                 </li>
               </ul>
             </li>
@@ -96,16 +96,16 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="#">{{ trans('navbar.communication-techniques') }}</a>
+              <a href="{{ route('topics.communication-techniques') }}">{{ trans('navbar.communication-techniques') }}</a>
             </li>
             <li>
-              <a href="#">{{ trans('navbar.developing-competencies') }}</a>
+              <a href="{{ route('topics.developing-competencies') }}">{{ trans('navbar.developing-competencies') }}</a>
             </li>
             <li>
-              <a href="#">{{ trans('navbar.stress-sticking') }}</a>
+              <a href="{{ route('topics.stress-sticking') }}">{{ trans('navbar.stress-sticking') }}</a>
             </li>
             <li>
-              <a href="#">{{ trans('navbar.life-crises') }}</a>
+              <a href="{{ route('topics.life-crises') }}">{{ trans('navbar.life-crises') }}</a>
             </li>
           </ul>
         </li>
