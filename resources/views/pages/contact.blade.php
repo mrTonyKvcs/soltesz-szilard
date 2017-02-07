@@ -3,7 +3,7 @@
 <div class="ms-hero-page-override ms-hero-img-team ms-hero-bg-primary">
     <div class="container">
       <div class="text-center">
-        <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Contact Us</h1>
+        <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">{{ trans('navbar.contact') }}</h1>
         <p class="lead lead-lg color-light text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">Do you need a boost in your project?
           <br>Contact us we will help you to finish your dream.</p>
       </div>
@@ -51,9 +51,9 @@
             <div class="col-lg-3 col-md-4 col-sm-5">
               <div class="card-block wow fadeInUp">
                 <div class="mb-2">
-                  <span class="ms-logo ms-logo-sm mr-1">M</span>
-                  <h3 class="no-m ms-site-title">Material
-                    <span>Style</span>
+                  <span class="ms-logo ms-logo-sm mr-1">S</span>
+                  <h3 class="no-m ms-site-title">Soltesz
+                    <span>Szilard</span>
                   </h3>
                 </div>
                 <address class="no-mb">

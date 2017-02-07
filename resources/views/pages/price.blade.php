@@ -3,7 +3,7 @@
 <div class="material-background"></div>
 <div class="container">
     <div class="text-center mb-4">
-      <h2 class="uppercase color-white animated fadeInUp animation-delay-7">See our subscription plans</h2>
+      <h2 class="uppercase color-white animated fadeInUp animation-delay-7">{{ trans('navbar.price') }}</h2>
       <p class="lead uppercase color-medium animated fadeInUp animation-delay-7">Surprise with our unique features</p>
     </div>
     <div class="row">

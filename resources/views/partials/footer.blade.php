@@ -136,9 +136,9 @@
             <div class="col-md-3 col-sm-5 ms-footer-col ms-footer-text-right">
               <div class="ms-footbar-block">
                 <div class="ms-footbar-title">
-                  <span class="ms-logo ms-logo-white ms-logo-sm mr-1">M</span>
-                  <h3 class="no-m ms-site-title">Material
-                    <span>Style</span>
+                  <span class="ms-logo ms-logo-white ms-logo-sm mr-1">S</span>
+                  <h3 class="no-m ms-site-title">Soltesz
+                    <span>Szilard</span>
                   </h3>
                 </div>
                 <address class="no-mb">
@@ -186,7 +186,7 @@
       </aside>
       <footer class="ms-footer">
         <div class="container">
-          <p>Material Style &copy; Copyright 2016</p>
+          <p>Soltesz Szilard &copy; Copyright 2016</p>
         </div>
       </footer>
       <div class="btn-back-top">

@@ -4,7 +4,7 @@
 <div class="ms-hero-page ms-hero-img-meeting ms-hero-bg-primary ms-bg-fixed mb-4">
 	<div class="container">
 	  <div class="text-center">
-	    <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Timeline</h1>
+	    <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">{{ trans('navbar.trainings') }}</h1>
 	    <p class="lead lead-lg color-light text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">Do you need a boost in your project?
 	      <br>Contact us we will help you to finish your dream.</p>
 	    <h3 class="color-white text-upercase text-normal">From
