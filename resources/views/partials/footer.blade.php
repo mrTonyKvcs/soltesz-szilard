@@ -6,34 +6,26 @@
                 <h3 class="ms-footbar-title">Sitemap</h3>
                 <ul class="list-unstyled ms-icon-list three_cols">
                   <li>
-                    <a href="index.html">
-                      <i class="zmdi zmdi-home"></i> Home</a>
+                    <a href="{{ route('pages.home') }}">
+                      <i class="zmdi zmdi-home"></i> {{ trans('navbar.home') }}</a>
                   </li>
                   <li>
-                    <a href="page-blog.html">
-                      <i class="zmdi zmdi-edit"></i> Blog</a>
+                    <a href="{{ route('blog.index') }}">
+                      <i class="zmdi zmdi-edit"></i> {{ trans('navbar.blog') }}</a>
                   </li>
                   <li>
-                    <a href="page-blog.html">
-                      <i class="zmdi zmdi-image-o"></i> Portafolio</a>
+                    <a href="{{ route('pages.price') }}">
+                      <i class="zmdi zmdi-money"></i> {{ trans('navbar.price') }}</a>
                   </li>
+                 {{--  <li>
+                    <a href="{{ route('trainings.index') }}">
+                      <i class="zmdi zmdi-time"></i> {{ trans('navbar.trainings') }}</a>
+                  </li> --}}
                   <li>
-                    <a href="portfolio-filters_sidebar.html">
-                      <i class="zmdi zmdi-case"></i> Works</a>
+                    <a href="{{ route('pages.motivation') }}">
+                      <i class="zmdi zmdi-favorite-outline"></i>{{ trans('navbar.motivation') }}</a>
                   </li>
-                  <li>
-                    <a href="page-timeline_left2.html">
-                      <i class="zmdi zmdi-time"></i> Timeline</a>
-                  </li>
-                  <li>
-                    <a href="page-pricing.html">
-                      <i class="zmdi zmdi-money"></i> Pricing</a>
-                  </li>
-                  <li>
-                    <a href="page-about.html">
-                      <i class="zmdi zmdi-favorite-outline"></i> About Us</a>
-                  </li>
-                  <li>
+                  {{-- <li>
                     <a href="page-team2.html">
                       <i class="zmdi zmdi-accounts"></i> Our Team</a>
                   </li>
@@ -44,14 +36,10 @@
                   <li>
                     <a href="page-faq2.html">
                       <i class="zmdi zmdi-help"></i> FAQ</a>
-                  </li>
+                  </li> --}}
                   <li>
-                    <a href="page-login2.html">
-                      <i class="zmdi zmdi-lock"></i> Login</a>
-                  </li>
-                  <li>
-                    <a href="page-contact.html">
-                      <i class="zmdi zmdi-email"></i> Contact</a>
+                    <a href="{{ route('pages.contact') }}">
+                      <i class="zmdi zmdi-email"></i> {{ trans('navbar.contact') }}</a>
                   </li>
                 </ul>
               </div>
@@ -162,7 +150,7 @@
                   <a href="javascript:void(0)" class="btn-circle btn-facebook">
                     <i class="zmdi zmdi-facebook"></i>
                   </a>
-                  <a href="javascript:void(0)" class="btn-circle btn-twitter">
+                  {{-- <a href="javascript:void(0)" class="btn-circle btn-twitter">
                     <i class="zmdi zmdi-twitter"></i>
                   </a>
                   <a href="javascript:void(0)" class="btn-circle btn-youtube">
@@ -177,7 +165,7 @@
                   </a>
                   <a href="javascript:void(0)" class="btn-circle btn-github">
                     <i class="zmdi zmdi-github"></i>
-                  </a>
+                  </a> --}}
                 </div>
               </div>
             </div>

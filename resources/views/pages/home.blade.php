@@ -3,7 +3,7 @@
 <div class="ms-hero ms-hero-material">
         <span class="ms-hero-bg"></span>
         <div class="container">
-          <div class="col-lg-6 col-md-7">
+          <div class="col-lg-12 col-md-12">
             <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
@@ -14,7 +14,7 @@
                         <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">The
                           <strong>power design</strong> amazing projects</h1>
                         <h2 class="animated fadeInLeft animation-delay-18">The most customizable
-                          <span class="color-warning">material design</span> template.</h2>
+                          <span class="color-warning">Lorem ipsum </span> dolor.</h2>
                       </header>
                       <ul class="ms-hero-material-list">
                         <li class="">
@@ -108,7 +108,7 @@
                         <h1 class="animated fadeInLeft animation-delay-15">Commitment of
                           <strong>monthly updates</strong>.</h1>
                         <h2 class="animated fadeInLeft animation-delay-18">There will soon be a version for
-                          <span class="color-warning">Bootstrap 4</span>.</h2>
+                          <span class="color-warning">Lorem ipsum.</span>.</h2>
                       </header>
                       <ul class="ms-hero-material-list">
                         <li class="">
@@ -166,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-5">
+{{--           <div class="col-lg-6 col-md-5">
             <div class="ms-hero-img animated zoomInUp animation-delay-30">
               <img src="/img/demo/mock-imac-material2.png" alt="" class="img-responsive">
               <div id="carousel-hero-img" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
@@ -187,7 +187,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> --}}
         </div>
         <!-- container -->
       </div>
@@ -240,8 +240,8 @@
       <!-- container -->
       <div class="wrap wrap-mountain mt-6">
         <div class="container">
-          <h2 class="text-center text-light mb-6 wow fadeInDown animation-delay-5">Material Design is a
-            <strong>new way</strong> to create designs</h2>
+          <h2 class="text-center text-light mb-6 wow fadeInDown animation-delay-5">Lorem is a
+            <strong> dolores mollitia</strong> ipsum dolor sit amet,</h2>
           <div class="row">
             <div class="col-md-6 col-md-push-6 mb-4  center-block">
               <img src="/img/demo/mock.png" alt="" class="img-responsive center-block wow zoomIn animation-delay-12 "> </div>
