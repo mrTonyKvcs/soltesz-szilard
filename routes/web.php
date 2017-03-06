@@ -22,8 +22,8 @@ function()
 	Route::get('stress-sticking', ['as' => 'topics.stress-sticking', 'uses' => 'TopicsController@stressSticking']);
 	Route::get('life-crises', ['as' => 'topics.life-crises', 'uses' => 'TopicsController@lifeCrises']);
 	// Blog
-	Route::get('blog', ['as' => 'blog.index', 'uses' => 'BlogsController@index']);
-	Route::get('blog/slug', ['as' => 'blog.show', 'uses' => 'BlogsController@index']);
+	Route::get(LaravelLocalization::transRoute('routes.blog.all'), ['as' => 'blog.index', 'uses' => 'BlogsController@index']);
+	Route::get(LaravelLocalization::transRoute('routes.blog.show'), ['as' => 'blog.show', 'uses' => 'BlogsController@show']);
 	// Trainings
 	Route::get('trainings', ['as'	=> 'trainings.index', 'uses'	=> 'TrainingsController@index']);
 });

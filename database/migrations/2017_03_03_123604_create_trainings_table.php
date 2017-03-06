@@ -16,7 +16,7 @@ class CreateTrainingsTable extends Migration
         Schema::create('trainings', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title', 100);
-            $table->string('slug', 100);
+            $table->string('slug', 100)->nullable();
             $table->text('description');
             $table->string('images_path', 100)->nullable();
             $table->string('video_path', 100)->nullable();

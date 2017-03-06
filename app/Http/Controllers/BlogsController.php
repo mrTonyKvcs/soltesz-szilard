@@ -2,16 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
 use Illuminate\Http\Request;
 
 class BlogsController extends Controller
 {
 	public function index()
 	{
-		return view('blog.index');
+		$blogs = Blog::orderBy('created_at')->get();
+		return view('blog.index', compact('blogs'));
 	}
-	public function show()
+	public function show($slug)
 	{
-		return view('blog.show');
+		$blog = Blog::where('slug', $slug)->firstOrFail();
+		return view('blog.show', compact('blog'));
 	}    
 }
