@@ -2,21 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
+use App\Training;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function home()
     {
-    	return view('pages.home');
-    }
-    public function motivation()
-    {
-        return view('pages.motivation');
+        $training = Training::orderBy('started_at')->first();
+        $blog = Blog::orderBy('created_at')->first();
+    	return view('pages.home', compact('training', 'blog'));
     }
     public function about()
     {
         return view('pages.about');
+    }
+    public function selflessCoaching()
+    {
+        return view('pages.selfless-coaching');
     }
     public function price()
     {

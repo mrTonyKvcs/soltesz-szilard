@@ -22,4 +22,8 @@ class TopicsController extends Controller
     {
     	return view('topics.life-crises');
     }
+    public function resilience()
+    {
+        return view('topics.resilience');
+    }
 }

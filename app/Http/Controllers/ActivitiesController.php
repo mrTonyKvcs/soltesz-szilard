@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class ActivitiesController extends Controller
 {
-    public function selflessCoaching()
+    public function personalCoaching()
     {
-    	return view('activities.selfless-coaching');
+        return view('activities.personal-coaching');
     }
      public function guidance()
     {

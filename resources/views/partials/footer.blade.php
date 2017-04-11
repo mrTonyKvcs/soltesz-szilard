@@ -22,8 +22,8 @@
                       <i class="zmdi zmdi-time"></i> {{ trans('navbar.trainings') }}</a>
                   </li> --}}
                   <li>
-                    <a href="{{ route('pages.motivation') }}">
-                      <i class="zmdi zmdi-favorite-outline"></i>{{ trans('navbar.motivation') }}</a>
+                    <a href="{{ route('pages.about') }}">
+                      <i class="zmdi zmdi-favorite-outline"></i>{{ trans('navbar.about') }}</a>
                   </li>
                   {{-- <li>
                     <a href="page-team2.html">

@@ -26,12 +26,19 @@
       <a class="link" href="{{ route('pages.home') }}">
         <i class="zmdi zmdi-home"></i> {{ trans('navbar.home') }}</a>
     </li>
+    <li>
+      <a class="link" href="{{ route('pages.about') }}">
+        <i class="zmdi zmdi-face"></i> Soltész Szilárd</a>
+    </li>
+    <li>
+      <a class="link" href="{{ route('pages.selfless-coaching') }}"><i class="zmdi zmdi-run"></i>{{ trans('navbar.selfless-coaching')}}</a>
+    </li>
     <li class="panel" role="tab" id="sch1">
       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc1" aria-expanded="false" aria-controls="sc1">
         <i class="zmdi zmdi-local-activity"></i> {{ trans('navbar.activity') }} </a>
       <ul id="sc1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch1">
         <li>
-          <a href="{{ route('activities.selfless-coaching') }}">{{ trans('navbar.selfless-coaching')}}</a>
+          <a href="{{ route('activities.personal-coaching') }}">{{ trans('navbar.personal-coaching')}}</a>
         </li>
         <li>
           <a href="{{ route('activities.guidance') }}">{{ trans('navbar.guidance')}}</a>
@@ -40,14 +47,6 @@
           <a href="{{ route('activities.group-trainings') }}">{{ trans('navbar.group-trainings')}}</a>
         </li>
       </ul>
-    </li>
-    <li>
-      <a class="link" href="{{ route('pages.motivation') }}">
-        <i class="zmdi zmdi-run"></i> {{ trans('navbar.motivation') }}</a>
-    </li>
-    <li>
-      <a class="link" href="{{ route('pages.about') }}">
-        <i class="zmdi zmdi-face"></i> {{ trans('navbar.about') }}</a>
     </li>
     <li class="panel" role="tab" id="sch2">
       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2" aria-expanded="false" aria-controls="sc2">
@@ -64,6 +63,9 @@
         </li>
         <li>
           <a href="{{ route('topics.life-crises') }}">{{ trans('navbar.life-crises') }}</a>
+        </li>
+        <li>
+          <a href="{{ route('topics.resilience') }}">{{ trans('navbar.resilience') }}</a>
         </li>
       </ul>
     </li>

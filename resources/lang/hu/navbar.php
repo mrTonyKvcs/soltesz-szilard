@@ -3,21 +3,22 @@ return [
 	'home'			=> 'Kezdőlap',
 	//introduction
 	'introduction'	=> 'Bemutatkozás',
-	'activity'		=> 'Tevékenység',
+	'activity'		=> 'Kiemelt tevékenységeim',
 	'motivation'	=> 'Motivációm',
-	'about'			=> 'Pár érdekesség rólam',
+	'selfless-coaching'	=> 'Selfless coaching',
 
 	// activity
-	'selfless-coaching'	=> 'Selfless coaching',
+	'personal-coaching'	=> 'Egyéni coaching/segítő beszélgetés',
 	'guidance'			=> 'Értékesítés- stratégia tanácsadás',
-	'group-trainings'	=> 'Csoportos képzések',
+	'group-trainings'	=> 'Előadás/tréning/műhely-unka/csoportos coaching',
 
 	// topic
 	'topic'						=> 'Kiemelt témáim',
 	'communication-techniques'	=> 'Asszertív, érdekképviseleti kommunikációs technikák',
 	'developing-competencies'	=> 'Vezetői kompetenciák fejlesztése',
 	'stress-sticking'			=> 'Stresszben ragadás',
-	'life-crises'				=> 'Munkahelyi, magánéleti krízishelyzetek',
+	'life-crises'				=> 'Életközepi válság/krízis',
+	'resilience'				=> 'Reziliencia',
 
 	'blog'			=> 'Blog',
 	'trainings'		=> 'Aktuális képzések',

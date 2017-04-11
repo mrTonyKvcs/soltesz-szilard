@@ -90,7 +90,7 @@
       </div>
     </div>
 </div>
-<div class="wrap ms-hero-bg-info ms-hero-img-meeting ms-bg-fixed mb-6 mt-4">
+<div class="wrap ms-hero-bg-info ms-hero-img-meeting ms-bg-fixed mb-6 mt-4" style="margin-bottom: 0;">
     <div class="container">
       <h2 class="text-center color-white no-mt mb-6 wow fadeInUp">Our Services</h2>
       <div class="col-md-4 col-sm-6">
@@ -171,357 +171,83 @@
           </div>
         </div>
       </div>
-      <div class="text-center">
-        <a href="javascript:void(0)" class="btn btn-raised btn-danger wow flipInX animation-delay-8">
-          <i class="fa fa-space-shuttle"></i> I have a project</a>
-        <a href="javascript:void(0)" class="btn btn-raised btn-info wow flipInX animation-delay-9">
-          <i class="zmdi zmdi-info"></i> More Information</a>
-      </div>
     </div>
 </div>
-<div class="container">
-	
-        <h1 class="color-primary text-center">Compare our plans</h1>
-        <p class="lead text-center center-block mb-4 mw-800">Suscipit placeat dolor iste, amet libero quidem aliquam expedita dicta repellendus ut modi sed mollitia dolorem tempore obcaecati incidunt est asperiores.</p>
-        <div class="row pricing-table-container">
-          <div class="col-md-4 hidden-sm hidden-xs pricing-col">
-            <div class="pricing-table pricing-table-description">
-              <div class="pricing-table-head">
-                <h2> Plans Available
-                  <span>Officia deserunt mollitia</span>
-                </h2>
-                <h3 class="price"> Pay Monthly </h3>
-              </div>
-              <ul class="pricing-table-content">
-                <li>
-                  <i class="fa fa-globe"></i>Domains </li>
-                <li>
-                  <i class="fa fa-briefcase"></i>Subdomains </li>
-                <li>
-                  <i class="fa fa-cloud-upload"></i>Diskspace </li>
-                <li>
-                  <i class="fa fa-envelope"></i>Email Addresses </li>
-                <li>
-                  <i class="fa fa-inbox"></i> MySQL Databases </li>
-                <li>
-                  <i class="fa fa-gift"></i>Google AdWords Credits </li>
-                <li>
-                  <i class="fa fa-terminal"></i>SSH Access </li>
-                <li>
-                  <i class="fa fa-location-arrow"></i>Message from Users List </li>
-                <li>
-                  <i class="fa fa-code"></i>PHP 5, Python, Node.js </li>
-                <li>
-                  <i class="fa fa-dashboard"></i>Scheduled Lock Screen </li>
-                <li>
-                  <i class="fa fa-cogs"></i>Ports Controls </li>
-                <li>
-                  <i class="fa fa-wrench"></i>Customisable Templates </li>
-                <li>
-                  <i class="fa fa-umbrella"></i>SSL Certificate </li>
-                <li>
-                  <i class="fa fa-gavel"></i>Premium DNS </li>
-                <li>
-                  <i class="fa fa-phone"></i>Phone and Web Support </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-2 pricing-col">
-            <div class="pricing-table">
-              <div class="pricing-table-head">
-                <h2> Begginer
-                  <span>Officia deserunt mollitia</span>
-                </h2>
-                <h3 class="price"> $
-                  <i>4</i>.99
-                  <span class="hidden-md hidden-lg">Per Month</span>
-                </h3>
-              </div>
-              <ul class="pricing-table-content">
-                <li> 1
-                  <span class="hidden-md hidden-lg">Domains</span>
-                </li>
-                <li> 10
-                  <span class="hidden-md hidden-lg">Subdomains</span>
-                </li>
-                <li> 10 GB
-                  <span class="hidden-md hidden-lg">Diskspace</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Email Addresses</span>
-                </li>
-                <li> 1
-                  <span class="hidden-md hidden-lg"> MySQL Databases</span>
-                </li>
-                <li> $50
-                  <span class="hidden-md hidden-lg">Google AdWords Credits</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">SSH Access</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">Message from Users List</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">PHP 5, Python, Node.js</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Scheduled Lock Screen</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Ports Controls</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"> </i>
-                  <span class="hidden-md hidden-lg">Customizable Templates</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">SSL Certificate</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Premium DNS</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">Phone &amp; Support</span>
-                </li>
-              </ul>
-              <div class="pricing-table-footer text-center">
-                <a href="javascript:void(0)" class="btn btn-primary btn-raised">
-                  <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 pricing-col">
-            <div class="pricing-table">
-              <div class="pricing-table-head">
-                <h2> Professional
-                  <span>Officia deserunt mollitia</span>
-                </h2>
-                <h3 class="price"> $
-                  <i>99</i>.99
-                  <span class="hidden-md hidden-lg">Per Month</span>
-                </h3>
-              </div>
-              <ul class="pricing-table-content">
-                <li> 1
-                  <span class="hidden-md hidden-lg">Domains</span>
-                </li>
-                <li> 10
-                  <span class="hidden-md hidden-lg">Subdomains</span>
-                </li>
-                <li> 10 GB
-                  <span class="hidden-md hidden-lg">Diskspace</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Email Addresses</span>
-                </li>
-                <li> 1
-                  <span class="hidden-md hidden-lg"> MySQL Databases</span>
-                </li>
-                <li> $50
-                  <span class="hidden-md hidden-lg">Google AdWords Credits</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">SSH Access</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">Message from Users List</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">PHP 5, Python, Node.js</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Scheduled Lock Screen</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Ports Controls</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"> </i>
-                  <span class="hidden-md hidden-lg">Customizable Templates</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">SSL Certificate</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Premium DNS</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">Phone &amp; Support</span>
-                </li>
-              </ul>
-              <div class="pricing-table-footer text-center">
-                <a href="javascript:void(0)" class="btn btn-primary btn-raised">
-                  <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 pricing-col">
-            <div class="pricing-table">
-              <div class="pricing-table-head">
-                <h2> Expert
-                  <span>Officia deserunt mollitia</span>
-                </h2>
-                <h3 class="price"> $
-                  <i>199</i>.99
-                  <span class="hidden-md hidden-lg">Per Month</span>
-                </h3>
-              </div>
-              <ul class="pricing-table-content">
-                <li> 1
-                  <span class="hidden-md hidden-lg">Domains</span>
-                </li>
-                <li> 10
-                  <span class="hidden-md hidden-lg">Subdomains</span>
-                </li>
-                <li> 10 GB
-                  <span class="hidden-md hidden-lg">Diskspace</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Email Addresses</span>
-                </li>
-                <li> 1
-                  <span class="hidden-md hidden-lg"> MySQL Databases</span>
-                </li>
-                <li> $50
-                  <span class="hidden-md hidden-lg">Google AdWords Credits</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">SSH Access</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">Message from Users List</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">PHP 5, Python, Node.js</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Scheduled Lock Screen</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Ports Controls</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"> </i>
-                  <span class="hidden-md hidden-lg">Customizable Templates</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">SSL Certificate</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Premium DNS</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">Phone &amp; Support</span>
-                </li>
-              </ul>
-              <div class="pricing-table-footer text-center">
-                <a href="javascript:void(0)" class="btn btn-primary btn-raised">
-                  <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 pricing-col">
-            <div class="pricing-table">
-              <div class="pricing-table-head">
-                <h2> Ultimate
-                  <span>Officia deserunt mollitia</span>
-                </h2>
-                <h3 class="price"> $
-                  <i>499</i>.99
-                  <span class="hidden-md hidden-lg">Per Month</span>
-                </h3>
-              </div>
-              <ul class="pricing-table-content">
-                <li> 1
-                  <span class="hidden-md hidden-lg">Domains</span>
-                </li>
-                <li> 10
-                  <span class="hidden-md hidden-lg">Subdomains</span>
-                </li>
-                <li> 10 GB
-                  <span class="hidden-md hidden-lg">Diskspace</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Email Addresses</span>
-                </li>
-                <li> 1
-                  <span class="hidden-md hidden-lg"> MySQL Databases</span>
-                </li>
-                <li> $50
-                  <span class="hidden-md hidden-lg">Google AdWords Credits</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">SSH Access</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">Message from Users List</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">PHP 5, Python, Node.js</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Scheduled Lock Screen</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Ports Controls</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"> </i>
-                  <span class="hidden-md hidden-lg">Customizable Templates</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">SSL Certificate</span>
-                </li>
-                <li>
-                  <i class="fa fa-times"></i>
-                  <span class="hidden-md hidden-lg">Premium DNS</span>
-                </li>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span class="hidden-md hidden-lg">Phone &amp; Support</span>
-                </li>
-              </ul>
-              <div class="pricing-table-footer text-center">
-                <a href="javascript:void(0)" class="btn btn-primary btn-raised">
-                  <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-              </div>
-            </div>
-          </div>
+<div class="container mt-6">
+  <div class="row">
+    <div class="col-lg-8 col-md-7">
+      <div class="card card-primary animated fadeInUp animation-delay-7">
+        <div class="ms-hero-bg-primary ms-hero-img-mountain">
+          <h2 class="text-center no-m pt-4 pb-4 color-white index-1">Contact</h2>
         </div>
+        <div class="card-block">
+          <form class="form-horizontal">
+            <fieldset>
+              <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">Name</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" id="inputName" placeholder="Name"> </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail" class="col-md-2 control-label">Email</label>
+                <div class="col-md-9">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email"> </div>
+              </div>
+              <div class="form-group">
+                <label for="inputSubject" class="col-md-2 control-label">Subject</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" id="inputSubject" placeholder="Subject"> </div>
+              </div>
+              <div class="form-group">
+                <label for="textArea" class="col-md-2 control-label">Message</label>
+                <div class="col-md-9">
+                  <textarea class="form-control" rows="5" id="textArea" placeholder="Your message..."></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-9 col-md-offset-2">
+                  <button type="submit" class="btn btn-raised btn-primary">Submit</button>
+                  <button type="button" class="btn btn-danger">Cancel</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-5">
+      <div class="card card-primary animated fadeInUp animation-delay-7">
+        <div class="card-block">
+          <div class="text-center mb-2">
+            <span class="ms-logo ms-logo-sm mr-1">S</span>
+            <h3 class="no-m ms-site-title">Soltész
+              <span>Szilárd</span>
+            </h3>
+          </div>
+          <address class="no-mb">
+            <p>
+              <i class="color-danger-light zmdi zmdi-pin mr-1"></i> 795 Folsom Ave, Suite 600</p>
+            <p>
+              <i class="color-warning-light zmdi zmdi-map mr-1"></i> San Francisco, CA 94107</p>
+            <p>
+              <i class="color-info-light zmdi zmdi-email mr-1"></i>
+              <a href="mailto:joe@example.com">example@domain.com</a>
+            </p>
+            <p>
+              <i class="color-royal-light zmdi zmdi-phone mr-1"></i>+34 123 456 7890 </p>
+            <p>
+              <i class="color-success-light fa fa-fax mr-1"></i>+34 123 456 7890 </p>
+          </address>
+        </div>
+      </div>
+      <div class="card card-primary animated fadeInUp animation-delay-7">
+        <div class="card-header">
+          <h3 class="card-title">
+            <i class="zmdi zmdi-map"></i>Map</h3>
+        </div>
+        <iframe width="100%" height="340" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=central%2Bpark&ie=UTF8&z=12&t=m&iwloc=near&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
 </div>
 @stop

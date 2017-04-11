@@ -68,11 +68,17 @@
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
+            <li>
+              <a href="{{ route('pages.about') }}">Soltész Szilárd</a>
+            </li>
+            <li>
+              <a href="{{ route('pages.selfless-coaching') }}">{{ trans('navbar.selfless-coaching')}}</a>
+            </li>
             <li class="dropdown-submenu">
               <a href="javascript:void(0)" class="has_children">{{ trans('navbar.activity') }}</a>
               <ul class="dropdown-menu dropdown-menu-left">
                 <li>
-                  <a href="{{ route('activities.selfless-coaching') }}">{{ trans('navbar.selfless-coaching')}}</a>
+                  <a href="{{ route('activities.personal-coaching') }}">{{ trans('navbar.personal-coaching')}}</a>
                 </li>
                 <li>
                   <a href="{{ route('activities.guidance') }}">{{ trans('navbar.guidance')}}</a>
@@ -81,12 +87,6 @@
                   <a href="{{ route('activities.group-trainings') }}">{{ trans('navbar.group-trainings')}}</a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a href="{{ route('pages.motivation') }}">{{ trans('navbar.motivation') }}</a>
-            </li>
-            <li>
-              <a href="{{ route('pages.about') }}">{{ trans('navbar.about') }}</a>
             </li>
           </ul>
         </li>
@@ -106,6 +106,9 @@
             </li>
             <li>
               <a href="{{ route('topics.life-crises') }}">{{ trans('navbar.life-crises') }}</a>
+            </li>
+            <li>
+              <a href="{{ route('topics.resilience') }}">{{ trans('navbar.resilience') }}</a>
             </li>
           </ul>
         </li>
