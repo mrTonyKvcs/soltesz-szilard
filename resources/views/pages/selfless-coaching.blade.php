@@ -7,7 +7,7 @@
 	        <div class="card animated materialUp animation-delay-5" ">
 	            <div class="card-block card-block-big ">
 	                <h1 class="no-mt ">{{ trans('navbar.selfless-coaching') }}</h1>
-	                <img src="/img/demo/postG3.jpg " alt=" " class="img-responsive mb-4">
+	                <img src="/img/big-C.jpg " alt=" " class="img-responsive mb-4" style="width: 100%;">
 	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio delectus <strong>eveniet quas exercitationem explicabo</strong> dolore quibusdam voluptatum saepe consequatur nostrum ducimus, repellendus molestiae natus ipsa, suscipit nihil nisi dolorem sit, sed earum enim quos deserunt. Ipsam, deleniti magni ullam incidunt dolores sit libero rerum reprehenderit velit? Id <a href="# ">veniam cum mollitia</a> minima porro quae dicta deserunt eligendi excepturi totam. Voluptatem illum rem, exercitationem. Neque illo magnam deserunt perspiciatis explicabo tempora culpa molestias, pariatur, nostrum a, reprehenderit.</p>
 	                <blockquote class="blockquote-big ">
 	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>

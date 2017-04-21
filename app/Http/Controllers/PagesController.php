@@ -10,8 +10,8 @@ class PagesController extends Controller
 {
     public function home()
     {
-        $training = Training::orderBy('started_at')->first();
-        $blog = Blog::orderBy('created_at')->first();
+        $training = Training::orderBy('started_at')->firstOrFail();
+        $blog = Blog::orderBy('created_at')->firstOrFail();
     	return view('pages.home', compact('training', 'blog'));
     }
     public function about()
