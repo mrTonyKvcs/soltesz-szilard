@@ -56,7 +56,7 @@
       <div role="tabpanel" class="tab-pane active in fade" id="developing-competencies">
         <div class="row">
           <div class="col-md-6">
-            <img src="/img/topics/vezetői-kompetenciák.jpg" alt="" class="img-responsive wow animated zoomIn animation-delay-8"> </div>
+            <img src="/img/topics/vezetoi-kompetenciak.jpg" alt="" class="img-responsive wow animated zoomIn animation-delay-8"> </div>
           <div class="col-md-6">
             <h3 class="text-normal wow animated fadeInUp animation-delay-4">{{ trans('navbar.developing-competencies') }}</h3>
             <p class="lead lead-md  wow animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
@@ -72,7 +72,7 @@
       <div role="tabpanel" class="tab-pane fade" id="stress-sticking">
         <div class="row">
           <div class="col-md-6 col-md-push-6">
-            <img src="/img/topics/stresszben-ragadás.jpg" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+            <img src="/img/topics/stresszben-ragadas.jpg" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
           <div class="col-md-6 col-md-pull-6">
             <h3 class="text-normal animated fadeInUp animation-delay-4">{{ trans('navbar.stress-sticking') }}</h3>
             <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
@@ -88,7 +88,7 @@
       <div role="tabpanel" class="tab-pane fade" id="life-crises">
         <div class="row">
           <div class="col-md-6">
-            <img src="/img/topics/életközepi-válság.jpg" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+            <img src="/img/topics/eletkozepi-valsag.jpg" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
           <div class="col-md-6">
             <h3 class="text-normal animated fadeInUp animation-delay-4">{{ trans('navbar.life-crises') }}</h3>
             <p class="lead lead-md  animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
