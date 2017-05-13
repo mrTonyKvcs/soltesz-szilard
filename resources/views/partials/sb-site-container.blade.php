@@ -78,10 +78,6 @@
         <i class="zmdi zmdi-calendar-note"></i> {{ trans('navbar.trainings') }}</a>
     </li>
     <li>
-      <a class="link" href="{{ route('pages.price') }}">
-        <i class="zmdi zmdi-money"></i> {{ trans('navbar.price') }}</a>
-    </li>
-    <li>
       <a class="link" href="{{ route('pages.contact') }}">
         <i class="zmdi zmdi-email"></i> {{ trans('navbar.contact') }}</a>
     </li>

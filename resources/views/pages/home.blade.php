@@ -15,7 +15,7 @@
       </div>
       <!-- container -->
       <div class="wrap wrap-danger mt-6">
-        <h2 class="text-center no-m">What our customers say</h2>
+        <h2 class="text-center no-m">Gondolatok</h2>
         <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" data-ride="carousel" data-interval="7000">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -32,7 +32,7 @@
                     <div class="col-md-4">
                       <div class="card animated flipInX animation-delay-2">
                         <blockquote class="blockquote-avatar withripple">
-                          <img src="/img/demo/avatar.png" alt="" class="avatar hidden-xs">
+                          {{-- <i class="fa fa-quote-left" aria-hidden="true"></i> --}}
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
                           <footer>Brian Krzanich, Intel CEO.</footer>
                         </blockquote>
@@ -143,7 +143,7 @@
         </div>
       </div>
       <div class="container mt-6">
-        <h2 class="text-center color-primary mb-4">Our Latest Works</h2>
+        <h2 class="text-center color-primary mb-4">Olvasmányok</h2>
         <div class="owl-dots"></div>
         <div class="owl-carousel owl-theme">
           <div class="card animation-delay-6">

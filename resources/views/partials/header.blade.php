@@ -119,9 +119,6 @@
           <a href="{{ route('trainings.index') }}">{{ trans('navbar.trainings') }}</a>
         </li>
         <li>
-          <a href="{{ route('pages.price') }}">{{ trans('navbar.price') }}</a>
-        </li>
-        <li>
           <a href="{{ route('pages.contact') }}">{{ trans('navbar.contact') }}</a>
         </li>
         <li class="dropdown">

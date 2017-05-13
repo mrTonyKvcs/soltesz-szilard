@@ -8,10 +8,9 @@
           <div class="carousel-caption">
             <div class="ms-hero-material-text-container">
               <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">The
-                  <strong>power design</strong> amazing projects</h1>
-                <h2 class="animated fadeInLeft animation-delay-18">The most customizable
-                  <span class="color-warning">Lorem ipsum </span> dolor.</h2>
+                <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">Selfless-coaching</h1>
+                <h2 class="animated fadeInLeft animation-delay-18"><span class="color-warning">“Tanulj meg  
+                  történetedből olvasni”</span> </h2>
               </header>
               <div class="col-lg-11 col-md-11 col-lg-offset-1 col-md-offset-1">
               <ul class="ms-hero-material-list">

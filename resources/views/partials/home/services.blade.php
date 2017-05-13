@@ -1,12 +1,10 @@
-  <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Szolgaltatasok</h2>
-  <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"> Lorem ipsum dolor sit amet,
-    <span class="color-primary">consectetur adipisicing</span> elit. Dolor alias provident excepturi eligendi, nam numquam iusto eum illum, ea quisquam.</p>
+  <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Tevékenységek</h2>
   <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
     <div class="text-center card-block">
       <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info">
         <i class="fa fa-user" aria-hidden="true"></i>
       </span>
-      <h4 class="color-info">Egyéni coaching /  segítőbeszélgetés</h4>
+      <h3 class="color-info"><strong>Egyéni coaching /  segítőbeszélgetés</strong></h3><br>
       <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
       <button class="btn btn-info btn-raised" data-toggle="modal" data-target="#myModal">{{ trans('button.next') }}</button>
     </div>
@@ -16,7 +14,7 @@
       <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning">
         <i class="fa fa-line-chart" aria-hidden="true"></i>
       </span>
-      <h4 class="color-warning">Értékesítés-stratégia tanácsadás</h4>
+      <h3 class="color-warning"><strong>Értékesítés-stratégia tanácsadás</strong></h3>
       <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
       <button class="btn btn-warning btn-raised" data-toggle="modal" data-target="#myModal2">{{ trans('button.next') }}</button>
     </div>
@@ -24,19 +22,19 @@
   <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
     <div class="text-center card-block">
       <span class="ms-icon ms-icon-circle ms-icon-xxlg color-success">
-        <i class="fa fa-coffee" aria-hidden="true"></i>
+        <i class="fa fa-cogs" aria-hidden="true"></i>
       </span>
-      <h4 class="color-success">Munkahelyi mentálhigiénés projektek</h4>
+      <h3 class="color-success"><strong>Munkahelyi mentálhigiénés projektek</strong></h3>
       <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
       <button class="btn btn-success btn-raised" data-toggle="modal" data-target="#myModal3">{{ trans('button.next') }}</button>
     </div>
   </div>
-  <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-6" style="padding-bottom: 18px;">
+  <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-6">
     <div class="text-center card-block">
       <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger">
         <i class="fa fa-users" aria-hidden="true"></i>
       </span>
-      <h4 class="color-danger">Élménycsoport vezetés</h4>
+      <h3 class="color-danger"><strong>Élménycsoport vezetés</strong></h3><br>
       <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
       <button class="btn btn-danger btn-raised" data-toggle="modal" data-target="#myModal4">{{ trans('button.next') }}</button>
     </div>
@@ -47,7 +45,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                <h3 class="modal-title" id="myModalLabel6">Egyéni coaching /  segítőbeszélgetés</h3>
+                <h3 class="modal-title" id="myModalLabel6"><strong>Egyéni coaching /  segítőbeszélgetés</strong></h3>
             </div>
             <div class="modal-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>

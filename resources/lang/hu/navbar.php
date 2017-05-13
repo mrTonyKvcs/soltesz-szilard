@@ -20,8 +20,8 @@ return [
 	'life-crises'				=> 'Életközepi válság/krízis',
 	'resilience'				=> 'Reziliencia',
 
-	'blog'			=> 'Blog',
-	'trainings'		=> 'Aktuális képzések',
+	'blog'			=> 'Olvasmányok',
+	'trainings'		=> 'Események',
 	'price'			=> 'Árak',
 	'contact'		=> 'Kapcsolat',
 	'language'		=> 'Nyelv'
