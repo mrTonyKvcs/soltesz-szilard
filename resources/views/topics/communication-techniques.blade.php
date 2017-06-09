@@ -8,21 +8,39 @@
 	            <div class="card-block card-block-big ">
 	                <h1 class="no-mt ">{{ trans('navbar.communication-techniques') }}</h1>
 	                <img src="/img/topics/asszertiv.jpg" alt=" " class="img-responsive mb-4" style="width: 100%">
-	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio delectus <strong>eveniet quas exercitationem explicabo</strong> dolore quibusdam voluptatum saepe consequatur nostrum ducimus, repellendus molestiae natus ipsa, suscipit nihil nisi dolorem sit, sed earum enim quos deserunt. Ipsam, deleniti magni ullam incidunt dolores sit libero rerum reprehenderit velit? Id <a href="# ">veniam cum mollitia</a> minima porro quae dicta deserunt eligendi excepturi totam. Voluptatem illum rem, exercitationem. Neque illo magnam deserunt perspiciatis explicabo tempora culpa molestias, pariatur, nostrum a, reprehenderit.</p>
-	                <blockquote class="blockquote-big ">
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-	                    <footer>Someone famous in <cite title="Source Title ">Source Title</cite></footer>
-	                </blockquote>
-	                <p>Nihil autem, consectetur mollitia est neque aperiam expedita reprehenderit quia in atque. Perferendis nulla asperiores dolores veritatis blanditiis. Quia architecto distinctio natus ad asperiores explicabo cum aliquid officiis, similique, quidem voluptatem odio illum possimus mollitia. Tempore optio soluta iusto maxime, cupiditate aut, assumenda facilis atque enim dicta, esse mollitia itaque voluptatem doloremque doloribus similique ad consequuntur asperiores. Ducimus reiciendis voluptatum fugit praesentium, labore nobis unde quia ullam quidem dolore et cumque. Est ratione similique rem.</p>
-	                <h3 class="color-primary ">Cupiditate necessitatibus inventore facilis</h3>
-	                <p>Deleniti, ut. Reiciendis cumque, autem quas, est rem nam inventore numquam, voluptatum eius vero repellat aliquam. <strong>Ut incidunt ab veniam fugiat beatae sequi tempora fuga</strong>, impedit unde inventore dignissimos! Beatae omnis amet tempora similique dolores error officia aliquam et cupiditate necessitatibus inventore facilis natus optio adipisci doloribus nulla voluptate sint fuga eum, dolorum aperiam quasi. Earum nemo ab ratione quia placeat voluptatem eos magni officia illo fugit consequatur, nihil aliquam nostrum esse officiis! Provident, a.</p>
+	                <h3 class="color-primary ">Az érzések színpada</h3>
+	                <p>A kommunikáció átkarolja egész életünket, emberi viszonyokat kapcsol össze. Sokszor dühösek, stresszesek vagyunk, valami, valahol megreked, és rossz érzéseket váltanak ki bennünk. Előfordul, hogy munkahelyi, magánéleti vagy egyéb kapcsolatai szituációkban megrekedünk, megoldatlan marad egy konfliktus. Ez a napi jólétünkre lehet káros hatással, beletemetkezünk egy kerülhető stresszhelyzetbe, ami akár a harmonikus lelki fejlődésünknek is a gátja lehet.</p>
+	                
+	                <p>Agresszívnek érzem a környeztem kommunikációját, nehéz megértetnem magamat, azt tapasztalom, hogy megint nehezen tudtam kiállni magamért, és ez bánt, akár szorongok is miatta. Ebben a helyzetben egy elhárító mechanizmussal gyorsan keresek egy ideológiát, és átkeresztelem az eseményeket. Próbálok ferdíteni, elfojtani vagy akár csak a pozitív felére gondolni, szinte lehasítani a problémás részt. Ezek nem fognak elmúlni, csak mert másképp értelmezem. Szépen, lappangó vírusként meglapul, s valamilyen formában a hatalmában tart, s vulkáni erővel időről-időre ki is fog törni. Ha agresszió formájában jelentkezik, akkor kifelé rombolok, így tördelve a megértés, hatékony érdekképviselet felszabadító érzését. Ha passzív módon befelé csomagolom el, kínzom magamat, áldozatként tekintek magamra, kerülöm a konfliktusokat, akkor is totálisan rombolok, csak épp magammal szemben vagyok agresszív. </p>
+	                <p>Visszatérő élmények lehetnek a nehéz megértetni magamat a környezetemmel, erőszakosnak tűnik az, amit őszintén képviselek, pedig a javító, építő szándék vezérel. A napi munkarutin leszívott gyengeségében tart, alig marad időm a családomra, barátaimra, s természetesen magamra. Be vagyok ragadva a munkahelyi szerepeimben, állandóan küzdök az időmmel, egyre kevésbé vagyok képes képviselni az érdekeimet, ezek a diszfunkciók értelmi-érzelmi disszonanciában tartanak. Az ellentétek feloldása érdekében pedig képes vagyok áldozatból tettessé válni, melyekre biztosan fog a szűkebb környezetünk is reagálni, melynek hatásában ismét áldozat lehetek. </p>
+	                <h3 class="color-primary ">Néhány felhasználási terület</h3>
 	                <img src="/img/profile1.jpg " alt=" " class="img-responsive imgborder ml-2 mb-2 pull-right ">
-	                <p>Dolor animi enim tempora. Nostrum velit iure aut dicta non at, rem ea ipsum quia! Eum magni earum accusamus dolores, accusantium, necessitatibus debitis natus expedita iure. Modi repellendus excepturi hic veniam et autem asperiores optio non dolore corrupti distinctio earum perferendis porro velit aperiam exercitationem explicabo dolores quaerat inventore sapiente vitae harum, doloribus. Nulla, inventore. Non totam sed ducimus iusto, excepturi consectetur, facere maxime quisquam, vitae eius iste ullam veritatis dolor enim repudiandae reprehenderit asperiores!</p>
-	                <p>Suscipit reprehenderit, delectus fugit, eum architecto dolore. Necessitatibus nisi, inventore magnam esse <span class="color-royal ">obcaecati qui facilis nulla consequatur</span> culpa eum reprehenderit, quia! Earum debitis voluptas tempore praesentium saepe, vitae qui mollitia voluptates, perferendis voluptatibus consectetur autem similique ea, sunt explicabo. In perspiciatis recusandae tenetur quaerat quos a. Et doloremque illo vel aliquid id laboriosam maiores voluptatem modi, fugiat explicabo perferendis, quo vitae consequatur totam cumque inventore earum aliquam nam eius impedit. Et quam quisquam, ex incidunt?</p>
-	                <blockquote cite=" ">
-	                    Non totam sed ducimus iusto, excepturi consectetur, facere maxime quisquam, vitae eius iste ullam veritatis dolor enim repudiandae
-	                </blockquote>
-	                <p>Distinctio dolor nulla cum tenetur sapiente pariatur doloremque officia id provident. Repellat sequi id reiciendis ipsum placeat accusantium, debitis in labore a unde. Similique commodi tempore eligendi exercitationem veritatis quaerat voluptatem tenetur, quo autem deleniti recusandae, sit quas blanditiis, temporibus numquam. Nisi repellat perferendis blanditiis praesentium incidunt necessitatibus, eveniet aut libero, ipsa neque recusandae facere adipisci et itaque? Ducimus molestiae ex voluptates itaque adipisci, et tempore aspernatur magnam incidunt quam, eveniet nobis modi asperiores cum.</p>
+	                <ul>
+	                	<li>Munkahelyi környezetben a hatékonyabb érdekképviselésre</li>
+	                	<li>Vezetőként a tisztább, egyértelmű, értelmezhetőbb kommunikáció eléréséhez</li>
+	                	<li>Szűk családi környezetben a harmonikusabb együttműködési szint elérése</li>
+	                	<li>Asszertív viselkedés attitűd fejlesztésére</li>
+	                	<li>Sikeresebb üzleti tárgyalások, saját pozícióm erősítésében</li>
+	                	<li>A magánélet számos más egyéb területén</li>
+	                	<li>Munkahelyemen magasabb pozíciót kívánok betölteni</li>
+	                	<li>Állást keresek, de nem kapom meg a megfelelő munkát</li>
+	                	<li>Nehezebben kommunikálok a gyerekeimmel, nem akarják elfogadni a szülő jó tanácsokat</li>
+	                	<li>Munkahelyi konfliktusok kezelése</li>
+	                	<li>Stresszbenragadás elkerülése</li>
+	                </ul>
+	                <h3 class="color-primary ">Fejlődési lehetőségek</h3>
+	                <p>Az asszertivitás, egy kommunikációs" jogrend". Szemléletváltás következtében felismerhetővé tesszük, hogy léteznek jogaid a kommunikáció, a közlések területén is. Megtanulhatod, úgy képviselni az érdekeidet, hogy közben figyelembe veszed környezted, kapcsolataid ugyanezen jogait.</p>
+	                <p>A másik fél személyének a minősítését kerüljük. Technikákkal, elméleti tudás segítségével elérhetővé tud válni, hogy a benned kialakult feszültséget, érzelmeket, melyeket az közlő fél cselekedete, viselkedése váltott ki benned, tudd felé visszajelezni, hogy azok miként hatottak rád.</p>
+	                <p>Négy dimenzióban dolgozunk: (!!!! ez ábrán lesz vizualizálva!!!!!)</p>
+	                <ol>
+	                	<li>a tudás, amit ismerünk, tudunk, hiszünk (ez a legnagyobb halmaz),</li>
+	                	<li>a tudásunkban lévő tartomány, melyet képes is vagyunk megfogalmazni,</li>
+	                	<li>a 2. szint készlettartományából mennyit építek be a kommunikációba,</li>
+	                	<li>az utolsó szint, hogy a verbális közléseimből mit értelmez a befogadó (ez a legkisebb tartomány).</li>
+	                </ol>
+	                <p>Az asszertív kommunikációs fejlesztés során kevésbé a tudásbázist bővítjük, munkaterületünk dinamikája a 4. dimenziótól indul visszafelé, így biztosítva, hogy valóban értékes, a hétköznapi életben is jól alkalmazható tudás képességét emeljem a készség a szintjére.</p>
+	                <p>A témakör kiválóan alkalmas az üzleti életben sokszor jelenlévő hatékonyabb tárgyalási technikák kialakítására, a valóban professzionális szint elérése. Hibásan járunk el, ha minden esetben csak a kudarcainkat elemezzük ki, vagy éppen azokat a szituációkat, melyekben kevésbé éreztük jól magunkat. Hatalmas lehetőségtár van az eredményes, akár a létrejött üzletkötések, üzletzárások tematikus átvilágításában is.</p>
+	                <p>Ez nem egy velünk született tudás, képesség, így fejleszthető, tanulható. Nem az eddig felhalmozott tudásod kerül átmosásra, vagy szektaszerű bekebelezésre. Az identitásod megtartása mellet egy nagyon békés tanulási folyamat eredményeként ráláthatsz egy másik viselkedésmódra, mely legfontosabb eszköze a nyílt, verbális kommunikáció. </p>
 	            </div>
 	        </div>
 	    </div>

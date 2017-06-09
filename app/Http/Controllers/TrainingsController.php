@@ -14,4 +14,9 @@ class TrainingsController extends Controller
     	$today = Carbon::now('Europe/London')->format('Y-M-d');
     	return view('trainings.index', compact('trainings', 'today'));
     }
+
+    public function show()
+    {
+    	return view('trainings.show');
+    }
 }

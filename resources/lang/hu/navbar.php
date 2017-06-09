@@ -5,7 +5,7 @@ return [
 	'introduction'	=> 'Bemutatkozás',
 	'activity'		=> 'Kiemelt tevékenységeim',
 	'motivation'	=> 'Motivációm',
-	'selfless-coaching'	=> 'Selfless coaching',
+	'selfless-coaching'	=> 'Selfness coaching',
 
 	// activity
 	'personal-coaching'	=> 'Egyéni coaching/segítő beszélgetés',

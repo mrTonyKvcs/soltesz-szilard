@@ -8,7 +8,7 @@
           <div class="carousel-caption">
             <div class="ms-hero-material-text-container">
               <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">Selfless-coaching</h1>
+                <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">Selfness-coaching</h1>
                 <h2 class="animated fadeInLeft animation-delay-18"><span class="color-warning">“Tanulj meg  
                   történetedből olvasni”</span> </h2>
               </header>
