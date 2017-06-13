@@ -121,7 +121,7 @@
         <li>
           <a href="{{ route('pages.contact') }}">{{ trans('navbar.contact') }}</a>
         </li>
-        <li class="dropdown">
+        {{-- <li class="dropdown">
           <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">{{ trans('navbar.language') }}
             <i class="zmdi zmdi-chevron-down"></i>
           </a>
@@ -134,7 +134,7 @@
                   </li>
               @endforeach
           </ul>
-        </li>
+        </li> --}}
         <!-- <li class="btn-navbar-menu"><a href="javascript:void(0)" class="sb-toggle-left"><i class="zmdi zmdi-menu"></i></a></li> -->
       </ul>
     </div>
