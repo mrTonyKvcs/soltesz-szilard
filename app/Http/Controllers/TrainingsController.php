@@ -15,8 +15,8 @@ class TrainingsController extends Controller
     	return view('trainings.index', compact('trainings', 'today'));
     }
 
-    public function show()
+    public function show(Training $training)
     {
-    	return view('trainings.show');
+    	return view('trainings.show', compact('training'));
     }
 }

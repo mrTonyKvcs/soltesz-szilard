@@ -15,9 +15,4 @@ class Blog extends Model
     protected $date = [
 	    'expired_at', 'deleted_at'
     ];
-    public function getDate($date)
-    {
-    	$date = Carbon::parse($date)->format('Y-M-d');
-    	return $date;
-    }
 }

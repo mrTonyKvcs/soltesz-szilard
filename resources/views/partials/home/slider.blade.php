@@ -22,14 +22,19 @@
                   </div>
                   <div class="ms-list-text animated fadeInRight animation-delay-19">{{ $training->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('trainings.index') }}">Tovább</a></div>
                 </li>
-                <li class="">
-                  <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                    <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp">
-                      <i class="zmdi zmdi-edit"></i>
-                    </span>
-                  </div>
-                  <div class="ms-list-text animated fadeInRight animation-delay-21">{{ $blog->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('blog.show', $blog->slug) }}">Tovább</a></div>
-                </li>
+                @if (  $blog )
+                  <li class="">
+                    <div class="ms-list-icon animated zoomInUp animation-delay-20">
+                      <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp">
+                        <i class="zmdi zmdi-edit"></i>
+                      </span>
+                    </div>
+                    <div class="ms-list-text animated fadeInRight animation-delay-21">
+                      {{ $blog->title }}&nbsp;&nbsp;&nbsp;
+                      <a href="{{ route('blog.show', $blog->slug) }}">Tovább</a>
+                    </div>
+                  </li>
+                @endif
                 <li class="">
                   <div class="ms-list-icon animated zoomInUp animation-delay-22">
                     <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp">

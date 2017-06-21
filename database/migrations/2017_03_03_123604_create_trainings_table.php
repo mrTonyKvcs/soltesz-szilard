@@ -18,8 +18,12 @@ class CreateTrainingsTable extends Migration
             $table->string('title', 100);
             $table->string('slug', 100)->nullable();
             $table->text('description');
+            $table->string('locale', 100);
             $table->string('images_path', 100)->nullable();
             $table->string('video_path', 100)->nullable();
+            $table->boolean('full')->default(false);
+            $table->integer('price')->nullable();
+            $table->integer('max_person')->nullable();
             $table->date('started_at')->nullable();
             $table->date('expired_at')->nullable();
             $table->softDeletes();

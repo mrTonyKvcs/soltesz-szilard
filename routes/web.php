@@ -28,7 +28,7 @@ function()
 	Route::get(LaravelLocalization::transRoute('routes.blog.show'), ['as' => 'blog.show', 'uses' => 'BlogsController@show']);
 	// Trainings
 	Route::get('trainings', ['as'	=> 'trainings.index', 'uses'	=> 'TrainingsController@index']);
-	Route::get('training', ['as'	=> 'trainings.show', 'uses'	=> 'TrainingsController@show']);
+	Route::get('training/{training}', ['as'	=> 'trainings.show', 'uses'	=> 'TrainingsController@show']);
 });
 Auth::routes();
 
