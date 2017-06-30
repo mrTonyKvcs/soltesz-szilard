@@ -6,8 +6,8 @@
 	    <div class="col-md-12">
 	        <div class="card animated materialUp animation-delay-5" ">
 	            <div class="card-block card-block-big ">
-	                <h1 class="no-mt ">{{ trans('navbar.communication-techniques') }}</h1>
-	                <img src="/img/topics/asszertiv.jpg" alt=" " class="img-responsive mb-4" style="width: 100%">
+	                <h1 class="no-mt ">{{ trans('navbar.communication-techniques') }}</h1><hr>
+	                <img src="/img/topics/asszertiv.jpg" alt=" " class="img-responsive mb-4" style="margin: 0 auto; max-height: 400px;">
 	                <h3 class="color-primary ">Az érzések színpada</h3>
 	                <p>A kommunikáció átkarolja egész életünket, emberi viszonyokat kapcsol össze. Sokszor dühösek, stresszesek vagyunk, valami, valahol megreked, és rossz érzéseket váltanak ki bennünk. Előfordul, hogy munkahelyi, magánéleti vagy egyéb kapcsolatai szituációkban megrekedünk, megoldatlan marad egy konfliktus. Ez a napi jólétünkre lehet káros hatással, beletemetkezünk egy kerülhető stresszhelyzetbe, ami akár a harmonikus lelki fejlődésünknek is a gátja lehet.</p>
 	                

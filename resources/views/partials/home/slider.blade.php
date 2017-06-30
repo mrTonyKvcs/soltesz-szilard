@@ -20,7 +20,7 @@
                       <i class="zmdi zmdi-calendar-note"></i>
                     </span>
                   </div>
-                  <div class="ms-list-text animated fadeInRight animation-delay-19">{{ $training->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('trainings.index') }}">Tovább</a></div>
+                  <div class="ms-list-text animated fadeInRight animation-delay-19"><strong>Események: </strong>{{ $training->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('trainings.index') }}">Tovább</a></div>
                 </li>
                 @if (  $blog )
                   <li class="">
@@ -30,7 +30,7 @@
                       </span>
                     </div>
                     <div class="ms-list-text animated fadeInRight animation-delay-21">
-                      {{ $blog->title }}&nbsp;&nbsp;&nbsp;
+                      <strong>Olvasmányok: </strong>{{ $blog->title }}&nbsp;&nbsp;&nbsp;
                       <a href="{{ route('blog.show', $blog->slug) }}">Tovább</a>
                     </div>
                   </li>
@@ -41,7 +41,7 @@
                       <i class="zmdi zmdi-album"></i>
                     </span>
                   </div>
-                  <div class="ms-list-text animated fadeInRight animation-delay-23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sequi est repudianda.</div>
+                  <div class="ms-list-text animated fadeInRight animation-delay-23"><strong>Kiemelt témáink: </strong>{{ $theme['title'] }}&nbsp;&nbsp;&nbsp;<a href="{{ route($theme['url']) }}">Tovább</a></div>
                 </li>
               </ul>
               </div>
