@@ -1,5 +1,15 @@
 @charset "UTF-8";
+.card-block > p {
+	font-size: 19px;
+}
 
+.card-block-big > p {
+	font-size: 19px;
+}
+
+.card-block > ul > li {
+	font-size: 19px;
+}
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.1

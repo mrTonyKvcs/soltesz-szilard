@@ -20,7 +20,7 @@
                       <i class="zmdi zmdi-calendar-note"></i>
                     </span>
                   </div>
-                  <div class="ms-list-text animated fadeInRight animation-delay-19"><strong>Események: </strong>{{ $training->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('trainings.index') }}">Tovább</a></div>
+                  <div class="ms-list-text animated fadeInRight animation-delay-19"><strong>Események: </strong>{{ $training->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('trainings.show',$training->slug) }}">Tovább</a></div>
                 </li>
                 @if (  $blog )
                   <li class="">

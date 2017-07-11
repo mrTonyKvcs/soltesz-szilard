@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="sb-site-container">
+    <div class="sb-site-container body-color">
         @include('partials.modal')
         @include('partials.header')
         @yield('content')

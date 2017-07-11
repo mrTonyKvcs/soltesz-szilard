@@ -18,7 +18,8 @@ elixir(mix => {
     	.styles([
     		'preload.min.css',
     		'plugins.min.css',
-    		'style.blue-500.min.css'
+    		'style.blue-500.min.css',
+            'app.css'
     	])
     	.scripts([
     		'plugins.min.js',

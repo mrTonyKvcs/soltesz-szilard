@@ -16,11 +16,11 @@
       <!-- container -->
       <div class="wrap wrap-danger mt-6">
         <h2 class="text-center no-m">Inspiráló gondolatok</h2>
-        <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" data-ride="carousel" data-interval="7000">
+        <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" {{-- data-ride="carousel" data-interval="7000" --}}>
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            {{-- <li data-target="#carousel-example-generic" data-slide-to="1"></li> --}}
           </ol>
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
