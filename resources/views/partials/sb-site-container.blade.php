@@ -48,27 +48,6 @@
         </li>
       </ul>
     </li>
-    <li class="panel" role="tab" id="sch2">
-      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2" aria-expanded="false" aria-controls="sc2">
-        <i class="zmdi zmdi-alert-circle"></i> {{ trans('navbar.topic') }} </a>
-      <ul id="sc2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch2">
-        <li>
-          <a href="{{ route('topics.communication-techniques') }}">{{ trans('navbar.communication-techniques') }}</a>
-        </li>
-        <li>
-          <a href="{{ route('topics.developing-competencies') }}">{{ trans('navbar.developing-competencies') }}</a>
-        </li>
-        <li>
-          <a href="{{ route('topics.stress-sticking') }}">{{ trans('navbar.stress-sticking') }}</a>
-        </li>
-        <li>
-          <a href="{{ route('topics.life-crises') }}">{{ trans('navbar.life-crises') }}</a>
-        </li>
-        <li>
-          <a href="{{ route('topics.resilience') }}">{{ trans('navbar.resilience') }}</a>
-        </li>
-      </ul>
-    </li>
     <li>
       <a class="link" href="{{ route('blog.index') }}">
         <i class="zmdi zmdi-edit"></i> {{ trans('navbar.blog') }}</a>

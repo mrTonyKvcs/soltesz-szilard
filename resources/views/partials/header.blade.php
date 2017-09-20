@@ -74,41 +74,8 @@
             <li>
               <a href="{{ route('pages.selfless-coaching') }}">{{ trans('navbar.selfless-coaching')}}</a>
             </li>
-            <li class="dropdown-submenu">
-              <a href="javascript:void(0)" class="has_children">{{ trans('navbar.activity') }}</a>
-              <ul class="dropdown-menu dropdown-menu-left">
-                <li>
-                  <a href="{{ route('activities.personal-coaching') }}">{{ trans('navbar.personal-coaching')}}</a>
-                </li>
-                <li>
-                  <a href="{{ route('activities.guidance') }}">{{ trans('navbar.guidance')}}</a>
-                </li>
-                <li>
-                  <a href="{{ route('activities.group-trainings') }}">{{ trans('navbar.group-trainings')}}</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">{{ trans('navbar.topic') }}
-            <i class="zmdi zmdi-chevron-down"></i>
-          </a>
-          <ul class="dropdown-menu">
             <li>
-              <a href="{{ route('topics.communication-techniques') }}">{{ trans('navbar.communication-techniques') }}</a>
-            </li>
-            <li>
-              <a href="{{ route('topics.developing-competencies') }}">{{ trans('navbar.developing-competencies') }}</a>
-            </li>
-            <li>
-              <a href="{{ route('topics.stress-sticking') }}">{{ trans('navbar.stress-sticking') }}</a>
-            </li>
-            <li>
-              <a href="{{ route('topics.life-crises') }}">{{ trans('navbar.life-crises') }}</a>
-            </li>
-            <li>
-              <a href="{{ route('topics.resilience') }}">{{ trans('navbar.resilience') }}</a>
+              <a href="{{ route('pages.selfless-coaching') }}">Szervezet lélektan</a>
             </li>
           </ul>
         </li>
