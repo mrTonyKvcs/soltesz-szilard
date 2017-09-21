@@ -1,4 +1,5 @@
   <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Tevékenységek</h2>
+  <br>
   <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
     <div class="text-center card-block">
       <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info">

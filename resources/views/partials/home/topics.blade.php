@@ -1,4 +1,7 @@
-<h1 class="font-light">{{ trans('navbar.topic') }}</h1>
+<h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">{{ trans('navbar.topic') }}</h2>
+<br>
+
+
 <div class="panel panel-light panel-flat">
   <!-- Nav tabs -->
   <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-5" role="tablist">
@@ -39,9 +42,7 @@
             <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
             <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
             <div class="">
-              <a href="{{ route('topics.communication-techniques')}}" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                <i class="zmdi zmdi-info"></i> {{ trans('button.next') }}
-              </a>
+                <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal01"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
             </div>
           </div>
         </div>
@@ -55,9 +56,7 @@
             <p class="lead lead-md  wow animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
             <p class="lead lead-md wow animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
             <div class="">
-              <a href="{{ route('topics.developing-competencies')}}" class="btn btn-info btn-raised wow animated zoomIn animation-delay-10">
-                <i class="zmdi zmdi-info"></i> {{ trans('button.next') }}
-              </a>
+                <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal02"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
             </div>
           </div>
         </div>
@@ -71,9 +70,7 @@
             <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
             <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
             <div class="">
-              <a href="{{ route('topics.stress-sticking')}}" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                <i class="zmdi zmdi-info"></i> {{ trans('button.next') }}
-              </a>
+                <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal03"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
             </div>
           </div>
         </div>
@@ -87,9 +84,7 @@
             <p class="lead lead-md  animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
             <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
             <div class="">
-              <a href="{{ route('topics.life-crises')}}" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                <i class="zmdi zmdi-info"></i> {{ trans('button.next') }}
-              </a>
+                <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal04"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
             </div>
           </div>
         </div>
@@ -97,3 +92,77 @@
     </div>
   </div>
 </div>
+
+<div class="modal modal-primary" id="myModal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+                <h3 class="modal-title" id="myModalLabel6"><strong>Tudásalapú érdekképviselet</strong></h3>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('button.close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-primary" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+                <h3 class="modal-title" id="myModalLabel6"><strong>{{ trans('navbar.developing-competencies') }}</strong></h3>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('button.close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-primary" id="myModal03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+                <h3 class="modal-title" id="myModalLabel6"><strong>{{ trans('navbar.stress-sticking') }}</strong></h3>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('button.close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal modal-primary" id="myModal04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+                <h3 class="modal-title" id="myModalLabel6"><strong>Cel-feladat orientáció</strong></h3>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('button.close') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
