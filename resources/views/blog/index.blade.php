@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-	<div class="ms-hero-page ms-hero-img-keyboard ms-hero-bg-primary mb-6">
+	<div class="ms-hero-page ms-hero-img-keyboard ms-hero-bg-primary mb-6" align="justify">
         <div class="container">
           <div class="text-center">
             <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Olvasmányok</h1>

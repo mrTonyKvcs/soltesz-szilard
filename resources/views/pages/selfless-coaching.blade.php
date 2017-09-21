@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="material-background"></div>
-<div class="container">
+<div class="container" align="justify">
     <div class="row">
 	    <div class="col-md-12">
 	        <div class="card animated materialUp animation-delay-5" ">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="material-background"></div>
-<div class="container">
+<div class="container" align="justify">
     <div class="card wow slideInUp">
       <div class="card-block-big">
         <h1 class="color-primary">Soltész Szilárd</h1><hr>
