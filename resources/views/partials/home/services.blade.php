@@ -5,8 +5,8 @@
       <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info">
         <i class="fa fa-user" aria-hidden="true"></i>
       </span>
-      <h3 class="color-info"><strong>Egyéni coaching /  segítőbeszélgetés</strong></h3><br>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
+      <h3 class="color-info"><strong>Coaching/segítő beszlélgetés</strong></h3><br>
+      <p class="">Meglátásom szerint a coaching folyamat egy intenzív, tanulásra alkalmas emberi találkozások lehetősége.</p>
       <button class="btn btn-info btn-raised" data-toggle="modal" data-target="#myModal">{{ trans('button.next') }}</button>
     </div>
   </div>
@@ -16,7 +16,7 @@
         <i class="fa fa-line-chart" aria-hidden="true"></i>
       </span>
       <h3 class="color-warning"><strong>Értékesítés-stratégia tanácsadás</strong></h3>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
+      <p class="">Komplex szakértői jelenlét, ahol a menedzsment által megfogalmazott célok, irányelvek...</p>
       <button class="btn btn-warning btn-raised" data-toggle="modal" data-target="#myModal2">{{ trans('button.next') }}</button>
     </div>
   </div>
@@ -26,7 +26,7 @@
         <i class="fa fa-cogs" aria-hidden="true"></i>
       </span>
       <h3 class="color-success"><strong>Munkahelyi mentálhigiénés projektek</strong></h3>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error lorem. Dolor amet?</p>
       <button class="btn btn-success btn-raised" data-toggle="modal" data-target="#myModal3">{{ trans('button.next') }}</button>
     </div>
   </div>
@@ -35,8 +35,8 @@
       <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger">
         <i class="fa fa-users" aria-hidden="true"></i>
       </span>
-      <h3 class="color-danger"><strong>Élménycsoport vezetés</strong></h3><br>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
+      <h3 class="color-danger"><strong>Csoportos/szervezeti coaching</strong></h3><br>
+      <p class="">A csoportos coaching folyamatban a tagok egymás közötti kapcsolataiban nincsen előzetes ...</p>
       <button class="btn btn-danger btn-raised" data-toggle="modal" data-target="#myModal4">{{ trans('button.next') }}</button>
     </div>
   </div>
@@ -46,11 +46,25 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                <h3 class="modal-title" id="myModalLabel6"><strong>Egyéni coaching /  segítőbeszélgetés</strong></h3>
+                <h3 class="modal-title" id="myModalLabel6"><strong>Coaching/segítő beszlélgetés</strong></h3>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+                <p>Meglátásom szerint a coaching folyamat egy intenzív, tanulásra alkalmas emberi találkozások lehetősége. A más nézőpontok aktív felfedezése az egyéni problémák megoldására fókuszál, a jelen állapotából indul ki a jövőbeli szándék(ok), cél(ok) elérésének, megvalósulásának érdekében. A coaching ülések alkalmasak a szakmai kompetenciák fejlesztésére, segíti a rejtett elvárások felfedezését, átdolgozását, illetve a megoldási struktúrák kialakítását. Elsődleges cél a változás indukálása, másodlagosan pedig támogathatja a személyiség fejlődését. Tanulható a cselekvési folyamatokhoz szükséges, a már rendelkezésre álló energiakészlet hatékony aktiválása: mikor, kire és hogyan fókuszál a kliens vagy coachee. A probléma a jelenlegi helyzet és a vágyott állapot közötti különbség.
+</p>
+                <ul>
+                    <li>Feladatok, eredmények optimalizálása
+</li>
+                    <li>Teljesítmény megakadása</li>
+                    <li>Belső motiváció karbantartása, a tapasztalati tanulás erősítése</li>
+                    <li>Erővesztés, döntési nehézségek</li>
+                    <li>Válság helyzetek, munkahelyi krízis</li>
+                    <li>Vezetői kompetenciák fejlesztése</li>
+                    <li>Szakmai személyiség növekedésében észlelhető zárlatok</li>
+                    <li>Megakadás a belső feszültséget okozó dilemmákban</li>
+                    <li>Interperszonális kapcsolatok zavarai</li>
+                </ul>
+                <p>A változások lehetősége általában a félelmeink irányában helyezkednek el, ezért egy semleges biztonságot adó coaching folyamat, segítő beszélgetés kiváló tesztüzem, ahol az ülések során az ügyfél, kliens saját nézőpontjából megértheti viselkedését, így a már meglévő tudásába új eszközöket, megoldásokat lesz képes integrálni, ami pedig fejleszti a tudatosságát, és az egészségesebb jelenlétét az életpályáján.
+</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('button.close') }}</button>
@@ -66,8 +80,10 @@
                 <h3 class="modal-title" id="myModalLabel6">Értékesítés-stratégia tanácsadás</h3>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+                <p>Komplex szakértői jelenlét, ahol a menedzsment által megfogalmazott célok, irányelvek és a működési mechanizmusok konstellációjában kutatjuk a valós, szervezeten belüli „kitüremkedési pontokat”, ahol a hatékonyság, a kívánt hatás megakadhat. Az értékesítési terület üzemelési elszivárgása nem kizárólagosan a jelenlegi állapotot érinti, hiszen a működési egyensúlytalanság, a rendelkezésre álló lehetőségek beragadása markánsan hat a fogyasztó jövőbeli vásárlói magatartására.</p>
+                <p>Minél hosszabb vagy szélesebb egy értékesítési csatorna (pl. franchise, MLM), annál kényesebb a hatásos értékesítési kultúra kialakítása, fenntartása. Érzékeny erőforrásunk maga az ember, azaz a jelenlegi, illetve jövőbeli munkatársaink is. Valós megoldási képletek, módszerek kerülnek ajánlásra, amelyek az erősebb értékesítéshez szükséges tanulási folyamatot biztosítják, segít felépíteni a tanulási és teljesítési zónák viszonyának ideális egyensúlyát.
+</p>
+<p>A profit alapját adja, hogy a vállalat jobban és hatékonyabban szolgálja ki ügyfeleit versenytársainál. Különböző módszertani átvilágítási, elemzési szempontok alapján egy megvalósítási térkép, modell segítségével konkrét javaslatok képződnek, hogy milyen változtatásokkal, módszerekkel, fejlesztési iránnyal érhető el hatékonyabban a tulajdonosok által megfogalmazott cél. </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('button.close') }}</button>
@@ -97,11 +113,22 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                <h3 class="modal-title" id="myModalLabel6">Élménycsoport vezetés</h3>
+                <h3 class="modal-title" id="myModalLabel6">Csoportos/szervezeti coaching</h3>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+                <p>A csoportos coaching folyamatban a tagok egymás közötti kapcsolataiban nincsen előzetes formális szerveződés, azaz sem egészében, sem részben nem alkotnak teamet egy vállalton belül. Előnye, hogy olyan szociális tér alakul ki, amelyben a csoporttagok különböző szervezetekből, és akár más szakterületről szerveződnek össze.</p>
+                <p>A szervezeti coaching egyértelműen folyamatorientált munkaforma, amelyben hivatásbeli problémákra fókuszálnak a dolgozók, az intézmény és/vagy a piac kontextusában. A team tagjainak közös a célja van, ez biztosan összeköti őket a szervezettel. Cselekvésorientált, a team vagy a szervezet valamely egységének teljesítményének a fejlesztése, a hatékonyabb együttműködés megsegítésére koncentrál ez a munkaforma. A coach egyik feladata megteremteni azt a tanulási környezetet, ahol a team képes megtalálni a saját megoldásaikat Megjelenő szervezeti és/vagy személyek közötti működési problémákra fókuszál, mint például:</p>
+                <ul>
+                    <li>láthatatlan konfliktusok, munkahelyi viták, feszítő témák,
+</li>
+                    <li> projektben működési zavarok,
+</li>
+                    <li>szervezeti egységek teljesítményének a visszaesése,</li>
+                    <li>a problémák és a megoldások nincsenek szinkronban,</li>
+                    <li>szervezeti nehézségek erős konkurencia hatására</li>
+                    <li>vállalati egységek, a dolgozók és az ügyfelek közötti viszony optimalizálása a hatékonyabb piacolás érdekében.</li>
+                </ul>
+                <p>A csoportdinamika segítségével elérhető a hatékonyabb összetartás, így a munkahelyi atmoszféra optimalizálására is alkalmas. A csoporthatással olyan sűrítmény, erő koncentrálódik az együttműködési periódus alatt, de akár egy alkalom során is, amelyek hosszú hónapok egyéni megismerésin, tanulásain keresztül tapasztalhatóak meg.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('button.close') }}</button>
