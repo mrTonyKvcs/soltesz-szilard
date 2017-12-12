@@ -26,7 +26,7 @@
         <i class="fa fa-cogs" aria-hidden="true"></i>
       </span>
       <h3 class="color-success"><strong>Munkahelyi mentálhigiénés projektek</strong></h3>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error lorem. Dolor amet?</p>
+      <p class="">A csend sose néma! A mentálhigiénia jellemzően megelőzésről szól hogy olyan elemi és érzelmi környezetet ...</p>
       <button class="btn btn-success btn-raised" data-toggle="modal" data-target="#myModal3">{{ trans('button.next') }}</button>
     </div>
   </div>
@@ -99,8 +99,11 @@
                 <h3 class="modal-title" id="myModalLabel6">Munkahelyi mentálhigiénés projektek</h3>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dicta. Voluptate cumque odit quam velit maiores sint rerum, dolore impedit commodi. Tempora eveniet odit vero rem blanditiis, tenetur laudantium cumque.</p>
+                <p>A csend sose néma!</p>
+                <p>A mentálhigiénia jellemzően megelőzésről szól, hogy olyan elemi és érzelmi környezetet alakítsunk ki, amiben a lelki egészségünket védjük, így óvjuk magunkat a fizikai károsodásoktól is. Másodlagosan feladata a meglévő egészséges mentális állapot karbantartása, ami legalább annyira fontos, mint a megelőzés.</p>
+                <p>A munkahely egy feszültségmező, és egyben szocializáló tér is, ahol számon szubjektum, alaphiedelem találkozik össze, feszül egymásnak. Láthatatlan, fedhetetlen konfliktusok sokasága húzódik meg egy intézmény szerveződésén belül, amelyek egyértelmű hatást gyakorolnak a szervezet működésére, ez pedig kivetül az embereknek a munkahellyel való érzelmi azonosulására. Egy dolgozó leginkább akkor tudja a képességeit a legjobban kifejteni, ha a munkahellyel valóviszonya optimális.</p>
+                <p>Ez a viszonyrendszer pedig ápolható, fejleszthető, illetve a szervezeti normákba beépíthető. Nagyon nem járnák el helyesen, ha kizárólag csak az intézmények részéről várnánk el a felelős gondolkodást, ez egy egyensúlytalan erőpróba lenne. Az egyén, a dolgozó a személyisége jellemzőit, addigi tapasztalatait állítja munkába, amikor leszerződik egy munkahellyel. Az intézmény és az abban dolgozók formális és informális viszonya biztos hatással van az emberi életfolyamat okán a személyiségében kialakuló, vagy már a belépéskor meglévő személyiség egyensúlyzavar gyengítésére vagy erősítésére.</p>
+                <p>A munkahelyi mentálhigiéné szemüvege képes olyan problémákat feltárni, amelyek a tapasztalható és látens konfliktusokat okozó zavarokat is érzékelik. Jelentősebb szervezeti beavatkozás nélkül a jelenség felismerhető állapotba hozható, így a probléma következtében észlelhető vagy kialakulható káros hatások csökkenése érdekében konkrét megoldások illeszthetőek be a vállalati működés folyamatiba. A munkahelyi mentálhigiéné segíti a szervezetet felkészíteni a jelentős életszakaszokra, a krízis jelenségekre, valamint a fejlődés során bekövetkező normatív jelenségekből fakadó vészhelyzetekre védelmet biztosít.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('button.close') }}</button>
