@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="text-center text-light mb-6 wow fadeInDown animation-delay-5">Selfness-coaching</h2>
+  <h2 class="text-center text-light mb-6 wow fadeInDown animation-delay-5">Selfness Coaching</h2>
   <div class="row">
     <div class="col-md-12" align="justify">
       <p class="wow fadeInLeft animation-delay-6">Szakmai színpadunkon, magánéletünk során, valamint hivatásunkban is sokszor tapasztalhatunk olyan működési zavarokat, melyek bekorlátoznak, esetenként félelmeink fékezik a változtatáshoz szükséges cselekvési döntések meghozatalát.

@@ -67,23 +67,22 @@
           <div class="card-block">
             <div class="text-center mb-2">
               <span class="ms-logo ms-logo-white ms-logo-sm mr-1">S</span>
-              <h3 class="no-m ms-site-title">Soltesz
-                <span>Szilard</span>
+              <h3 class="no-m ms-site-title">Soltész <span>Szilárd</span>
               </h3>
             </div>
             <address class="no-mb">
               <p>
-                <i class="color-danger-light zmdi zmdi-pin mr-1"></i> 795 Folsom Ave, Suite 600</p>
+                <i class="color-danger-light zmdi zmdi-pin mr-1"></i> 6000 Kecskemét, Jégvirág utca 6.</p>
               <p>
-                <i class="color-warning-light zmdi zmdi-map mr-1"></i> San Francisco, CA 94107</p>
+                <i class="color-warning-light zmdi zmdi-map mr-1"></i> 1133 Budapest, Cézár Ház</p>
               <p>
                 <i class="color-info-light zmdi zmdi-email mr-1"></i>
-                <a href="mailto:joe@example.com" class="link">example@domain.com</a>
+                <a href="mailto:szilard.soltesz@gmail.com" class="link">szilard.soltesz@gmail.com</a>
               </p>
               <p>
-                <i class="color-royal-light zmdi zmdi-phone mr-1"></i>+34 123 456 7890 </p>
-              <p>
-                <i class="color-success-light fa fa-fax mr-1"></i>+34 123 456 7890 </p>
+                <i class="color-royal-light zmdi zmdi-phone mr-1"></i>
+                <a href="tel:+36302311240" style="color:white;">+36 30 231 1240</a>
+              </p>
             </address>
           </div>
         </div>

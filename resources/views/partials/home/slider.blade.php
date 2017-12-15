@@ -8,7 +8,7 @@
           <div class="carousel-caption">
             <div class="ms-hero-material-text-container">
               <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">Selfness-coaching</h1>
+                <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">Selfness Coaching</h1>
                 <h2 class="animated fadeInLeft animation-delay-18"><span class="color-warning">“Tanulj meg  
                   történetedből olvasni”</span> </h2>
               </header>
@@ -41,7 +41,7 @@
                       <i class="zmdi zmdi-album"></i>
                     </span>
                   </div>
-                  <div class="ms-list-text animated fadeInRight animation-delay-23"><strong>Kiemelt témáink: </strong>{{ $theme['title'] }}&nbsp;&nbsp;&nbsp;<a href="{{ route($theme['url']) }}">Tovább</a></div>
+                  <div class="ms-list-text animated fadeInRight animation-delay-23"><strong>Kiemelt témáim: </strong>{{ $theme['title'] }}&nbsp;&nbsp;&nbsp;<a href="{{ route($theme['url']) }}">Tovább</a></div>
                 </li>
               </ul>
               </div>

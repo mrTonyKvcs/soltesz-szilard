@@ -4,8 +4,7 @@
       <a href="{{ route('pages.home') }}">
         <!-- <img src="/img/demo/logo-header.png" alt=""> -->
         <span class="ms-logo animated zoomInDown animation-delay-5">S</span>
-        <h1 class="animated fadeInRight animation-delay-6">Soltesz
-          <span>Szilard</span>
+        <h1 class="animated fadeInRight animation-delay-6">Soltész <span>Szilárd</span>
         </h1>
       </a>
     </div>
@@ -18,7 +17,8 @@
             </a>
           </li> --}}
           <li class="animated fadeInRight animation-delay-2">
-            <a href="javascript:void(0)" class="btn-circle btn-facebook">
+            <a href="https://www.facebook.com/www.selfnesscoaching.hu/
+" class="btn-circle btn-facebook" target="_blank">
               <i class="zmdi zmdi-facebook"></i>
             </a>
           </li>
