@@ -7,25 +7,25 @@
     <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-5" role="tablist">
         <li class="wow fadeInDown animation-delay-6" role="presentation">
             <a href="#communication-techniques" aria-controls="windows" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="fa fa-circle" style="color: #334a86;"></i>
+                <i class="fa fa-circle" style="color: #2196f3;"></i>
                 <span class="hidden-xs">Tudásalapú érdekképviselet</span>
             </a>
         </li>
         <li class="wow fadeInDown animation-delay-4 active" role="presentation">
             <a href="#developing-competencies" aria-controls="macos" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="fa fa-circle" style="color: #d68b23;"></i>
+                <i class="fa fa-circle" style="color: #3BB0FF;"></i>
                 <span class="hidden-xs">{{ trans('navbar.developing-competencies') }}</span>
             </a>
         </li>
         <li class="wow fadeInDown animation-delay-2" role="presentation">
             <a href="#stress-sticking" aria-controls="linux" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="fa fa-circle" style="color: #191219;"></i>
+                <i class="fa fa-circle" style="color: #54C9FF;"></i>
                 <span class="hidden-xs">{{ trans('navbar.stress-sticking') }}</span>
             </a>
         </li>
         <li class="wow fadeInDown animation-delay-4" role="presentation">
             <a href="#life-crises" aria-controls="android" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="fa fa-circle" style="color: #e8d83c;"></i>
+                <i class="fa fa-circle" style="color: #6EE3FF;"></i>
                 <span class="hidden-xs">Cél-feladatorientáció</span>
             </a>
         </li>

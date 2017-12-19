@@ -14,7 +14,7 @@
         @include('partials.home.topics')
       </div>
       <!-- container -->
-      <div class="wrap wrap-danger mt-6">
+      <div class="wrap wrap-danger mt-6" style="background: #0a6ebd;">
         <h2 class="text-center no-m">Inspiráló gondolatok</h2>
         <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" {{-- data-ride="carousel" data-interval="7000" --}}>
           <!-- Indicators -->

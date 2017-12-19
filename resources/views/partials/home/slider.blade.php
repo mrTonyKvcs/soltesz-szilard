@@ -16,7 +16,7 @@
               <ul class="ms-hero-material-list">
                 <li class="">
                   <div class="ms-list-icon animated zoomInUp animation-delay-18">
-                    <span class="ms-icon ms-icon-circle ms-icon-xlg color-warning shadow-3dp">
+                    <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp">
                       <i class="zmdi zmdi-calendar-note"></i>
                     </span>
                   </div>
@@ -25,7 +25,7 @@
                 @if (  $blog )
                   <li class="">
                     <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                      <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp">
+                      <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp">
                         <i class="zmdi zmdi-edit"></i>
                       </span>
                     </div>
@@ -37,7 +37,7 @@
                 @endif
                 <li class="">
                   <div class="ms-list-icon animated zoomInUp animation-delay-22">
-                    <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp">
+                    <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp">
                       <i class="zmdi zmdi-album"></i>
                     </span>
                   </div>

@@ -2,49 +2,49 @@
   <br>
   <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
     <div class="text-center card-block">
-      <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info">
+      <span class="ms-icon ms-icon-circle ms-icon-xxlg color-blue">
         <i class="fa fa-user" aria-hidden="true"></i>
       </span>
-      <h3 class="color-info"><strong>Coaching/segítő beszlélgetés</strong></h3><br>
+      <h3 class="color-blue"><strong>Coaching/segítő beszlélgetés</strong></h3><br>
       <p class="">Meglátásom szerint a coaching folyamat egy intenzív, tanulásra alkalmas emberi találkozások lehetősége.</p>
-      <button class="btn btn-info btn-raised" data-toggle="modal" data-target="#myModal">{{ trans('button.next') }}</button>
+      <button class="btn btn-info btn-raised" data-toggle="modal" data-target="#myModal" style="background: #2196f3">{{ trans('button.next') }}</button>
     </div>
   </div>
   <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
     <div class="text-center card-block">
-      <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning">
+      <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning" style="background: #3BB0FF">
         <i class="fa fa-line-chart" aria-hidden="true"></i>
       </span>
-      <h3 class="color-warning"><strong>Értékesítés-stratégia tanácsadás</strong></h3>
+      <h3 class="" style="color: #3BB0FF;"><strong>Értékesítés-stratégia tanácsadás</strong></h3>
       <p class="">Komplex szakértői jelenlét, ahol a menedzsment által megfogalmazott célok, irányelvek...</p>
-      <button class="btn btn-warning btn-raised" data-toggle="modal" data-target="#myModal2">{{ trans('button.next') }}</button>
+      <button class="btn btn-warning btn-raised" data-toggle="modal" data-target="#myModal2" style="background: #3BB0FF">{{ trans('button.next') }}</button>
     </div>
   </div>
   <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
     <div class="text-center card-block">
-      <span class="ms-icon ms-icon-circle ms-icon-xxlg color-success">
+      <span class="ms-icon ms-icon-circle ms-icon-xxlg" style="background: #54C9FF;">
         <i class="fa fa-cogs" aria-hidden="true"></i>
       </span>
-      <h3 class="color-success"><strong>Munkahelyi mentálhigiénés projektek</strong></h3>
+      <h3 class="" style="color: #54C9FF;"><strong>Munkahelyi mentálhigiénés projektek</strong></h3>
       <p class="">A csend sose néma! A mentálhigiénia jellemzően megelőzésről szól hogy olyan elemi és érzelmi környezetet ...</p>
-      <button class="btn btn-success btn-raised" data-toggle="modal" data-target="#myModal3">{{ trans('button.next') }}</button>
+      <button class="btn btn-success btn-raised" data-toggle="modal" data-target="#myModal3" style="background: #54C9FF;">{{ trans('button.next') }}</button>
     </div>
   </div>
   <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-6">
     <div class="text-center card-block">
-      <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger">
+      <span class="ms-icon ms-icon-circle ms-icon-xxlg" style="background: #6EE3FF;">
         <i class="fa fa-users" aria-hidden="true"></i>
       </span>
-      <h3 class="color-danger"><strong>Csoportos/szervezeti coaching</strong></h3><br>
+      <h3 class="" style="color: #6EE3FF;"><strong>Csoportos/szervezeti coaching</strong></h3><br>
       <p class="">A csoportos coaching folyamatban a tagok egymás közötti kapcsolataiban nincsen előzetes ...</p>
-      <button class="btn btn-danger btn-raised" data-toggle="modal" data-target="#myModal4">{{ trans('button.next') }}</button>
+      <button class="btn btn-danger btn-raised" data-toggle="modal" data-target="#myModal4" style="background: #6EE3FF;">{{ trans('button.next') }}</button>
     </div>
   </div>
   {{-- Modal windows --}}
 <div class="modal modal-info" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog animated zoomIn animated-3x" role="document">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style="background: #2196f3;">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
                 <h3 class="modal-title" id="myModalLabel6"><strong>Coaching/segítő beszlélgetés</strong></h3>
             </div>
@@ -74,8 +74,8 @@
 </div>
 <div class="modal modal-warning" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog animated zoomIn animated-3x" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
+        <div class="modal-content" style="border-bottom: 3px solid #3BB0FF">
+            <div class="modal-header" style="background: #3BB0FF">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
                 <h3 class="modal-title" id="myModalLabel6">Értékesítés-stratégia tanácsadás</h3>
             </div>
@@ -93,8 +93,8 @@
 </div>
 <div class="modal modal-success" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog animated zoomIn animated-3x" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
+        <div class="modal-content" style="border-bottom: 3px solid #54C9FF;">
+            <div class="modal-header" style="background: #54C9FF;">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
                 <h3 class="modal-title" id="myModalLabel6">Munkahelyi mentálhigiénés projektek</h3>
             </div>
@@ -113,8 +113,8 @@
 </div>
 <div class="modal modal-danger" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog animated zoomIn animated-3x" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
+        <div class="modal-content" style="border-bottom: 3px solid #6EE3FF;">
+            <div class="modal-header" style="background: #6EE3FF;">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
                 <h3 class="modal-title" id="myModalLabel6">Csoportos/szervezeti coaching</h3>
             </div>

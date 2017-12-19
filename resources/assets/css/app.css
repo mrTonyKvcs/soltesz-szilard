@@ -2,3 +2,11 @@
 	font-size: 14px;
 }
 
+.ms-icon.color-blue {
+    background: #2196F3;
+    color: #fff
+}
+
+.color-blue {
+    color: #2196F3;
+}
