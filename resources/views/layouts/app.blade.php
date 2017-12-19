@@ -16,7 +16,7 @@
         <script src="assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body align="justify">
     <div id="ms-preload" class="ms-preload">
       <div id="status">
         <div class="spinner">

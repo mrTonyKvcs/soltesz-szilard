@@ -4,12 +4,12 @@
 <div class="container" align="justify">
     <div class="row">
 	    <div class="col-md-12">
-	        <div class="card animated materialUp animation-delay-5" ">
+	        <div class="card animated materialUp animation-delay-5">
 	            <div class="card-block card-block-big ">
 	                <h1 class="no-mt ">{{ trans('navbar.selfless-coaching') }}</h1><hr>
 	                <div class="row">
 		                <div class="col-md-12">
-			                <img src="/img/C.jpg " alt=" " class="img-responsive mb-4" style="margin: 0 auto">
+			                <img src="/img/C.jpg " alt=" " class="img-responsive mb-4" style="margin: 0 auto;">
 		                </div>
 	                </div>
 	                <div class="col-md-12">
