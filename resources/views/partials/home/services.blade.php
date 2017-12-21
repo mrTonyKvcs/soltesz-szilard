@@ -35,7 +35,7 @@
       <span class="ms-icon ms-icon-circle ms-icon-xxlg" style="background: #5C717A;">
         <i class="fa fa-users" aria-hidden="true"></i>
       </span>
-      <h3 class="" style="color: #5C717A"><strong>Csoportos/szervezeti coaching</strong></h3><br>
+      <h3 class="" style="color: #5C717A"><strong>Csoportos/<br>szervezeti coaching</strong></h3>
       <p class="">A csoportos coaching folyamatban a tagok egymás közötti kapcsolataiban nincsen előzetes ...</p>
       <button class="btn btn-danger btn-raised" data-toggle="modal" data-target="#myModal4" style="background: #5C717A">{{ trans('button.next') }}</button>
     </div>
