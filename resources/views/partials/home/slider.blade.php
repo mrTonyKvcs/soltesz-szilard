@@ -16,16 +16,16 @@
               <ul class="ms-hero-material-list">
                 <li class="">
                   <div class="ms-list-icon animated zoomInUp animation-delay-18">
-                    <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp">
+                    <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp" style="background: #537690;">
                       <i class="zmdi zmdi-calendar-note"></i>
                     </span>
                   </div>
-                  <div class="ms-list-text animated fadeInRight animation-delay-19"><strong>Események: </strong>{{ $training->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('trainings.show',$training->slug) }}">Tovább</a></div>
+                  <div class="ms-list-text animated fadeInRight animation-delay-19"><strong>Események: </strong>{{ $training->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('trainings.show',$training->slug) }}" style="background: ">Tovább</a></div>
                 </li>
                 @if (  $blog )
                   <li class="">
                     <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                      <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp">
+                      <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp" style="background: #265F8D;">
                         <i class="zmdi zmdi-edit"></i>
                       </span>
                     </div>
@@ -37,11 +37,11 @@
                 @endif
                 <li class="">
                   <div class="ms-list-icon animated zoomInUp animation-delay-22">
-                    <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp">
+                    <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp" style="background: #5C717A;">
                       <i class="zmdi zmdi-album"></i>
                     </span>
                   </div>
-                  <div class="ms-list-text animated fadeInRight animation-delay-23"><strong>Kiemelt témáim: </strong>{{ $theme['title'] }}&nbsp;&nbsp;&nbsp;<a href="{{ route($theme['url']) }}">Tovább</a></div>
+                  <div class="ms-list-text animated fadeInRight animation-delay-23"><strong>Kiemelt témáim: </strong>Vezetői kompetenciák fejlesztése &nbsp;&nbsp;&nbsp;<a href="#topics">Tovább</a></div>
                 </li>
               </ul>
               </div>

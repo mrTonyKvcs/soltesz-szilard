@@ -20,6 +20,7 @@
     <div class="row">
       <div class="col-md-8">
         <ul class="ms-timeline">
+            @if(!$trainings)
           @foreach($trainings as $training)
             <li class="ms-timeline-item wow materialUp">
                <div class="ms-timeline-date">
@@ -60,6 +61,7 @@
               </div>
             </li>
           @endforeach
+      @endif
          </ul>
       </div>
       <div class="col-md-4">
@@ -91,7 +93,7 @@
             <img src="/img/profile-sm.png" alt="..." class="img-avatar-circle"> </div>
           <div class="card-block pt-6 text-center">
             <h3 class="color-info">Soltész Szilárd</h3>
-            <p>Az elmúlt 20 év szakmai tevékenységeim során több száz üzletkötővel, vezetővel dolgoztam közvetlenül.</p>
+            <p>Szélesre nyílt eddigi életutam folyamatosan formálja a szemléletem, gondolkodásom.</p>
             <a href="{{ route('pages.about') }}" class="btn btn-raised btn-info">Tovább</a>
           </div>
         </div>

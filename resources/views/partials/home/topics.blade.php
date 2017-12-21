@@ -2,30 +2,30 @@
 <br>
 
 
-<div class="panel panel-light panel-flat">
+<div class="panel panel-light panel-flat" id="topics">
     <!-- Nav tabs -->
     <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-5" role="tablist">
         <li class="wow fadeInDown animation-delay-6" role="presentation">
             <a href="#communication-techniques" aria-controls="windows" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="fa fa-circle" style="color: #2196f3;"></i>
+                <i class="fa fa-circle" style="color: #99BCCC;"></i>
                 <span class="hidden-xs">Tudásalapú érdekképviselet</span>
             </a>
         </li>
         <li class="wow fadeInDown animation-delay-4 active" role="presentation">
             <a href="#developing-competencies" aria-controls="macos" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="fa fa-circle" style="color: #3BB0FF;"></i>
+                <i class="fa fa-circle" style="color: #537690"></i>
                 <span class="hidden-xs">{{ trans('navbar.developing-competencies') }}</span>
             </a>
         </li>
         <li class="wow fadeInDown animation-delay-2" role="presentation">
             <a href="#stress-sticking" aria-controls="linux" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="fa fa-circle" style="color: #54C9FF;"></i>
+                <i class="fa fa-circle" style="color: #265F8D"></i>
                 <span class="hidden-xs">{{ trans('navbar.stress-sticking') }}</span>
             </a>
         </li>
         <li class="wow fadeInDown animation-delay-4" role="presentation">
             <a href="#life-crises" aria-controls="android" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="fa fa-circle" style="color: #6EE3FF;"></i>
+                <i class="fa fa-circle" style="color: #5C717A"></i>
                 <span class="hidden-xs">Cél-feladatorientáció</span>
             </a>
         </li>
@@ -43,7 +43,7 @@
                     <p class="lead lead-md animated fadeInUp animation-delay-6">A tudásalapú érdekképviselet szóösszetételét tekintve a valós önismereten alapuló gyakorlatias gondolkodás. Máskülönben egy szükséges feltételrendszer is, ahol az egyik a másik nélkül nehezen tud mentális egyensúlyt teremteni. Ha nem világos/egyértelmű, hogy milyen keretek között, mi és/vagy ki mellett köteleződünk el, akkor az sem lehet világos/egyértelmű, hogy valóban azt a termést „zsákmányoljuk” be, ami valóban a javunkat szolgálja.
                     </p>
                     <div class="">
-                        <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal01"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
+                        <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal01" style="background: #99BCCC;"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     <p class="lead lead-md  wow animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
                     <p class="lead lead-md wow animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
                     <div class="">
-                        <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal02"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
+                        <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal02" style="background: #537690;"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
                     <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
                     <div class="">
-                        <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal03"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
+                        <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal03" style="background: #265F8D"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                     <p class="lead lead-md  animated fadeInUp animation-delay-6">Életünk során számos olyan esemény, szituáció, határhelyzet felbukkan, amelyek a változás lehetőségét kínálják, még a legsúlyosabb krízisekben is benne van a pozitív kimeneteli állapot.</p>
                     <p class="lead lead-md animated fadeInUp animation-delay-7">Ha olyan begyakorolt technikával kívánjuk megoldani a kialakult élethelyzetet, amelyek már előtte sem hozták a várt eredményt vagy nem kínáltak tartós megoldást, nagy eséllyel ekkor sem lesz másképpen.</p>
                     <div class="">
-                        <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal04"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
+                        <button class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal04" style="background: #5C717A;"><i class="zmdi zmdi-info"></i>  {{ trans('button.next') }}</button>
                     </div>
                 </div>
             </div>

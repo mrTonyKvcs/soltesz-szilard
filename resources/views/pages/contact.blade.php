@@ -69,7 +69,7 @@
               </div>
             </div>
             <div class="col-lg-9 col-md-8 col-sm-7">
-              <iframe width="100%" height="340" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=central%2Bpark&ie=UTF8&z=12&t=m&iwloc=near&output=embed"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.3048946930576!2d19.055645965838156!3d47.52292680174724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dbf17bd33de7%3A0x3db358f351cbd1b5!2zQ8OpesOhciBIw6F6IEtmdC4!5e0!3m2!1shu!2shu!4v1513872551756" width="100%" height="340" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>

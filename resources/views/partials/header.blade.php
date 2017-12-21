@@ -3,8 +3,8 @@
     <div class="ms-title">
       <a href="{{ route('pages.home') }}">
         <!-- <img src="/img/demo/logo-header.png" alt=""> -->
-        <span class="ms-logo animated zoomInDown animation-delay-5">S</span>
-        <h1 class="animated fadeInRight animation-delay-6">Soltész <span>Szilárd</span>
+        <span class="ms-logo animated zoomInDown animation-delay-5 logo-color">S</span>
+        <h1 class="animated fadeInRight animation-delay-6" style="color: #537690;">Soltész <span>Szilárd</span>
         </h1>
       </a>
     </div>
@@ -88,20 +88,20 @@
         <li>
           <a href="{{ route('pages.contact') }}">{{ trans('navbar.contact') }}</a>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">{{ trans('navbar.language') }}
-            <i class="zmdi zmdi-chevron-down"></i>
-          </a>
-          <ul class="dropdown-menu language_bar_chooser">
-              @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                  <li>
-                      <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
-                          {{ $properties['native'] }}
-                      </a>
-                  </li>
-              @endforeach
-          </ul>
-        </li>
+        {{--<li class="dropdown">--}}
+          {{--<a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">{{ trans('navbar.language') }}--}}
+            {{--<i class="zmdi zmdi-chevron-down"></i>--}}
+          {{--</a>--}}
+          {{--<ul class="dropdown-menu language_bar_chooser">--}}
+              {{--@foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)--}}
+                  {{--<li>--}}
+                      {{--<a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">--}}
+                          {{--{{ $properties['native'] }}--}}
+                      {{--</a>--}}
+                  {{--</li>--}}
+              {{--@endforeach--}}
+          {{--</ul>--}}
+        {{--</li>--}}
         <!-- <li class="btn-navbar-menu"><a href="javascript:void(0)" class="sb-toggle-left"><i class="zmdi zmdi-menu"></i></a></li> -->
       </ul>
     </div>

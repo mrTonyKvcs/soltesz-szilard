@@ -10,3 +10,29 @@
 .color-blue {
     color: #2196F3;
 }
+
+.logo-color {
+    background: #265F8D;
+}
+
+.ms-hero.ms-hero-material:before {
+    background-color: #265F8D;
+}
+
+.ms-hero.ms-hero-material .ms-hero-bg:after, 
+.ms-hero.ms-hero-material .ms-hero-bg:before {
+    background-color: #99BCCC;
+}
+
+.ms-hero.ms-hero-material {
+    background-color: #042844;
+}
+
+.card blockquote.blockquote-avatar {
+    padding-left: 20px;
+}
+
+.pv-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
