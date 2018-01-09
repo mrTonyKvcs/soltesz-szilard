@@ -13,6 +13,7 @@ function()
 	// Route::get('price', ['as' => 'pages.price', 'uses' => 'PagesController@price']);
 	Route::get(LaravelLocalization::transRoute('routes.contact'), ['as' => 'pages.contact', 'uses' => 'PagesController@contact']);
 	Route::get(LaravelLocalization::transRoute('routes.selfness-coaching'), ['as' => 'pages.selfless-coaching', 'uses' => 'PagesController@selflessCoaching']);
+	Route::get('szervezet-es-munkalelektan', ['as' => 'pages.organization', 'uses' => 'PagesController@organization']);
 	// Activities
 	Route::get(LaravelLocalization::transRoute('routes.personal-coaching'), ['as' => 'activities.personal-coaching', 'uses' => 'ActivitiesController@personalCoaching']);
 	Route::get(LaravelLocalization::transRoute('routes.guidance'), ['as' => 'activities.guidance', 'uses' => 'ActivitiesController@guidance']);

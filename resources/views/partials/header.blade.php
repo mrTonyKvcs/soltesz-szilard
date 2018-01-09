@@ -75,7 +75,7 @@
               <a href="{{ route('pages.selfless-coaching') }}">{{ trans('navbar.selfless-coaching')}}</a>
             </li>
             <li>
-              <a href="{{ route('pages.selfless-coaching') }}">Szervezet lélektan</a>
+              <a href="{{ route('pages.organization') }}">Szervezet-és munkalélektan</a>
             </li>
           </ul>
         </li>

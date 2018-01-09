@@ -39,18 +39,27 @@ class PagesController extends Controller
 
     	return view('pages.home', compact('training', 'blog', 'theme'));
     }
+
     public function about()
     {
         return view('pages.about');
     }
+
     public function selflessCoaching()
     {
         return view('pages.selfless-coaching');
     }
+
+    public function organization()
+    {
+        return view('pages.organization');
+    }
+
     public function price()
     {
     	return view('pages.price');
     }
+
     public function contact()
     {
     	return view('pages.contact');
