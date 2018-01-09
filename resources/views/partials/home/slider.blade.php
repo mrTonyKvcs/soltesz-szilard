@@ -8,9 +8,8 @@
           <div class="carousel-caption">
             <div class="ms-hero-material-text-container">
               <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">COACHING - MENTÁLHIGIÉNÉ- SZERVEZETI TANÁCSADÁS</h1>
-                {{--<h2 class="animated fadeInLeft animation-delay-18"><span class="color-warning">“Tanulj meg  --}}
-                  {{--történetedből olvasni”</span> </h2>--}}
+                <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">Selfness és Coaching</h1>
+                <h2 class="animated fadeInLeft animation-delay-18" style="text-transform: lowercase; text-shadow: none;"><span class="color-warning">COACHING - MENTÁLHIGIÉNÉ- SZERVEZETI TANÁCSADÁS</span></h2>
               </header>
               <div class="col-lg-11 col-md-11 col-lg-offset-1 col-md-offset-1">
               <ul class="ms-hero-material-list">
@@ -41,7 +40,7 @@
                       <i class="zmdi zmdi-album"></i>
                     </span>
                   </div>
-                  <div class="ms-list-text animated fadeInRight animation-delay-23"><strong>Kiemelt témáim: </strong>Vezetői kompetenciák fejlesztése &nbsp;&nbsp;&nbsp;<a href="#topics">Tovább</a></div>
+                  <div class="ms-list-text animated fadeInRight animation-delay-23"><strong>Kiemelt témáim: </strong>Teremtő vezetés &nbsp;&nbsp;&nbsp;<a href="#topics">Tovább</a></div>
                 </li>
               </ul>
               </div>
