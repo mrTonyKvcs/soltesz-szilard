@@ -14,30 +14,25 @@
             <form class="form-horizontal">
               <fieldset>
                 <div class="form-group">
-                  <label for="inputName" class="col-md-2 control-label">Name</label>
+                  <label for="inputName" class="col-md-2 control-label">Név</label>
                   <div class="col-md-9">
-                    <input type="text" class="form-control" id="inputName" placeholder="Name"> </div>
+                    <input name="name" type="text" class="form-control" id="inputName" placeholder="Név"> </div>
                 </div>
                 <div class="form-group">
                   <label for="inputEmail" class="col-md-2 control-label">Email</label>
                   <div class="col-md-9">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email"> </div>
+                    <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email"> </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputSubject" class="col-md-2 control-label">Subject</label>
+                  <label for="textArea" class="col-md-2 control-label">Üzenet</label>
                   <div class="col-md-9">
-                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject"> </div>
-                </div>
-                <div class="form-group">
-                  <label for="textArea" class="col-md-2 control-label">Message</label>
-                  <div class="col-md-9">
-                    <textarea class="form-control" rows="5" id="textArea" placeholder="Your message..."></textarea>
+                    <textarea name="message" class="form-control" rows="5" id="textArea" placeholder="Üzenet"></textarea>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-md-9 col-md-offset-2">
-                    <button type="submit" class="btn btn-raised btn-primary">Submit</button>
-                    <button type="button" class="btn btn-danger">Cancel</button>
+                    <button type="submit" class="btn btn-raised btn-primary">Küldés</button>
+                    <button type="button" class="btn btn-danger">Mégse</button>
                   </div>
                 </div>
               </fieldset>
