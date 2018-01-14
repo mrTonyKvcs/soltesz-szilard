@@ -33,7 +33,7 @@ class MailController extends Controller
     {
         \Mail::send('emails.contact', ['data' => $request], function ($m) use ($request) {
             $m->to(env('MAILGUN_TO'))
-                ->subject('Weblap: Érdeklődés')
+                ->subject('Weblap: Kapcsolat')
                 ->from($request->email, $request->name);
         });
 
