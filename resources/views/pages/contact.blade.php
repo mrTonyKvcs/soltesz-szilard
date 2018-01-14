@@ -11,7 +11,7 @@
 	
         <div class="card card-hero animated fadeInUp animation-delay-7">
           <div class="card-block">
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="{{ route('mail.contact') }}">
               <fieldset>
                 <div class="form-group">
                   <label for="inputName" class="col-md-2 control-label">Név</label>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-md-9 col-md-offset-2">
-                    <button type="submit" class="btn btn-raised btn-primary">Küldés</button>
+                    <button type="submit" class="btn btn-raised btn-primary" disabled>Küldés</button>
                     <button type="button" class="btn btn-danger">Mégse</button>
                   </div>
                 </div>

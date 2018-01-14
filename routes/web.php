@@ -30,6 +30,10 @@ function()
 	// Trainings
 	Route::get('trainings', ['as'	=> 'trainings.index', 'uses'	=> 'TrainingsController@index']);
 	Route::get('training/{training}', ['as'	=> 'trainings.show', 'uses'	=> 'TrainingsController@show']);
+
+    //Mail
+	Route::post('tender', ['as'	=> 'mail.tender', 'uses' => 'MailsController@sendTenderToSupport']);
+	Route::post('contact', ['as'	=> 'mail.contact', 'uses' => 'MailsController@sendMailToSupport']);
 });
 Auth::routes();
 
