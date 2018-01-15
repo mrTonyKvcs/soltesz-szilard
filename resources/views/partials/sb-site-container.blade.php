@@ -33,20 +33,8 @@
     <li>
       <a class="link" href="{{ route('pages.selfless-coaching') }}"><i class="zmdi zmdi-run"></i>{{ trans('navbar.selfless-coaching')}}</a>
     </li>
-    <li class="panel" role="tab" id="sch1">
-      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc1" aria-expanded="false" aria-controls="sc1">
-        <i class="zmdi zmdi-local-activity"></i> {{ trans('navbar.activity') }} </a>
-      <ul id="sc1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch1">
-        <li>
-          <a href="{{ route('activities.personal-coaching') }}">{{ trans('navbar.personal-coaching')}}</a>
-        </li>
-        <li>
-          <a href="{{ route('activities.guidance') }}">{{ trans('navbar.guidance')}}</a>
-        </li>
-        <li>
-          <a href="{{ route('activities.group-trainings') }}">{{ trans('navbar.group-trainings')}}</a>
-        </li>
-      </ul>
+    <li>
+      <a class="link" href="{{ route('pages.organization') }}"><i class="zmdi zmdi-run"></i>Szervezet-és munkalélektan</a>
     </li>
     <li>
       <a class="link" href="{{ route('blog.index') }}">
