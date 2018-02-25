@@ -20,7 +20,7 @@
     <div class="row">
       <div class="col-md-8">
         <ul class="ms-timeline">
-            @if(!$trainings)
+            @if($trainings)
           @foreach($trainings as $training)
             <li class="ms-timeline-item wow materialUp">
                <div class="ms-timeline-date">
@@ -39,7 +39,7 @@
                   @elseif ($training->images_path)
                     <div class="withripple zoom-img">
                         <a href="javascript:void(0);">
-                          <img src="/{{ $training->images_path }}" alt="" class="img-responsive"> </a>
+                          <img src="/{{ $training->images_path }}" alt="" class="img-responsive" style="width: 100%;"> </a>
                       </div>
                       <div class="card-block">
                         <h4 class="color-success"><strong>{{ $training->title }}</strong></h4>

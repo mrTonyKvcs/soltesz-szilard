@@ -32,7 +32,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-md-9 col-md-offset-2">
-                    <button type="submit" class="btn btn-raised btn-primary" disabled>Küldés</button>
+                    <button type="submit" class="btn btn-raised btn-primary">Küldés</button>
                     <button type="button" class="btn btn-danger">Mégse</button>
                   </div>
                 </div>

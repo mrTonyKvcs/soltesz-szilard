@@ -9,7 +9,7 @@ class BlogsController extends Controller
 {
 	public function index()
 	{
-		$blogs = Blog::orderBy('created_at')->get();
+		$blogs = Blog::orderBy('created_at', 'desc')->get();
 		return view('blog.index', compact('blogs'));
 	}
 	public function show($slug)

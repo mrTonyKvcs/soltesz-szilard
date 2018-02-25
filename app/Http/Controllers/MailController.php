@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
+use App\Training;
 use Illuminate\Http\Request;
 
 class MailController extends Controller
@@ -25,8 +27,11 @@ class MailController extends Controller
 
         // flash()->success('Köszönjük!', 'Az üzenetét elküldtük.');
         // flash()->success(trans('message.title'), trans('message.body'));
+        $trainings = Training::orderBy('started_at', 'desc')->get();
+    	$today = Carbon::now('Europe/London')->format('Y-M-d');
 
-        return back();
+
+        return view('trainings.index', compact('trainings', 'today'));
     }
 
     public function sendMailToSupport(Request $request)

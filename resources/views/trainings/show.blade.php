@@ -49,7 +49,7 @@
 					</div>	
 				</div>
               <div class="row">
-              {!! Form::open(['class' => 'form-horizontal']) !!}
+                  {!! Form::open(['class' => 'form-horizontal', 'route' => 'mail.tender']) !!}
               		<fieldset>
               			<h2 class="color-primary no-mb text-center">Jelentkezés</h2><hr>
               			<div class="form-group">
