@@ -52,6 +52,11 @@
                   {!! Form::open(['class' => 'form-horizontal', 'route' => 'mail.tender']) !!}
               		<fieldset>
               			<h2 class="color-primary no-mb text-center">Jelentkezés</h2><hr>
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-2">
+                                <input name="title" type="hidden" value="{{ $training->title }}">
+                            </div>
+                        </div>
               			<div class="form-group">
 							<div class="col-md-8 col-md-offset-2">
 								{{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Név', 'type' => 'text']) }}

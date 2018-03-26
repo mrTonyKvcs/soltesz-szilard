@@ -21,7 +21,7 @@ class MailController extends Controller
      //    ]);
         \Mail::send('emails.tender', ['data' => $request], function ($m) use ($request) {
             $m->to(env('MAILGUN_TO'))
-	            ->subject('Weblap: Jelentkezés')
+	            ->subject('Jelentkezés: ' . $request->title)
 		        ->from($request->email, $request->name);
         });
 

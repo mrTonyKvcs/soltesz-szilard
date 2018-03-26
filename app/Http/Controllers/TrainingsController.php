@@ -10,7 +10,7 @@ class TrainingsController extends Controller
 {
     public function index()
     {
-    	$trainings = Training::orderBy('started_at', 'desc')->get();
+    	$trainings = Training::orderBy('started_at', 'asc')->get();
     	$today = Carbon::now('Europe/London')->format('Y-M-d');
 
     	return view('trainings.index', compact('trainings', 'today'));

@@ -11,7 +11,7 @@ class PagesController extends Controller
     public function home()
     {
         $training = Training::orderBy('started_at', 'desc')->firstOrFail();
-        $blog = Blog::orderBy('created_at')->first();
+        $blog = Blog::orderBy('created_at', 'desc')->first();
 
         $themes = [
             [
