@@ -49,8 +49,10 @@
                 <h3 class="modal-title" id="myModalLabel6"><strong>Coaching/segítő beszlélgetés</strong></h3>
             </div>
             <div class="modal-body">
-                <p>Meglátásom szerint a coaching folyamat egy intenzív, tanulásra alkalmas emberi találkozások lehetősége. A más nézőpontok aktív felfedezése az egyéni problémák megoldására fókuszál, a jelen állapotából indul ki a jövőbeli szándék(ok), cél(ok) elérésének, megvalósulásának érdekében. A coaching ülések alkalmasak a szakmai kompetenciák fejlesztésére, segíti a gátló mechanizmusok felfedezését, átdolgozását, és serkenti a megoldási struktúrák kialakítását. Elsődleges cél a változás indukálása, másodlagosan pedig támogathatja a személyiség fejlődését. Problémafókuszú cselekvési folyamat, ahol szükséges a rendelkezésre álló energiakészlet hatékony aktiválása: mikor, kire és hogyan fókuszál a kliens vagy coachee. A probléma a jelenlegi helyzet és a vágyott állapot közötti különbség.
-</p>
+                <p>Meglátásom szerint a coaching folyamat egy intenzív, tanulásra alkalmas emberi találkozások lehetősége. A más nézőpontok aktív felfedezése az egyéni problémák megoldására fókuszál, a jelen állapotából indul ki a jövőbeli szándék(ok), cél(ok) elérésének, megvalósulásának érdekében. A coaching ülések alkalmasak a szakmai kompetenciák fejlesztésére, segíti a gátló mechanizmusok felfedezését, átdolgozását, és serkenti a megoldási struktúrák kialakítását. Elsődleges cél a változás indukálása, másodlagosan pedig támogathatja a személyiség fejlődését. A probléma, az elakadás
+szembenézésével kezdődő cselekvési folyamat, ahol szükséges a rendelkezésre álló
+energiakészlet hatékony aktiválása: mikor, kire és hogyan fókuszál a kliens vagy coachee. A
+probléma egy megközelítése: a jelenlegi helyzet és a vágyott állapot közötti különbség.</p>
                 <ul>
                     <li>Feladatok, eredmények optimalizálása
 </li>
@@ -65,7 +67,7 @@
                 </ul>
                 <p>A változások lehetősége általában a félelmeink irányában helyezkednek el, ezért egy semleges biztonságot adó coaching folyamat, segítő beszélgetés kiváló tesztüzem, ahol az ülések során az ügyfél, kliens saját nézőpontjából megértheti viselkedését, így a már meglévő tudásába új eszközöket, megoldásokat lesz képes integrálni, ami pedig fejleszti a tudatosságát, és az egészségesebb jelenlétét az életpályáján.
 </p>
-                <p>Speciális területeim: közép- és felsővezetők, sportolók, egyéb döntéshozó szakemberek, politikusok, segítő szakemberek, művészek és alkotók.
+                <p>Speciális területeim: közép- és felsővezetők, sportolók, egyéb döntéshozó szakemberek, segítő szakemberek, művészek és alkotók.
 </p>
             </div>
             <div class="modal-footer">
