@@ -20,7 +20,7 @@
     <div class="row">
       <div class="col-md-8">
         <ul class="ms-timeline">
-            @if($trainings)
+            @if(count($trainings) > 0)
           @foreach($trainings as $training)
             <li class="ms-timeline-item wow materialUp">
                <div class="ms-timeline-date">
@@ -61,6 +61,8 @@
               </div>
             </li>
           @endforeach
+      @else
+          <h3>Jelenleg zárt csoportokat és programokat tartok.</h3>
       @endif
          </ul>
       </div>

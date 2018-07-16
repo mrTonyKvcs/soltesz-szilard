@@ -19,7 +19,7 @@
                       <i class="zmdi zmdi-calendar-note"></i>
                     </span>
                   </div>
-                  <div class="ms-list-text animated fadeInRight animation-delay-19"><strong>Események: </strong>{{ $training->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('trainings.index') }}" style="background: ">Tovább</a></div>
+                  <div class="ms-list-text animated fadeInRight animation-delay-19"><strong>Események: </strong>@if($training){{ $training->title }}&nbsp;&nbsp;&nbsp;<a href="{{ route('trainings.index') }}" style="background: ">Tovább</a>@else <p>Jelenleg zárt csoportokat és programokat tartok.</p>@endif</div>
                 </li>
                 @if (  $blog )
                   <li class="">
