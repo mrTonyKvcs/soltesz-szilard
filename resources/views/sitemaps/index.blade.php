@@ -100,10 +100,10 @@
 
    </url>
 
-   @foreach ($trainings as $trainings)
+   @foreach ($trainings as $training)
    <url>
 
-   <loc>{{ route('trainings.show', $trainings->slug) }}</loc>
+   <loc>{{ route('trainings.show', $training->slug) }}</loc>
 
       <lastmod>{{ $now }}</lastmod>
 

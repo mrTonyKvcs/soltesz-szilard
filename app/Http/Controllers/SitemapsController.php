@@ -17,6 +17,6 @@ class SitemapsController extends Controller
 
         $trainings = Training::all();
 
-        return response(view('sitemaps.index', compact('now', 'blogs', 'training')))->header('Content-Type', 'application/xml');
+        return response(view('sitemaps.index', compact('now', 'blogs', 'trainings')))->header('Content-Type', 'application/xml');
     }
 }
