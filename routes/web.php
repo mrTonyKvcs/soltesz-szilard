@@ -1,4 +1,5 @@
 <?php
+Route::get('sitemap.xml', 'SitemapsController@index');
 Route::group(
 [
 	'prefix' => LaravelLocalization::setLocale(),
@@ -28,8 +29,8 @@ function()
 	Route::get(LaravelLocalization::transRoute('routes.blog.all'), ['as' => 'blog.index', 'uses' => 'BlogsController@index']);
 	Route::get(LaravelLocalization::transRoute('routes.blog.show'), ['as' => 'blog.show', 'uses' => 'BlogsController@show']);
 	// Trainings
-	Route::get('trainings', ['as'	=> 'trainings.index', 'uses'	=> 'TrainingsController@index']);
-	Route::get('training/{training}', ['as'	=> 'trainings.show', 'uses'	=> 'TrainingsController@show']);
+	Route::get('esemenyek', ['as'	=> 'trainings.index', 'uses'	=> 'TrainingsController@index']);
+	Route::get('esemenyek/{training}', ['as'	=> 'trainings.show', 'uses'	=> 'TrainingsController@show']);
 
     //Mail
 	Route::post('tender', ['as'	=> 'mail.tender', 'uses' => 'MailController@sendTenderToSupport']);
