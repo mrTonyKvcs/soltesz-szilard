@@ -42,6 +42,6 @@ class MailController extends Controller
                 ->from($request->email, $request->name);
         });
 
-        return back();
+        return redirect('kapcsolat')->with('success', 'Sikeresen elküldted az üzenetet!');
     }
 }

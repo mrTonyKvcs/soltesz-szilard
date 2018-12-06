@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Training;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -24,4 +25,13 @@ class Applicant extends Model
     protected $dates = [
         'deleted_at'
     ];
+
+    /**
+     * training
+     *
+     */
+    public function training()
+    {
+        return $this->belongsTo(Training::class);
+    }
 }

@@ -78,7 +78,7 @@
                         <th scope="row">{{ $training->id }}</th>
                         <td>{{ $training->title }}</td>
                         <td class="text-center">
-                            <a href="">
+                            <a href="{{ route('esemenyek.edit', $training->id) }}">
                                 <i class="fas fa-edit"></i>
                             </a>
                         </td>

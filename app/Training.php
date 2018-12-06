@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Applicant;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -33,6 +34,15 @@ class Training extends Model
     }
 
     /**
+     * applicants
+     *
+     */
+    public function applicants()
+    {
+        return $this->hasMany(Applicant::class);
+    }
+
+    /**
      * dates
      *
      */
@@ -40,4 +50,5 @@ class Training extends Model
     {
         return $this->hasMany(Date::class);
     }
+
 }

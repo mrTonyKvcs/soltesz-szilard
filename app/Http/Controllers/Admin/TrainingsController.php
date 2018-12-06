@@ -90,7 +90,9 @@ class TrainingsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $training = Training::find($id);
+
+        return view('admin.trainings.edit', compact('training'));
     }
 
     /**
@@ -102,7 +104,45 @@ class TrainingsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'title'         => 'required',
+            'description'   => 'required',
+            'started_at'    => 'required',
+            'expired_at'    => 'required'
+        ]);
+
+        $training = Training::find($id);
+
+        $date = $training->dates->first();
+
+        
+        if($request->image_path === null) {
+            $request->image_path = $training->image_path;
+            $request['slug'] = str_slug($request->title);
+            $training->update($request->all());
+        } 
+        else {
+            $this->imageUpload($request->all());
+
+            $training->update([
+                'slug'          => str_slug($request->title),
+                'title'         => $request->title,
+                'description'   => $request->description,
+                'locale'        => $request->locale,
+                'image_path'    => 'images/trainings/' .str_slug($request->title) . '.' . $request->image_path->getClientOriginalExtension(),
+                'price'         => $request->price,
+                'max_person'    => $request->max_person
+            ]);
+        }
+
+        $date->update([
+            'training_id'   => $training->id,
+            'started_at'    => $request->started_at,
+            'expired_at'    => $request->expired_at
+        ]);
+
+        
+        return redirect('admin/esemenyek')->with('success', 'Sikeresen szerkesztetted az eseményt!');
     }
 
     /**

@@ -8,11 +8,11 @@
             </div>
         </div>
     </div> 
-    <div class="container mt-5">
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">#</th>
+                    <th scope="col">Esemény Neve</th>
                     <th scope="col">Név</th>
                     <th scope="col">Email</th>
                     <th scope="col">Telefonszám</th>
@@ -25,6 +25,7 @@
                     @foreach($applicants as $applicant)
                         <tr>
                             <th scope="row">{{ $loop->index + 1 }}</th>
+                            <td>{{ $applicant->training->title }}</td>
                             <td>{{ $applicant->name }}</td>
                             <td>{{ $applicant->email }}</td>
                             <td>{{ $applicant->phone_number }}</td>
@@ -37,5 +38,4 @@
                 @endif
             </tbody>
         </table>
-    </div>
 @endsection
