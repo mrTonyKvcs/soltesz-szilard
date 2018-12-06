@@ -8,37 +8,51 @@
     </div>
 </div>		
 <div class="container">
-	
+	    
         <div class="card card-hero animated fadeInUp animation-delay-7">
-          <div class="card-block">
-            <form class="form-horizontal" action="{{ route('mail.contact') }}" method="post">
-            {{ csrf_field() }}
-              <fieldset>
-                <div class="form-group">
-                  <label for="inputName" class="col-md-2 control-label">Név</label>
-                  <div class="col-md-9">
-                    <input name="name" type="text" class="form-control" id="inputName" placeholder="Név" required> </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputEmail" class="col-md-2 control-label">Email</label>
-                  <div class="col-md-9">
-                    <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email" required> </div>
-                </div>
-                <div class="form-group">
-                  <label for="textArea" class="col-md-2 control-label">Üzenet</label>
-                  <div class="col-md-9">
-                    <textarea name="message" class="form-control" rows="5" id="textArea" placeholder="Üzenet" required></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-md-9 col-md-offset-2">
-                    <button type="submit" class="btn btn-raised btn-primary">Küldés</button>
-                    <button type="button" class="btn btn-danger">Mégse</button>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div>
+            <div class="card-block">
+                @if(session()->get('success'))
+                    <div class="alert alert-success">
+                        {{ session()->get('success') }}  
+                    </div><br />
+                @endif
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <form class="form-horizontal" action="{{ route('mail.contact') }}" method="post">
+                    {{ csrf_field() }}
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="inputName" class="col-md-2 control-label">Név</label>
+                            <div class="col-md-9">
+                                <input name="name" type="text" class="form-control" id="inputName" placeholder="Név" required> </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-md-2 control-label">Email</label>
+                            <div class="col-md-9">
+                                <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email" required> </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="textArea" class="col-md-2 control-label">Üzenet</label>
+                            <div class="col-md-9">
+                                <textarea name="message" class="form-control" rows="5" id="textArea" placeholder="Üzenet" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-9 col-md-offset-2">
+                                <button type="submit" class="btn btn-raised btn-primary">Küldés</button>
+                                <button type="button" class="btn btn-danger">Mégse</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
         <div class="card card-primary">
           <div class="row">

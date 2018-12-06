@@ -36,6 +36,12 @@ class MailController extends Controller
 
     public function sendMailToSupport(Request $request)
     {
+        $this->validate( $request, [
+            'name'          => 'required',
+            'email'         => 'required',
+            'message'       => 'required',
+        ]);
+
         \Mail::send('emails.contact', ['data' => $request], function ($m) use ($request) {
             $m->to(env('MAILGUN_TO'))
                 ->subject('Weblap: Kapcsolat')
