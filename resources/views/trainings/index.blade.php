@@ -53,14 +53,15 @@
                                     <img src="/{{ $training->image_path }}" alt="" class="img-responsive" style="width: 100%;"> </a>
                             </div>
                             <div class="card-block">
-                                <h4 class="color-success"><strong>{{ $training->title }}</strong></h4>
-                                <p>{!! str_limit($training->description, $limit = 550, $end = '...') !!}</p>
+                                <h3 class="card-title"><a class="color-success" href="{{ route('trainings.show', $training->slug) }}">{{ $training->title }}</a></h3>
+                                {{--<h4 class="color-success"><strong>{{ $training->title }}</strong></h4>--}}
+                                <p>{!! str_limit(strip_tags($training->description), $limit = 550, $end = '...') !!}</p>
 
                                 <a href="{{ route('trainings.show', $training->slug) }}" class="btn btn-raised btn-success">Tovább</a>
                             </div>
                         @else
                             <div class="card-header">
-                                <h3 class="card-title">{{ $training->title }}</h3>
+                                <h3 class="card-title"><a href="{{ route('trainings.show', $training->slug) }}">{{ $training->title }}</a></h3>
                             </div>
                             <div class="card-block"> 
                                 <p>{!! str_limit(strip_tags($training->description), $limit = 550, $end = '...') !!}</p>
