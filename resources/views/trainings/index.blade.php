@@ -63,7 +63,7 @@
                                 <h3 class="card-title">{{ $training->title }}</h3>
                             </div>
                             <div class="card-block"> 
-                                <p>{!! str_limit($training->description, $limit = 550, $end = '...') !!}</p>
+                                <p>{!! str_limit(strip_tags($training->description), $limit = 550, $end = '...') !!}</p>
                                 <div class="pull-right">
                                     <a href="{{ route('trainings.show', $training->slug) }}" class="btn btn-raised btn-info">Tovább</a>
                                 </div>
