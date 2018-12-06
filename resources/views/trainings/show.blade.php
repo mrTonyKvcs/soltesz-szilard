@@ -72,6 +72,9 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <input name="training_id" type="hidden" value="{{ $training->id }}">
                             </div>
+                            <div class="col-md-8 col-md-offset-2">
+                                <input name="title" type="hidden" value="{{ $training->title }}">
+                            </div>
                         </div>
               			<div class="form-group">
 							<div class="col-md-8 col-md-offset-2">
