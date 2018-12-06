@@ -34,11 +34,13 @@
 		                    <i class="fa fa-map-marker mr-1 color-success"></i> Helyszín</th>
 		                  <td>{{ $training->locale }}</td>
 		                </tr>
-		                <tr>
-		                  <th>
-		                    <i class="zmdi zmdi-calendar mr-1 color-info"></i> Időpont</th>
-		                  <td>{{ $training->started_at->format('Y-M-d') }}</td>
-		                </tr>
+                        @foreach($training->dates as $date)
+                            <tr>
+                                <th>
+                                    <i class="zmdi zmdi-calendar mr-1 color-info"></i> Időpont</th>
+                                <td>{{ $date->started_at->format('Y-m-d') }}</td>
+                            </tr>
+                        @endforeach
 		              </table>
 		            </div>
 					<div class="col-md-8">
@@ -49,37 +51,51 @@
 					</div>	
 				</div>
               <div class="row">
+                @if(session()->get('success'))
+                    <div class="alert alert-success">
+                        {{ session()->get('success') }}  
+                    </div><br />
+                @endif
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                   {!! Form::open(['class' => 'form-horizontal', 'route' => 'mail.tender']) !!}
               		<fieldset>
               			<h2 class="color-primary no-mb text-center">Jelentkezés</h2><hr>
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-2">
-                                <input name="title" type="hidden" value="{{ $training->title }}">
+                                <input name="training_id" type="hidden" value="{{ $training->id }}">
                             </div>
                         </div>
               			<div class="form-group">
 							<div class="col-md-8 col-md-offset-2">
-								{{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Név', 'type' => 'text']) }}
+								{{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Név', 'type' => 'text', 'required' => 'required']) }}
 							</div>
 		                </div>
 		                <div class="form-group">
 							<div class="col-md-8 col-md-offset-2">
-								{{ Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email', 'type' => 'text']) }}
+								{{ Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email', 'type' => 'text', 'required' => 'required']) }}
 							</div>
 		                </div>
 		                <div class="form-group">
 							<div class="col-md-8 col-md-offset-2">
-								{{ Form::text('phone', null, ['class' => 'form-control', 'placeholder' => 'Telefonszám', 'type' => 'text']) }}
+								{{ Form::text('phone_number', null, ['class' => 'form-control', 'placeholder' => 'Telefonszám', 'type' => 'text', 'required' => 'required']) }}
 							</div>
 		                </div>
 		                <div class="form-group">
 							<div class="col-md-8 col-md-offset-2">
-								{{ Form::text('address', null, ['class' => 'form-control', 'placeholder' => 'Lakcím', 'type' => 'text']) }}
+                                {!! Form::textarea('description', null, ['class'=>'form-control', 'rows' => 2, 'placeholder' => 'Röviden írd meg miért jelentkeztél? (3-4 mondat)', 'required' => 'required']) !!}
 							</div>
 		                </div>
 		                <div class="form-group">
 							<div class="col-md-8 col-md-offset-2">
-								{{ Form::text('rank', null, ['class' => 'form-control', 'placeholder' => 'Beosztás', 'type' => 'text']) }}
+                                {!! Form::textarea('about_me', null, ['class'=>'form-control', 'rows' => 2, 'placeholder' => 'Mondj magadról pár gondolatot! (3-4 mondat)', 'required' => 'required']) !!}
 							</div>
 		                </div>
 		                 <div class="form-group">

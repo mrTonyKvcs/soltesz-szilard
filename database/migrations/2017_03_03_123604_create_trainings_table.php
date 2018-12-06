@@ -15,19 +15,15 @@ class CreateTrainingsTable extends Migration
     {
         Schema::create('trainings', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title', 100);
-            $table->string('slug', 100)->nullable();
+            $table->string('slug');
+            $table->string('title');
             $table->text('description');
-            $table->string('locale', 100);
-            $table->string('images_path', 100)->nullable();
-            $table->string('video_path', 100)->nullable();
-            $table->boolean('full')->default(false);
-            $table->integer('price')->nullable();
+            $table->string('locale');
+            $table->string('image_path')->nullable();
+            $table->string('price')->nullable();
             $table->integer('max_person')->nullable();
-            $table->date('started_at')->nullable();
-            $table->date('expired_at')->nullable();
-            $table->softDeletes();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

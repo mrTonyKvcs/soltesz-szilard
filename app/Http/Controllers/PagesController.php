@@ -10,9 +10,8 @@ class PagesController extends Controller
 {
     public function home()
     {
-        if ($traing) {
-            $training = Training::orderBy('started_at', 'desc')->firstOrFail();
-        }
+        $training = Training::all()->first();
+
         $blog = Blog::orderBy('created_at', 'desc')->first();
 
         $themes = [

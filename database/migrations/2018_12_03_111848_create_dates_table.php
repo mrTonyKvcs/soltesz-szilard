@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBlogsTable extends Migration
+class CreateDatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateBlogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('blogs', function (Blueprint $table) {
+        Schema::create('dates', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title', 200);
-            $table->string('slug', 200);
-            $table->text('description');
-            $table->string('img_path', 100)->nullable();
+            $table->integer('training_id');
+            $table->date('started_at');
             $table->date('expired_at');
             $table->timestamps();
             $table->softDeletes();
@@ -32,6 +30,6 @@ class CreateBlogsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('blogs');
+        Schema::dropIfExists('dates');
     }
 }

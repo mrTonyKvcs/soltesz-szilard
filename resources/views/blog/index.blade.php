@@ -20,7 +20,7 @@
                       <h3 class="no-mt">
                         <a href="{{ route('blog.show', $blog->slug) }}">{{ $blog->title }}</a>
                       </h3>
-                      <p>{!! str_limit($blog->description, $limit = 600, $end = '...') !!}</p>
+                      <p>{!! str_limit(strip_tags($blog->description), 600) !!}</p>
                     </div>
                   </div>
                   <div class="row">

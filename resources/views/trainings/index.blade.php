@@ -19,53 +19,64 @@
 <div class="container">
     <div class="row">
       <div class="col-md-8">
+          @if(session()->get('success'))
+              <div class="alert alert-success">
+                  {{ session()->get('success') }}  
+              </div><br />
+          @endif
+          @if (count($errors) > 0)
+              <div class="alert alert-danger">
+                  <ul>
+                      @foreach ($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                      @endforeach
+                  </ul>
+              </div>
+          @endif
         <ul class="ms-timeline">
             @if(count($trainings) > 0)
           @foreach($trainings as $training)
             <li class="ms-timeline-item wow materialUp">
-               <div class="ms-timeline-date">
-                <time class="timeline-time" datetime="">
-                  {{ $training->started_at->format('Y') }}
-                  <span>{{ $training->started_at->format('M') }}</span>
-                  {{ $training->started_at->format('d') }}.
-                </time>
-                <i class="ms-timeline-point bg-info"></i>
-                <div class="card card-info">
-                  @if ($training->video_path)
-                    <div class="card-header">
-                      <h3 class="card-title">{{ $training->title }}</h3>
-                    </div>
-                    <div data-type="youtube" data-video-id="{{ $training->video_path }}"></div>
-                  @elseif ($training->images_path)
-                    <div class="withripple zoom-img">
-                        <a href="javascript:void(0);">
-                          <img src="/{{ $training->images_path }}" alt="" class="img-responsive" style="width: 100%;"> </a>
-                      </div>
-                      <div class="card-block">
-                        <h4 class="color-success"><strong>{{ $training->title }}</strong></h4>
-                        <p>{!! str_limit($training->description, $limit = 550, $end = '...') !!}</p>
+                <div class="ms-timeline-date">
+                    <time class="timeline-time" datetime="">
+                        @foreach($training->dates as $date)
+                            {{ $date->started_at->format('Y') }}
+                            <span>{{ $date->started_at->format('M') }}</span>
+                            {{ $date->started_at->format('d') }}.
+                        @endforeach
+                    </time>
+                    <i class="ms-timeline-point bg-info"></i>
+                    <div class="card card-info">
+                        @if ($training->image_path)
+                            <div class="withripple zoom-img">
+                                <a href="javascript:void(0);">
+                                    <img src="/{{ $training->image_path }}" alt="" class="img-responsive" style="width: 100%;"> </a>
+                            </div>
+                            <div class="card-block">
+                                <h4 class="color-success"><strong>{{ $training->title }}</strong></h4>
+                                <p>{!! str_limit($training->description, $limit = 550, $end = '...') !!}</p>
 
-                        <a href="{{ route('trainings.show', $training->slug) }}" class="btn btn-raised btn-success">Tovább</a>
-                      </div>
-                    @else
-                      <div class="card-header">
-                        <h3 class="card-title">{{ $training->title }}</h3>
-                      </div>
-                      <div class="card-block"> 
-                        <p>{!! str_limit($training->description, $limit = 550, $end = '...') !!}</p>
-                        <div class="pull-right">
-                          <a href="{{ route('trainings.show', $training->slug) }}" class="btn btn-raised btn-info">Tovább</a>
-                        </div>
-                      </div>
-                    @endif
-              </div>
+                                <a href="{{ route('trainings.show', $training->slug) }}" class="btn btn-raised btn-success">Tovább</a>
+                            </div>
+                        @else
+                            <div class="card-header">
+                                <h3 class="card-title">{{ $training->title }}</h3>
+                            </div>
+                            <div class="card-block"> 
+                                <p>{!! str_limit($training->description, $limit = 550, $end = '...') !!}</p>
+                                <div class="pull-right">
+                                    <a href="{{ route('trainings.show', $training->slug) }}" class="btn btn-raised btn-info">Tovább</a>
+                                </div>
+                            </div>
+                        @endif
+                    </div>
             </li>
-          @endforeach
-      @else
-          <h3>Jelenleg zárt csoportokat és programokat tartok.</h3>
-      @endif
-         </ul>
-      </div>
+        @endforeach
+    @else
+        <h3>Jelenleg zárt csoportokat és programokat tartok.</h3>
+    @endif
+        </ul>
+                </div>
       <div class="col-md-4">
         <div class="card card-primary-inverse animated zoomInUp animation-delay-7">
           <div class="card-block">

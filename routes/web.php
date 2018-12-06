@@ -36,9 +36,25 @@ function()
 	Route::post('tender', ['as'	=> 'mail.tender', 'uses' => 'MailController@sendTenderToSupport']);
 	Route::post('contact', ['as'	=> 'mail.contact', 'uses' => 'MailController@sendMailToSupport']);
 });
-Auth::routes();
+//Auth::routes();
+Route::group(['middleware' => ['web']], function() {
+// Login Routes...
+    Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+    Route::post('login', ['as' => 'login.post', 'uses' => 'Auth\LoginController@login']);
+    Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
-// Route::get('/home', 'HomeController@index');
+// Password Reset Routes...
+    Route::get('password/reset', ['as' => 'password.reset', 'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm']);
+    Route::post('password/email', ['as' => 'password.email', 'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
+    Route::get('password/reset/{token}', ['as' => 'password.reset.token', 'uses' => 'Auth\ResetPasswordController@showResetForm']);
+    Route::post('password/reset', ['as' => 'password.reset.post', 'uses' => 'Auth\ResetPasswordController@reset']);
+});
+
+//Admin
+Route::get('admin', [ 'as' => 'admin.index', 'uses' => 'HomeController@index']);
+Route::resource('admin/olvasmanyok', 'Admin\BlogsController');
+Route::resource('admin/esemenyek', 'Admin\TrainingsController');
+Route::get('admin/jelentkezok', [ 'as' => 'admin.applicants', 'uses' => 'Admin\ApplicantsController@index']);
 
 if (version_compare(PHP_VERSION, '7.2.0', '>=')) {
 // Ignores notices and reports all other kinds... and warnings

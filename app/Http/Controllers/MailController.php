@@ -2,36 +2,36 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
 use App\Training;
+use App\Applicant;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class MailController extends Controller
 {
     public function sendTenderToSupport(Request $request)
     {
-    	// $this->validate($request, [
-     //        'name'      			=> 'required',
-     //        'phone'     			=> 'required',
-     //        'email'                 => 'required',
-     //        'vehicle_type'			=> 'required',
-     //        'chassis_number'		=> 'required',
-     //        'part'					=> 'required',
-     //        'message'   			=> 'required|min:10|max:1000'
-     //    ]);
+        $this->validate( $request, [
+            'name'          => 'required',
+            'email'         => 'required',
+            'phone_number'  => 'required',
+            'description'   => 'required',
+            'about_me'      => 'required'
+        ]);
+
+        Applicant::create($request->all());
+
         \Mail::send('emails.tender', ['data' => $request], function ($m) use ($request) {
             $m->to(env('MAILGUN_TO'))
-	            ->subject('Jelentkezés: ' . $request->title)
-		        ->from($request->email, $request->name);
+                ->subject('Jelentkezés: ' . $request->title)
+                ->from($request->email, $request->name);
         });
 
-        // flash()->success('Köszönjük!', 'Az üzenetét elküldtük.');
-        // flash()->success(trans('message.title'), trans('message.body'));
-        $trainings = Training::orderBy('started_at', 'desc')->get();
+        $trainings = Training::all();
     	$today = Carbon::now('Europe/London')->format('Y-M-d');
 
 
-        return view('trainings.index', compact('trainings', 'today'));
+        return redirect('esemenyek')->with('success', 'Sikeresen jelentkeztél az eseményre!');
     }
 
     public function sendMailToSupport(Request $request)
