@@ -19,28 +19,37 @@
 		                <h2 class="color-primary no-mb">Információk</h2>
 		              </div>
 		              <table class="table table-no-border table-striped">
-		                <tr>
-		                  <th>
-		                    <i class="zmdi zmdi-accounts mr-1 color-royal"></i> Max. Létszám</th>
-		                  <td>{{ $training->max_person }} /  fő</td>
-		                </tr>
-		                <tr>
-		                  <th>
-		                    <i class="zmdi zmdi-money mr-1 color-warning"></i> Ár</th>
-		                  <td>{{ $training->price }} Ft</td>
-		                </tr>
-		                <tr>
-		                  <th>
-		                    <i class="fa fa-map-marker mr-1 color-success"></i> Helyszín</th>
-		                  <td>{{ $training->locale }}</td>
-		                </tr>
                         @foreach($training->dates as $date)
                             <tr>
                                 <th>
                                     <i class="zmdi zmdi-calendar mr-1 color-info"></i> Időpont</th>
-                                <td>{{ $date->started_at->format('Y-m-d') }}</td>
+                                <td>{{ $date->started_at->format('Y-m-d') }} {{ $date->hour }}</td>
                             </tr>
                         @endforeach
+		                <tr>
+		                  <th>
+		                    <i class="fa fa-map-marker mr-1 color-danger"></i> Helyszín</th>
+		                  <td>{{ $training->locale }}</td>
+		                </tr>
+		                <tr>
+		                  <th>
+		                    <i class="fa fa-users mr-1 color-success"></i> Csoport típusa</th>
+		                  <td>{{ $training->type }}</td>
+		                </tr>
+                        @if($training->max_person != null)
+                            <tr>
+                                <th>
+                                    <i class="zmdi zmdi-accounts mr-1 color-royal"></i> Max. Létszám</th>
+                                <td>{{ $training->max_person }} /  fő</td>
+                            </tr>
+                        @endif
+                        @if($training->price != null)
+                            <tr>
+                            <th>
+                                <i class="zmdi zmdi-money mr-1 color-warning"></i> Ár</th>
+                            <td>{{ $training->price }} Ft</td>
+                            </tr>
+                        @endif
 		              </table>
 		            </div>
 					<div class="col-md-8">

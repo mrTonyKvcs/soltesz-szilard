@@ -54,7 +54,7 @@ Route::group(['middleware' => ['web']], function() {
 Route::get('admin', [ 'as' => 'admin.index', 'uses' => 'HomeController@index']);
 Route::resource('admin/olvasmanyok', 'Admin\BlogsController');
 Route::resource('admin/esemenyek', 'Admin\TrainingsController');
-Route::get('admin/jelentkezok', [ 'as' => 'admin.applicants', 'uses' => 'Admin\ApplicantsController@index']);
+Route::resource('admin/jelentkezok', 'Admin\ApplicantsController');
 
 if (version_compare(PHP_VERSION, '7.2.0', '>=')) {
 // Ignores notices and reports all other kinds... and warnings

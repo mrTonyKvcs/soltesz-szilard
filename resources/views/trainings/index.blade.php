@@ -34,39 +34,41 @@
               </div>
           @endif
         <ul class="ms-timeline">
-            @if(count($trainings) > 0)
-          @foreach($trainings as $training)
+            @if(count($dates) > 0)
+            @foreach($dates as $date)
             <li class="ms-timeline-item wow materialUp">
                 <div class="ms-timeline-date">
                     <time class="timeline-time" datetime="">
-                        @foreach($training->dates as $date)
+                        {{--@foreach($training->dates as $date)--}}
                             {{ $date->started_at->format('Y') }}
                             <span>{{ $date->started_at->format('M') }}</span>
                             {{ $date->started_at->format('d') }}.
-                        @endforeach
+                        {{--@endforeach--}}
                     </time>
                     <i class="ms-timeline-point bg-info"></i>
                     <div class="card card-info">
-                        @if ($training->image_path)
+                        @if ($date->training->image_path)
                             <div class="withripple zoom-img">
                                 <a href="javascript:void(0);">
-                                    <img src="/{{ $training->image_path }}" alt="" class="img-responsive" style="width: 100%;"> </a>
+                                    <img src="/{{ $date->training->image_path }}" alt="" class="img-responsive" style="width: 100%;"> </a>
                             </div>
                             <div class="card-block">
-                                <h3 class="card-title"><a class="color-success" href="{{ route('trainings.show', $training->slug) }}">{{ $training->title }}</a></h3>
+                                <div class="">
+                                    <h3 class="card-title"><a class="color-success" href="{{ route('trainings.show', $date->training->slug) }}">{{ $date->training->title }}</a><small class="text-warning text-uppercase" style="float:right; font-size:14px;">{{ $date->training->type }} csoport</small></h3> 
+                                </div>
                                 {{--<h4 class="color-success"><strong>{{ $training->title }}</strong></h4>--}}
-                                <p>{!! str_limit(strip_tags($training->description), $limit = 550, $end = '...') !!}</p>
+                                <p>{!! str_limit(strip_tags($date->training->description), $limit = 550, $end = '...') !!}</p>
 
-                                <a href="{{ route('trainings.show', $training->slug) }}" class="btn btn-raised btn-success">Tovább</a>
+                                <a href="{{ route('trainings.show', $date->training->slug) }}" class="btn btn-raised btn-success">Tovább</a>
                             </div>
                         @else
                             <div class="card-header">
-                                <h3 class="card-title"><a href="{{ route('trainings.show', $training->slug) }}">{{ $training->title }}</a></h3>
+                                <h3 class="card-title"><a href="{{ route('trainings.show', $date->training->slug) }}">{{ $date->training->title }}</a></h3>
                             </div>
                             <div class="card-block"> 
-                                <p>{!! str_limit(strip_tags($training->description), $limit = 550, $end = '...') !!}</p>
+                                <p>{!! str_limit(strip_tags($date->training->description), $limit = 550, $end = '...') !!}</p>
                                 <div class="pull-right">
-                                    <a href="{{ route('trainings.show', $training->slug) }}" class="btn btn-raised btn-info">Tovább</a>
+                                    <a href="{{ route('trainings.show', $date->training->slug) }}" class="btn btn-raised btn-info">Tovább</a>
                                 </div>
                             </div>
                         @endif

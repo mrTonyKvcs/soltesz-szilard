@@ -19,7 +19,7 @@ class CreateBlogsTable extends Migration
             $table->string('slug', 200);
             $table->text('description');
             $table->string('img_path', 100)->nullable();
-            $table->date('expired_at');
+            $table->date('published_at');
             $table->timestamps();
             $table->softDeletes();
         });

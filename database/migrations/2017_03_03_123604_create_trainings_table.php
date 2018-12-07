@@ -17,6 +17,7 @@ class CreateTrainingsTable extends Migration
             $table->increments('id');
             $table->string('slug');
             $table->string('title');
+            $table->string('type');
             $table->text('description');
             $table->string('locale');
             $table->string('image_path')->nullable();

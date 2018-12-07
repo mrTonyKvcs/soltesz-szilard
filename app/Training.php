@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use App\Applicant;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -16,7 +17,7 @@ class Training extends Model
      * @var mixed
      */
     protected $fillable = [
-        'title', 'slug', 'description', 'locale' , 'image_path', 'price', 'max_person'
+        'title', 'slug', 'description', 'type', 'locale' , 'image_path', 'price', 'max_person'
     ];
 
     /**

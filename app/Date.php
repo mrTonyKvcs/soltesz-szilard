@@ -15,7 +15,7 @@ class Date extends Model
      *
      * @var string
      */
-    protected $fillable = [ 'training_id', 'started_at', 'expired_at' ];
+    protected $fillable = [ 'training_id', 'started_at', 'hour'];
 
     /**
      * dates
@@ -23,7 +23,7 @@ class Date extends Model
      * @var mixed
      */
     protected $dates = [
-        'started_at', 'expired_at', 'deleted_at'
+        'started_at', 'deleted_at'
     ];
 
     /**

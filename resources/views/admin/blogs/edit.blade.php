@@ -33,7 +33,7 @@
                             <input type="text" name="title" class="form-control" id="exampleInput1" aria-describedby="titleHelp" placeholder="Cím" value="{{ $blog->title }}" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <input class="form-control" type="date" name="expired_at" placeholder="Datum" value="{{ $blog->expired_at }}" required>
+                            <input class="form-control" type="date" name="published_at" placeholder="Datum" value="{{ $blog->published_at }}" required>
                         </div>
                     </div>
                     <div class="form-group">

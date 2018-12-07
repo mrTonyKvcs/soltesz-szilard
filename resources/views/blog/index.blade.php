@@ -27,7 +27,7 @@
                     <div class="col-lg-8">
                       <span class="ml-1 hidden-xs">
                         <i class="zmdi zmdi-time mr-05 color-info "></i>
-                        <span class="color-medium-dark">{{ $blog->created_at->format('Y-M-d')}}</span>
+                        <span class="color-medium-dark">{{ $blog->published_at}}</span>
                       </span>
                     </div>
                     <div class="col-lg-4 pull-right">

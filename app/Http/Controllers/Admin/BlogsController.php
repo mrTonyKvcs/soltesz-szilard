@@ -42,7 +42,7 @@ class BlogsController extends Controller
             'title'         => 'required',
             'description'   => 'required',
             'img_path'      => 'required',
-            'expired_at'    => 'required'
+            'published_at'  => 'required'
         ]);
 
         $this->imageUpload($request->all());
@@ -52,7 +52,7 @@ class BlogsController extends Controller
             'title'         => $request->title,
             'description'   => $request->description,
             'img_path'      => 'images/blogs/' . str_slug($request->title) . '.' .  $request->img_path->getClientOriginalExtension(),
-            'expired_at'    => $request->expired_at
+            'published_at'    => $request->published_at
         ]);
 
         return back()->with('success', 'Sikeresen feltetted az új olvasmányt!');
@@ -110,7 +110,7 @@ class BlogsController extends Controller
                 'title'         => $request->title,
                 'description'   => $request->description,
                 'img_path'      => 'images/blogs/' . str_slug($request->title) . '.' .  $request->img_path->getClientOriginalExtension(),
-                'expired_at'    => $request->expired_at
+                'published_at'    => $request->published_at
             ]);
         }
 

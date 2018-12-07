@@ -30,28 +30,29 @@
                     {{ csrf_field() }}
                     {{ method_field('PUT') }}
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-6">
                             <input name="title" type="text" class="form-control" id="exampleInput1" aria-describedby="titleHelp" placeholder="Cím" value="{{ $training->title }}" required>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-6">
                             <input name="locale" type="text" class="form-control" placeholder="Helyszín"value="{{ $training->locale }}" >
                         </div>
-                        <div class="form-group col-md-2">
+                        <div class="form-group col-md-6">
+                            <input name="type" type="text" class="form-control" placeholder="Esemény típusa" value="{{ $training->type }}">
+                        </div>
+                        <div class="form-group col-md-3">
                             <input name="max_person" type="text" class="form-control" placeholder="Max. létszám" value="{{ $training->max_person }}">
                         </div>
-                        <div class="form-group col-md-2">
+                        <div class="form-group col-md-3">
                             <input name="price" type="text" class="form-control" placeholder="Ár" value="{{ $training->price }}">
                         </div>
                     </div>
                     <div class="form-row">
                         @foreach($training->dates as $date)
-                            <div class="form-group col-md-6">
-                                <label for="">Időpont</label>
+                            <div class="form-group col-md-8">
                                 <input name="started_at" class="form-control" type="date" placeholder="Időpont" value="{{ $date->started_at->format('Y-m-d') }}">
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="">Lejárati Dátum</label>
-                                <input name="expired_at" class="form-control" type="date" value="{{ $date->expired_at->format('Y-m-d') }}">
+                            <div class="form-group col-md-4">
+                                <input name="hour" class="form-control" type="time" placeholder="Időpont" value="{{ $date->hour }}">
                             </div>
                         @endforeach
                     </div>

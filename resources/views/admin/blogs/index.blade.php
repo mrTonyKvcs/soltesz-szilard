@@ -32,7 +32,7 @@
                             <input type="text" name="title" class="form-control" id="exampleInput1" aria-describedby="titleHelp" placeholder="Cím" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <input class="form-control" type="date" name="expired_at" placeholder="Datum" required>
+                            <input class="form-control" type="date" name="published_at" placeholder="Datum" required>
                         </div>
                     </div>
                     <div class="form-group">

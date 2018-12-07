@@ -43,9 +43,10 @@ class TrainingsController extends Controller
         $this->validate($request, [
             'title'         => 'required',
             'description'   => 'required',
-            'image_path'      => 'required',
+            'type'          => 'required',
+            'image_path'    => 'required',
             'started_at'    => 'required',
-            'expired_at'    => 'required'
+            'hour'          => 'required'
         ]);
 
         $format = $request->image_path->getClientOriginalExtension();
@@ -54,6 +55,7 @@ class TrainingsController extends Controller
             'slug'          => str_slug($request->title),
             'title'         => $request->title,
             'description'   => $request->description,
+            'type'          => $request->type,
             'locale'        => $request->locale,
             'image_path'    => 'images/trainings/' .str_slug($request->title) . '.' . $format,
             'price'         => $request->price,
@@ -65,7 +67,7 @@ class TrainingsController extends Controller
         Date::create([
             'training_id'   => $training->id,
             'started_at'    => $request->started_at,
-            'expired_at'    => $request->expired_at
+            'hour'          => $request->hour
         ]);
 
         return back()->with('success', 'Sikeresen felvetted az új eseményt!');
@@ -107,8 +109,9 @@ class TrainingsController extends Controller
         $this->validate($request, [
             'title'         => 'required',
             'description'   => 'required',
+            'type'          => 'required',
             'started_at'    => 'required',
-            'expired_at'    => 'required'
+            'hour'          => 'required'
         ]);
 
         $training = Training::find($id);
@@ -128,6 +131,7 @@ class TrainingsController extends Controller
                 'slug'          => str_slug($request->title),
                 'title'         => $request->title,
                 'description'   => $request->description,
+                'type'          => $request->type,
                 'locale'        => $request->locale,
                 'image_path'    => 'images/trainings/' .str_slug($request->title) . '.' . $request->image_path->getClientOriginalExtension(),
                 'price'         => $request->price,
@@ -138,7 +142,7 @@ class TrainingsController extends Controller
         $date->update([
             'training_id'   => $training->id,
             'started_at'    => $request->started_at,
-            'expired_at'    => $request->expired_at
+            'hour'          => $request->hour
         ]);
 
         

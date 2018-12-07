@@ -17,7 +17,7 @@ class CreateDatesTable extends Migration
             $table->increments('id');
             $table->integer('training_id');
             $table->date('started_at');
-            $table->date('expired_at');
+            $table->time('hour');
             $table->timestamps();
             $table->softDeletes();
         });

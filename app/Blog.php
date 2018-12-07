@@ -11,7 +11,7 @@ class Blog extends Model
 	use SoftDeletes;
 
     protected $fillable = [
-        'title', 'slug', 'description', 'img_path', 'expired_at'
+        'title', 'slug', 'description', 'img_path', 'published_at'
     ];
     protected $date = [
 	    'deleted_at'
