@@ -19,7 +19,9 @@ class TrainingsController extends Controller
     {
         $trainings = Training::all();
 
-        return ( view('admin.trainings.index', compact('trainings')));
+        $dates = Date::orderBy('started_at', 'desc')->get();
+
+        return ( view('admin.trainings.index', compact('trainings', 'dates')));
     }
 
     /**

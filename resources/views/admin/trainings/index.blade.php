@@ -69,22 +69,24 @@
                 <tr class="text-uppercase">
                     <th scope="col">#</th>
                     <th scope="col">Neve</th>
+                    <th scope="col">Dátum</th>
                     <th scope="col" class="text-center">Szerkeszt</th>
                     <th scope="col" class="text-center">töröl</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach($trainings as $training)
+                @foreach($dates as $date)
                     <tr>
-                        <th scope="row">{{ $training->id }}</th>
-                        <td>{{ $training->title }}</td>
+                        <th scope="row">{{ $loop->index + 1 }}</th>
+                        <td>{{ $date->training->title }} @if($date->started_at < \Carbon\Carbon::now()) <small class="text-uppercase text-danger pl-3">lejárt esemény</small> @endif</td>
+                        <th scope="row">{{ $date->started_at->format('Y-m-d') }}</th>
                         <td class="text-center">
-                            <a href="{{ route('esemenyek.edit', $training->id) }}">
+                            <a href="{{ route('esemenyek.edit', $date->training->id) }}">
                                 <i class="fas fa-edit"></i>
                             </a>
                         </td>
                         <td class="text-center">
-                            <form action="{{ route('esemenyek.destroy', $training->id) }}" method="post">
+                            <form action="{{ route('esemenyek.destroy', $date->training->id) }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
                                 <button class="btn text-danger btn-sm" type="submit">                                <i class="fas fa-trash"></i> </button>
