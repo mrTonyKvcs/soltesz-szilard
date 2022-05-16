@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="theme-color" content="#333">
         <title>Soltesz Szilard</title>
-        <meta name="description" content="Soltész Szilárd - Selfness és Coaching">
+        <meta name="description" content="Soltész Szilárd - ">
         <meta name="keywords" content="coaching Kecskemét,  coaching Budapest, vezetőfejlesztés Kecskemét, vezetőfejlesztés Budapest,  vezetőfejlesztés+coaching, vezetőfejlesztés tréning ,vezetők fejlesztése, vezető fejlesztő tréning, vezetői kompetenciák fejlesztése, munkahelyi mentalhigenia">
         <meta name="robots" content="index, follow">
         <meta name="revisit-after" content="1 Month">

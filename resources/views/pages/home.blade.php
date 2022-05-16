@@ -7,15 +7,16 @@
         @include('partials.home.services')
       </div>
       <!-- container -->
+  
       <div class="wrap wrap-mountain mt-6">
         @include('partials.home.selfless-coaching')
       </div>
-      <div class="container mt-6">
+      {{-- <div class="container mt-6">
         @include('partials.home.topics')
-      </div>
+      </div> --}}
       <!-- container -->
-      <div class="wrap wrap-danger mt-6 pv-10" style="background: #99BCCC;">
-        <h2 class="text-center no-m">Inspiráló gondolatok</h2>
+      <div class="wrap wrap-danger" style="background: #99BCCC;">
+        <h2 class="text-center no-m mb-3">Inspiráló gondolatok</h2>
         <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" {{-- data-ride="carousel" data-interval="7000" --}}>
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -41,8 +42,8 @@
                       <div class="card animated flipInX animation-delay-3">
                         <blockquote class="blockquote-avatar withripple">
                           {{--<img src="/img/demo/avatar.png" alt="" class="avatar hidden-xs">--}}
-                          <p>Bizonyosságra törekedni és elfogadni a bizonytalanságot... Kemény prés ez, mégis szorításából született meg minden igaz bölcsesség, ima, művészet.</p>
-                          <footer>Pilinszky János</footer>
+                          <p>Az individuáció jelentése: egyeddé válás, és amennyiben individualitáson a legbensőbb, végső és semmihez sem hasonlító egyszerűségünket értjük: önmagunkká válás. Ezért az individuáció szót úgy is fordíthatnánk, hogy önállósodás vagy önmegvalósítás.</p>
+                          <footer>C. G. Jung</footer>
                         </blockquote>
                       </div>
                     </div>

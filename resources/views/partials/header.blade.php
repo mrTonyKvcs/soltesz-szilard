@@ -69,10 +69,10 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
             <li>
-              <a href="{{ route('pages.about') }}">Soltész Szilárd</a>
+              <a href="{{ route('pages.about') }}">{{ trans('navbar.about')}}</a>
             </li>
             <li>
-              <a href="{{ route('pages.selfless-coaching') }}">{{ trans('navbar.selfless-coaching')}}</a>
+              <a href="{{ route('pages.selfless-coaching') }}">{{ trans('navbar.helpers_are_essential')}}</a>
             </li>
             <li>
               <a href="{{ route('pages.organization') }}">Szervezet-és munkalélektan</a>

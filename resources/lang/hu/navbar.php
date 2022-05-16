@@ -6,6 +6,8 @@ return [
 	'activity'		=> 'Kiemelt tevékenységeim',
 	'motivation'	=> 'Motivációm',
 	'selfless-coaching'	=> 'Selfness és Coaching',
+	'about'	=> 'Magamról',
+	'helpers_are_essential'	=> 'Segítői alapvetés',
 
 	// activity
 	'personal-coaching'	=> 'Egyéni coaching/segítő beszélgetés',

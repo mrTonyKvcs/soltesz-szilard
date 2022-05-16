@@ -90,9 +90,9 @@
             </div>
             <address class="no-mb">
               <p>
-                <i class="color-danger-light zmdi zmdi-pin mr-1"></i> 6000 Kecskemét, Jégvirág utca 6.</p>
-              <p>
-                <i class="color-warning-light zmdi zmdi-map mr-1"></i> 1133 Budapest, Cézár Ház</p>
+                <i class="color-danger-light zmdi zmdi-pin mr-1"></i> 1146, Budapest Abonyi utca 3.              </p>
+              {{-- <p>
+                <i class="color-warning-light zmdi zmdi-map mr-1"></i> 1133 Budapest, Cézár Ház</p> --}}
               <p>
                 <i class="color-info-light zmdi zmdi-email mr-1"></i>
                 <a href="mailto:szilard.soltesz@gmail.com" class="link">szilard.soltesz@gmail.com</a>

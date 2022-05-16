@@ -64,10 +64,11 @@
                 </div>
                 <address class="no-mb">
                   <p>
-                    <i class="color-danger-light zmdi zmdi-pin mr-1"></i>6000 Kecskemét, Jégvirág utca 6.</p>
-                  <p>
+                    <i class="color-danger-light zmdi zmdi-pin mr-1"></i>1146, Budapest Abonyi utca 3.
+                  </p>
+                  {{-- <p>
                     <i class="color-warning-light zmdi zmdi-map mr-1"></i>1133 Budapest, Cézár Ház</p>
-                  <p>
+                  <p> --}}
                     <i class="color-info-light zmdi zmdi-email mr-1"></i>
                     <a href="mailto:szilard.soltesz@gmail.com">szilard.soltesz@gmail.com</a>
                   </p>
@@ -79,7 +80,7 @@
               </div>
             </div>
             <div class="col-lg-9 col-md-8 col-sm-7">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2063.4434046756555!2d19.05861727786231!3d47.522478733434404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dbf6a893c861%3A0x7ddd214fecbf826f!2sBudapest%2C+Tutaj+u.%2C+1133!5e0!3m2!1shu!2shu!4v1521541383885" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.1898620191814!2d19.085841716279692!3d47.505693579178164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc8709604d5f%3A0x663ce85523bdbcd3!2sBudapest%2C%20Abonyi%20u.%203%2C%201146!5e0!3m2!1shu!2shu!4v1652718006838!5m2!1shu!2shu" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>   
             </div>
           </div>
         </div>
