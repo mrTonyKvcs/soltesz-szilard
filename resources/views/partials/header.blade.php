@@ -74,9 +74,9 @@
             <li>
               <a href="{{ route('pages.selfless-coaching') }}">{{ trans('navbar.helpers_are_essential')}}</a>
             </li>
-            <li>
+            {{-- <li>
               <a href="{{ route('pages.organization') }}">Szervezet-és munkalélektan</a>
-            </li>
+            </li> --}}
           </ul>
         </li>
         <li>

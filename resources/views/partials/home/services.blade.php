@@ -6,7 +6,7 @@
         <i class="fa fa-user" aria-hidden="true"></i>
       </span>
       <h3 style="color: #99BCCC"><strong>Coaching/segítő beszélgetés</strong></h3><br>
-      <p class="">Meglátásom szerint a coaching folyamat egy intenzív, tanulásra alkalmas emberi találkozások lehetősége.</p>
+      <p class="">Félünk attól, ami már egyszer megtörtént velünk. Egy probléma megoldása feszültséget okoz.</p>
       <button class="btn btn-info btn-raised" data-toggle="modal" data-target="#myModal" style="background: #99BCCC;">{{ trans('button.next') }}</button>
     </div>
   </div>
@@ -38,8 +38,8 @@
       <h3 class="" style="color: #5C717A"><strong>Csoportos folyamatok</strong></h3>
       <p class="">
         <ul>
-          <li>tanulócsoport</li>
-          <li>szupervíziós csoport </li>
+          <li>önismereti tanulócsoport</li>
+          <li>szupervíziós csoport</li>
           <li>encounter csoport</li>
           <li>önsegítő csoport</li>
         </ul>  
@@ -147,8 +147,8 @@
             <div class="modal-body">
                 <p>Csoportos folyamatok:</p>
                 <ul>
-                    <li>tanulócsoport </li>
-                    <li>szupervíziós csoport </li>
+                    <li>önismereti tanulócsoport </li>
+                    <li>szupervíziós csoport</li>
                     <li>encounter csoport</li>
                     <li>önsegítő csoport</li>
                 </ul>
