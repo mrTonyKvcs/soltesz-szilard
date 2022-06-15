@@ -34,14 +34,14 @@
                     </div>
                   </li>
                 @endif
-                <li class="">
+                {{-- <li class="">
                   <div class="ms-list-icon animated zoomInUp animation-delay-22">
                     <span class="ms-icon ms-icon-circle ms-icon-xlg color-blue shadow-3dp" style="background: #5C717A;">
                       <i class="zmdi zmdi-album"></i>
                     </span>
                   </div>
                   <div class="ms-list-text animated fadeInRight animation-delay-23"><strong>Kiemelt témáim: </strong>Teremtő vezetés &nbsp;&nbsp;&nbsp;<a href="#topics">Tovább</a></div>
-                </li>
+                </li> --}}
               </ul>
               </div>
             </div>
