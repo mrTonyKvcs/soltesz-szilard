@@ -28,14 +28,14 @@
     </li>
     <li>
       <a class="link" href="{{ route('pages.about') }}">
-        <i class="zmdi zmdi-face"></i> Soltész Szilárd</a>
+        <i class="zmdi zmdi-face"></i>Magamról</a>
     </li>
     <li>
-      <a class="link" href="{{ route('pages.selfless-coaching') }}"><i class="zmdi zmdi-run"></i>{{ trans('navbar.selfless-coaching')}}</a>
+      <a class="link" href="{{ route('pages.selfless-coaching') }}"><i class="zmdi zmdi-run"></i>Segítői alapvetés</a>
     </li>
-    <li>
+    {{-- <li>
       <a class="link" href="{{ route('pages.organization') }}"><i class="zmdi zmdi-run"></i>Szervezet-és munkalélektan</a>
-    </li>
+    </li> --}}
     <li>
       <a class="link" href="{{ route('blog.index') }}">
         <i class="zmdi zmdi-edit"></i> {{ trans('navbar.blog') }}</a>
@@ -52,7 +52,11 @@
   <div class="ms-slidebar-social ms-slidebar-block">
     <h4 class="ms-slidebar-block-title">Social Links</h4>
     <div class="ms-slidebar-social">
-      <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
+      {{-- <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
+        <i class="zmdi zmdi-facebook"></i>
+        <div class="ripple-container"></div>
+      </a> --}}
+      <a href="https://www.facebook.com/matrixconsulting.hu" class="btn-circle btn-circle-raised btn-facebook">
         <i class="zmdi zmdi-facebook"></i>
         <div class="ripple-container"></div>
       </a>

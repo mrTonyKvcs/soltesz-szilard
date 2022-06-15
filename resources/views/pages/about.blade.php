@@ -14,7 +14,7 @@
                     2013-ban kezdtem el tanulni a coach-tanácsadást. Kerestem azokat a képzéseket, ahol holisztikus szemlélet van, ahol fontos szempont megismerni az emberi működést, és ahol nem fél igazságokról beszélnek. 2015-ben jelentkeztem a Károli Gáspár Református Egyetem mentálhigiénés segítő szakember képzésére. A képzés vezetői és több oktatója hittek abban, hogy megtalálom azt az igazságot, amit oly rendíthetetlenül keresek. Hivatásom alappillére lett a személyközpontú megközelítés, amivel akaratlanul átitatódtam általuk. Szakmai önbecsülésemet erősítette tanulmányaim következő állomása, az egyetem szupervizor képzése.
                 </p>
                 <p>
-                    Az emberi lét egyik lényegében, a fejlődésben segítek. Ezért fontos, hogy a szakmai ismeretek mellett, hogyan és milyen eszközökkel készítem fel magamat napi szinten erre a feladatra. 
+                    Az emberi lét egyik lényegében, a fejlődésben segítek. Ezért fontos, hogy a szakmai ismeretek mellett, hogyan és milyen eszközökkel készítem fel magamat napi szinten erre a szolgálatra. 
                 </p>
                 <p>
                     Inspiráló szakemberek segítségével képzem magamat. Több terápiás eszközt és segítői módszert sajátítottam már el és integráltam a munkámba. Különböző hagyományokkal és filozófiai irányzatokkal ismerkedem, és a teljességre törekvés szándékával kapcsolom össze a tudomány és a spiritualitás világ válaszait. Fontos premisszának tekintem, hogy mások megismerése önmagunk megismerésén keresztül lehetséges. A szakmai, szellemi és spirituális fejlődés hármasa ma már életmód számomra. 
