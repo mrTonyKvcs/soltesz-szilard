@@ -17,7 +17,7 @@
             </a>
           </li> --}}
           <li class="animated fadeInRight animation-delay-2">
-            <a href="https://www.facebook.com/www.selfnesscoaching.hu/
+            <a href="https://www.facebook.com/matrixconsulting.hu
 " class="btn-circle btn-facebook" target="_blank">
               <i class="zmdi zmdi-facebook"></i>
             </a>

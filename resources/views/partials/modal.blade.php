@@ -68,8 +68,8 @@
             </form>
             <div class="text-center">
               <h3>Login with</h3>
-              <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-facebook">
-                <i class="zmdi zmdi-facebook"></i> Facebook</a>
+              <a href="https://www.facebook.com/matrixconsulting.hu" class="wave-effect-light btn btn-raised btn-facebook">
+                <i class="zmdi zmdi-facebook"></i> </a>
               <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-twitter">
                 <i class="zmdi zmdi-twitter"></i> Twitter</a>
               <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-google">
