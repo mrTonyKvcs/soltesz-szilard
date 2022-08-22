@@ -8,7 +8,7 @@
           <div class="carousel-caption">
             <div class="ms-hero-material-text-container">
               <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                <h1 class="animated fadeInLeft animation-delay-15 font-smoothing" style="text-transform: inherit;">Matrix Consulting</h1>
+                {{-- <h1 class="animated fadeInLeft animation-delay-15 font-smoothing" style="text-transform: inherit;">mentálhigiéné - coaching/tanácsadás  - szupervízió</h1> --}}
                 <h2 class="animated fadeInLeft animation-delay-18" style="text-transform: lowercase; text-shadow: none;"><span class="color-warning" style="text-transform: uppercase;">mentálhigiéné - coaching/tanácsadás  - szupervízió</span></h2>
               </header>
               <div class="col-lg-11 col-md-11 col-lg-offset-1 col-md-offset-1">
