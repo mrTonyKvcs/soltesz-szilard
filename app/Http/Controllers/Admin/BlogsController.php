@@ -41,17 +41,20 @@ class BlogsController extends Controller
         $this->validate( $request, [
             'title'         => 'required',
             'description'   => 'required',
-            'img_path'      => 'required',
             'published_at'  => 'required'
         ]);
 
-        $this->imageUpload($request->all());
+        if ($request->img_path != null) {
+            $this->imageUpload($request->all());
+
+            $path = 'images/blogs/' . str_slug($request->title) . '.' .  $request->img_path->getClientOriginalExtension();
+        }
 
         $blog = Blog::create([
             'slug'          => str_slug($request->title),
             'title'         => $request->title,
             'description'   => $request->description,
-            'img_path'      => 'images/blogs/' . str_slug($request->title) . '.' .  $request->img_path->getClientOriginalExtension(),
+            'img_path'      => isset($path) ? $path : null,
             'published_at'    => $request->published_at
         ]);
 
