@@ -34,7 +34,6 @@
               </div>
           @endif
         <ul class="ms-timeline">
-          {{die($dates)  }}
             @if(count($dates) > 0)
             @foreach($dates as $date)
             <li class="ms-timeline-item wow materialUp">

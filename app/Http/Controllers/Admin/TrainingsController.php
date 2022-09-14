@@ -46,12 +46,15 @@ class TrainingsController extends Controller
             'title'         => 'required',
             'description'   => 'required',
             'type'          => 'required',
-            'image_path'    => 'required',
             'started_at'    => 'required',
             'hour'          => 'required'
         ]);
 
-        $format = $request->image_path->getClientOriginalExtension();
+        if($request->image_path != null) {
+            $format = $request->image_path->getClientOriginalExtension();
+            $this->imageUpload($request->all());
+            $path = 'images/trainings/' .str_slug($request->title) . '.' . $format;
+        }
 
         $training = Training::create([
             'slug'          => str_slug($request->title),
@@ -59,12 +62,10 @@ class TrainingsController extends Controller
             'description'   => $request->description,
             'type'          => $request->type,
             'locale'        => $request->locale,
-            'image_path'    => 'images/trainings/' .str_slug($request->title) . '.' . $format,
+            'image_path'    =>  isset($path) ? $path : null,
             'price'         => $request->price,
             'max_person'    => $request->max_person
         ]);
-
-        $this->imageUpload($request->all());
 
         Date::create([
             'training_id'   => $training->id,
@@ -160,6 +161,7 @@ class TrainingsController extends Controller
     public function destroy($id)
     {
         $training = Training::find($id);
+        $training->dates()->delete();
 
         $training->delete();
 
