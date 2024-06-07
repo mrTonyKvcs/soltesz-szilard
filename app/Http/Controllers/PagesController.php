@@ -8,61 +8,67 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function home()
-    {
-        $training = Training::all()->first();
 
-        $blog = Blog::orderBy('created_at', 'desc')->first();
+  public function home()
+  {
+    $training = Training::all()->first();
 
-        $themes = [
-            [
-                'title' => trans('navbar.communication-techniques'),
-                'url'   => 'topics.communication-techniques'
-            ],
-            [
-                'title' => trans('navbar.developing-competencies'),
-                'url'   => 'topics.developing-competencies'
-            ],
-            [
-                'title' => trans('navbar.stress-sticking'),
-                'url'   => 'topics.stress-sticking'
-            ],
-            [
-                'title' => trans('navbar.life-crises'),
-                'url'   => 'topics.life-crises'
-            ],
-            [
-                'title' => trans('navbar.resilience'),
-                'url'   => 'topics.resilience'
-            ]
-        ];
-        $theme = collect($themes)->random();
+    $blog = Blog::orderBy('created_at', 'desc')->first();
 
-    	return view('pages.home', compact('training', 'blog', 'theme'));
-    }
+    $themes = [
+      [
+        'title' => trans('navbar.communication-techniques'),
+        'url'   => 'topics.communication-techniques'
+      ],
+      [
+        'title' => trans('navbar.developing-competencies'),
+        'url'   => 'topics.developing-competencies'
+      ],
+      [
+        'title' => trans('navbar.stress-sticking'),
+        'url'   => 'topics.stress-sticking'
+      ],
+      [
+        'title' => trans('navbar.life-crises'),
+        'url'   => 'topics.life-crises'
+      ],
+      [
+        'title' => trans('navbar.resilience'),
+        'url'   => 'topics.resilience'
+      ]
+    ];
+    $theme = collect($themes)->random();
 
-    public function about()
-    {
-        return view('pages.about');
-    }
+    return view('pages.home', compact('training', 'blog', 'theme'));
+  }
 
-    public function selflessCoaching()
-    {
-        return view('pages.selfless-coaching');
-    }
+  public function about()
+  {
+    return view('pages.about');
+  }
 
-    public function organization()
-    {
-        return view('pages.organization');
-    }
+  public function selflessCoaching()
+  {
+    return view('pages.selfless-coaching');
+  }
 
-    public function price()
-    {
-    	return view('pages.price');
-    }
+  public function organization()
+  {
+    return view('pages.organization');
+  }
 
-    public function contact()
-    {
-    	return view('pages.contact');
-    }
+  public function price()
+  {
+    return view('pages.price');
+  }
+
+  public function contact()
+  {
+    return view('pages.contact');
+  }
+
+  public function maintenance()
+  {
+    return view('maintenance');
+  }
 }
