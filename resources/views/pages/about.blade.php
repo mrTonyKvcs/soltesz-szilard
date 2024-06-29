@@ -4,47 +4,24 @@
     <div class="container" align="justify">
         <div class="card wow slideInUp">
             <div class="card-block-big">
-                <h1 class="color-primary">Magamról</h1><hr>
-                <p>
-                    Alapvégzettségem közgazdász, hosszú évekig a kereskedelem és az értékesítés területein
-                    dolgoztam vezetőként. Sok hibázásom és csalódásom számos mélyre mutató kérdést hívott
-                    elő. Válaszok hiányában magyarázatokat és inspiráló embereket kerestem. 
-                </p>
+                <h1 class="color-primary">Magamról</h1>
+                <hr>
+                <p>Okleveles közgazdász végzettséggel váltottam a segítői pályára. 2013-ban kezdtem el coachingot tanulni,
+                    majd következtek a humanisztikus és személyközpontú szemléletű egyetemi képzések: mentálhigiénés segítő
+                    szakember és szupervízió szakirányok. Szakmai elkötelezettségem és fejlődési vágyam tekervényes utakra
+                    terelt, és viharos éveket vállaltam. A fejlődés és az ébredés kemény lecke, amelynek során a szembesülés
+                    és önmeghaladás szorításában haladok és formálódom.</p>
 
-                <img src="/img/profile1.jpg " alt=" " class="img-responsive imgborder ml-2 mb-2 pull-right ">
-                <p>
-                    2013-ban kezdtem el tanulni a coach-tanácsadást. Kerestem azokat a képzéseket, ahol
-                    holisztikus szemlélet van, ahol fontos szempont megismerni az emberi működést, és ahol nem
-                    fél igazságokról beszélnek. 2015-ben jelentkeztem a Károli Gáspár Református Egyetem
-                    mentálhigiénés segítő szakember képzésére. A képzés vezetői és több oktatója hittek abban,
-                    hogy megtalálom azt az igazságot, amit oly rendíthetetlenül keresek. Hivatásom alappillére
-                    lett a személyközpontú megközelítés, amivel akaratlanul átitatódtam általuk. Szakmai
-                    önbecsülésemet erősítette tanulmányaim következő állomása, az egyetem szupervizor
-                    képzése.
-                </p>
-                <p>
-                    Az emberi lét egyik lényegében, a fejlődésben segítek. Ezért fontos, hogy a szakmai
-                    ismeretek mellett, hogyan és milyen eszközökkel készítem fel magamat napi szinten erre a
-                    szolgálatra.
-                </p>
-                <p>
-                    Inspiráló szakemberek segítségével képzem magamat. Több terápiás eszközt és segítői
-                    módszert sajátítottam már el és integráltam a munkámba. Különböző hagyományokkal és
-                    filozófiai irányzatokkal ismerkedem, és a teljességre törekvés szándékával kapcsolom össze a
-                    tudomány és a spiritualitás világ válaszait. Fontos premisszának tekintem, hogy mások
-                    megismerése önmagunk megismerésén keresztül lehetséges. A szakmai, szellemi és spirituális
-                    fejlődés hármasa ma már életmód számomra. 
-                </p>
-                <p>
-                    A tudományosság mellett azok a szellemi és bölcseleti rendszerek érdekelnek elsősorban,
-                    amelyek a változással való együttműködésről szólnak, valamint finomítják a
-                    lényegérzékenységet és az információkon alapuló intitív gondolkodást. A változást nem mi
-                    hozzuk létre és nem ragadható meg pontosan. Kívülről érkezik, de belülről kerülhetünk valódi
-                    kapcsolatba a külső feltételekkel. Az önfejlesztésem része, hogy harcművészeteket gyakorlok.
-                    Arra tanínatak, hogy úgy legyek ura önmagamnak, hogy bárhol is legyek, legyek ott teljesen,
-                    és közben maradjak hű önmagamhoz. 
-                </p>
-
+                <img src="/img/profile.jpg " alt=" " class="img-responsive imgborder ml-2 mb-2 pull-right"
+                    style="max-height: 250px;">
+                <p>Különböző hagyományok és szellemi utak, valamint egzisztencialista irányvonalak segítségével kötöm össze
+                    a tudományt és a spiritualitást. A személyes, szellemi és spirituális fejlődés hármasa ma már életmód
+                    számomra. Az önismereti munkám meghatározó része, hogy harcművészeteket gyakorlok.</p>
+                <p>Számos segítő és terápiás eszközt integrálok, valamint rendszerállítási módszereket használok a
+                    munkámban. Nincs legjobb vagy leghatékonyabb módszer. Aki ilyet állít, az a kétséggel vagy zavarral
+                    küzdőt akarja megtéveszteni. Kétségtelen, hogy megfelelő helyzetekben egyes módszerek jobban működnek.
+                    Fontos a technikákat és eszközöket a megfelelő tempóban és ritmusban használni, valamint ismerni és
+                    figyelembe venni sajátosságaik előnyeit és hátrányait, mind szakmai, mind etikai megfontolásból.</p>
             </div>
         </div>
     </div>
