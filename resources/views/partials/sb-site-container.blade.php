@@ -57,7 +57,8 @@
         <i class="zmdi zmdi-facebook"></i>
         <div class="ripple-container"></div>
       </a> --}}
-            <a href="https://www.facebook.com/solteszszilard.hu" class="btn-circle btn-circle-raised btn-facebook">
+            <a href="https://www.facebook.com/solteszszilard.hu" class="btn-circle btn-circle-raised btn-facebook"
+                target="_blank">
                 <i class="zmdi zmdi-facebook"></i>
                 <div class="ripple-container"></div>
             </a>

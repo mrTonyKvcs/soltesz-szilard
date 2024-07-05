@@ -12,7 +12,7 @@
 	      <span class="counter color-warning">2016</span>
 	    </h3> --}}
                 <a href="{{ route('blog.index') }}" class="btn btn-warning">
-                    <i class="zmdi zmdi-desktop-mac"></i> Olvasmányok</a>
+                    <i class="zmdi zmdi-desktop-mac"></i>Témaközpont</a>
                 <a href="{{ route('pages.about') }}" class="btn btn-info">
                     <i class="zmdi zmdi-accounts"></i>Magamról</a>
             </div>
@@ -122,7 +122,6 @@
                     </div>
                     <div class="card-block pt-6 text-center">
                         <h3 class="color-info">Soltész Szilárd</h3>
-                        <p>Szélesre nyílt eddigi életutam folyamatosan formálja a szemléletem, gondolkodásom.</p>
                         <a href="{{ route('pages.about') }}" class="btn btn-raised btn-info">Tovább</a>
                     </div>
                 </div>

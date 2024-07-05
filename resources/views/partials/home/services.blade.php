@@ -86,7 +86,9 @@
                       <li>Közös Értelmezés</li>
                       <li>Fejlődés és Transzcendencia</li>
                   </ul>
-                  <p>(Bővebben az egzisztencialista coachingról: lásd Témaközpont)</p>
+                  <p>(Bővebben az egzisztencialista coachingról: lásd <a href="{{ route('blog.index') }}"
+                          target="_blank">Témaközpont</a>. Jelentkezni:
+                      lásd <a href="{{ route('trainings.index') }}" target="_blank">Események</a>)</p>
 
               </div>
               <div class="modal-footer">
@@ -169,6 +171,8 @@
                       <li>támogatott döntéshozatal</li>
                       <li>szakmai izoláció csökkentése</li>
                   </ul>
+                  <p>(Jelentkezni:
+                      lásd <a href="{{ route('trainings.index') }}" target="_blank">Események</a>)</p>
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-default"
@@ -201,7 +205,8 @@
                       összefüggéseit is feltárja. A szervezetállítás különösen hasznos a vállalati és csoportos
                       problémák megoldásában, mivel láthatóvá teszi a szervezeti struktúrák és kapcsolatok mögöttes
                       formáló erőit.</p>
-                  <p>(Bővebben a rendszerállításról: lásd Témaközpont. Egyéni és csoportos családállításra jelentkezni:
+                  <p>(Bővebben a rendszerállításról: lásd <a href="{{ route('blog.index') }}"
+                          target="_blank">Témaközpont</a>. Egyéni és csoportos családállításra jelentkezni:
                       lásd <a href="{{ route('trainings.index') }}" target="_blank">Események</a>.)</p>
               </div>
               <div class="modal-footer">
