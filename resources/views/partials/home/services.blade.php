@@ -86,9 +86,9 @@
                       <li>Közös Értelmezés</li>
                       <li>Fejlődés és Transzcendencia</li>
                   </ul>
-                  <p>(Bővebben az egzisztencialista coachingról: lásd <a href="{{ route('blog.index') }}"
-                          target="_blank">Témaközpont</a>. Jelentkezni:
-                      lásd <a href="{{ route('trainings.index') }}" target="_blank">Események</a>)</p>
+                  {{-- <p>(Bővebben az egzisztencialista coachingról: lásd <a href="{{ route('blog.index') }}" --}}
+                  {{--        target="_blank">Témaközpont</a>. Jelentkezni: --}}
+                  {{--    lásd <a href="{{ route('trainings.index') }}" target="_blank">Események</a>)</p> --}}
 
               </div>
               <div class="modal-footer">
@@ -171,8 +171,8 @@
                       <li>támogatott döntéshozatal</li>
                       <li>szakmai izoláció csökkentése</li>
                   </ul>
-                  <p>(Jelentkezni:
-                      lásd <a href="{{ route('trainings.index') }}" target="_blank">Események</a>)</p>
+                  {{-- <p>(Jelentkezni: --}}
+                  {{--    lásd <a href="{{ route('trainings.index') }}" target="_blank">Események</a>)</p> --}}
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-default"
