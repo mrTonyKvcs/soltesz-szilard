@@ -30,7 +30,7 @@ Route::group(
     Route::get(LaravelLocalization::transRoute('routes.blog.show'), ['as' => 'blog.show', 'uses' => 'BlogsController@show']);
     // Trainings
     Route::get('esemenyek', ['as'  => 'trainings.index', 'uses'  => 'TrainingsController@index']);
-    Route::get('esemenyek/{training}', ['as'  => 'trainings.show', 'uses'  => 'TrainingsController@show']);
+    Route::get('esemenyek/{id}', ['as'  => 'trainings.show', 'uses'  => 'TrainingsController@show']);
 
     //Mail
     Route::post('tender', ['as'  => 'mail.tender', 'uses' => 'MailController@sendTenderToSupport']);

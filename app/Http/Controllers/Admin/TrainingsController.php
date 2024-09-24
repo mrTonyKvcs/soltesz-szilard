@@ -10,178 +10,186 @@ use App\Http\Controllers\Controller;
 
 class TrainingsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $trainings = Training::all();
+  /**
+   * Display a listing of the resource.
+   *
+   * @return \Illuminate\Http\Response
+   */
+  public function index()
+  {
+    $trainingsWithDates = Training::whereHas('dates', function ($q) {
+      $q->orderBy('started_at', 'desc');
+    });
 
-        $dates = Date::orderBy('started_at', 'desc')->get();
+    $trainingsWithoutDates = Training::whereDoesntHave('dates');
 
-        return ( view('admin.trainings.index', compact('trainings', 'dates')));
+    $trainings = $trainingsWithoutDates->union($trainingsWithDates)->get();
+
+    return (view('admin.trainings.index', compact('trainings')));
+  }
+
+  /**
+   * Show the form for creating a new resource.
+   *
+   * @return \Illuminate\Http\Response
+   */
+  public function create()
+  {
+    //
+  }
+
+  /**
+   * Store a newly created resource in storage.
+   *
+   * @param  \Illuminate\Http\Request  $request
+   * @return \Illuminate\Http\Response
+   */
+  public function store(Request $request)
+  {
+    $this->validate($request, [
+      'title'         => 'required',
+      'description'   => 'required',
+      'type'          => 'required',
+      // 'started_at'    => 'required',
+      // 'hour'          => 'required'
+    ]);
+
+    if ($request->image_path != null) {
+      $format = $request->image_path->getClientOriginalExtension();
+      $this->imageUpload($request->all());
+      $path = 'images/trainings/' . str_slug($request->title) . '.' . $format;
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    $training = Training::create([
+      'slug'          => str_slug($request->title),
+      'title'         => $request->title,
+      'description'   => $request->description,
+      'type'          => $request->type,
+      'locale'        => $request->locale,
+      'image_path'    =>  isset($path) ? $path : null,
+      'price'         => $request->price,
+      'max_person'    => $request->max_person
+    ]);
+
+    if ($request->started_at && $request->hour) {
+      Date::create([
+        'training_id'   => $training->id,
+        'started_at'    => $request->started_at,
+        'hour'          => $request->hour
+      ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        $this->validate($request, [
-            'title'         => 'required',
-            'description'   => 'required',
-            'type'          => 'required',
-            'started_at'    => 'required',
-            'hour'          => 'required'
-        ]);
+    return back()->with('success', 'Sikeresen felvetted az új eseményt!');
+  }
 
-        if($request->image_path != null) {
-            $format = $request->image_path->getClientOriginalExtension();
-            $this->imageUpload($request->all());
-            $path = 'images/trainings/' .str_slug($request->title) . '.' . $format;
-        }
+  /**
+   * Display the specified resource.
+   *
+   * @param  int  $id
+   * @return \Illuminate\Http\Response
+   */
+  public function show($id)
+  {
+    //
+  }
 
-        $training = Training::create([
-            'slug'          => str_slug($request->title),
-            'title'         => $request->title,
-            'description'   => $request->description,
-            'type'          => $request->type,
-            'locale'        => $request->locale,
-            'image_path'    =>  isset($path) ? $path : null,
-            'price'         => $request->price,
-            'max_person'    => $request->max_person
-        ]);
+  /**
+   * Show the form for editing the specified resource.
+   *
+   * @param  int  $id
+   * @return \Illuminate\Http\Response
+   */
+  public function edit($id)
+  {
+    $training = Training::find($id);
 
-        Date::create([
-            'training_id'   => $training->id,
-            'started_at'    => $request->started_at,
-            'hour'          => $request->hour
-        ]);
+    return view('admin.trainings.edit', compact('training'));
+  }
 
-        return back()->with('success', 'Sikeresen felvetted az új eseményt!');
+  /**
+   * Update the specified resource in storage.
+   *
+   * @param  \Illuminate\Http\Request  $request
+   * @param  int  $id
+   * @return \Illuminate\Http\Response
+   */
+  public function update(Request $request, $id)
+  {
+    $this->validate($request, [
+      'title'         => 'required',
+      'description'   => 'required',
+      'type'          => 'required',
+      // 'started_at'    => 'required',
+      // 'hour'          => 'required'
+    ]);
+
+    $training = Training::find($id);
+
+    if ($training->dates->first()) {
+      $date = $training->dates->first();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
+
+    if ($request->image_path === null) {
+      $request->image_path = $training->image_path;
+      $request['slug'] = str_slug($request->title);
+      $training->update($request->all());
+    } else {
+      $this->imageUpload($request->all());
+
+      $training->update([
+        'slug'          => str_slug($request->title),
+        'title'         => $request->title,
+        'description'   => $request->description,
+        'type'          => $request->type,
+        'locale'        => $request->locale,
+        'image_path'    => 'images/trainings/' . str_slug($request->title) . '.' . $request->image_path->getClientOriginalExtension(),
+        'price'         => $request->price,
+        'max_person'    => $request->max_person
+      ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        $training = Training::find($id);
-
-        return view('admin.trainings.edit', compact('training'));
+    if ($request->started_at && $request->hour) {
+      $date->update([
+        'training_id'   => $training->id,
+        'started_at'    => $request->started_at,
+        'hour'          => $request->hour
+      ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        $this->validate($request, [
-            'title'         => 'required',
-            'description'   => 'required',
-            'type'          => 'required',
-            'started_at'    => 'required',
-            'hour'          => 'required'
-        ]);
 
-        $training = Training::find($id);
+    return redirect('admin/esemenyek')->with('success', 'Sikeresen szerkesztetted az eseményt!');
+  }
 
-        $date = $training->dates->first();
+  /**
+   * Remove the specified resource from storage.
+   *
+   * @param  int  $id
+   * @return \Illuminate\Http\Response
+   */
+  public function destroy($id)
+  {
+    $training = Training::find($id);
+    $training->dates()->delete();
 
-        
-        if($request->image_path === null) {
-            $request->image_path = $training->image_path;
-            $request['slug'] = str_slug($request->title);
-            $training->update($request->all());
-        } 
-        else {
-            $this->imageUpload($request->all());
+    $training->delete();
 
-            $training->update([
-                'slug'          => str_slug($request->title),
-                'title'         => $request->title,
-                'description'   => $request->description,
-                'type'          => $request->type,
-                'locale'        => $request->locale,
-                'image_path'    => 'images/trainings/' .str_slug($request->title) . '.' . $request->image_path->getClientOriginalExtension(),
-                'price'         => $request->price,
-                'max_person'    => $request->max_person
-            ]);
-        }
+    return back()->with('success', 'Sikeresen törölted az eseményt!');
+  }
 
-        $date->update([
-            'training_id'   => $training->id,
-            'started_at'    => $request->started_at,
-            'hour'          => $request->hour
-        ]);
+  /**
+   * imageUpload
+   *
+   * @param mixed $request
+   */
+  public function imageUpload($request)
+  {
+    $image = $request['image_path'];
 
-        
-        return redirect('admin/esemenyek')->with('success', 'Sikeresen szerkesztetted az eseményt!');
-    }
+    $input['images_name'] = str_slug($request['title']) . '.' . $image->getClientOriginalExtension();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        $training = Training::find($id);
-        $training->dates()->delete();
+    $destinationPath = storage_path('app/public/images/trainings');
 
-        $training->delete();
-
-        return back()->with('success', 'Sikeresen törölted az eseményt!');
-    }
-
-    /**
-     * imageUpload
-     *
-     * @param mixed $request
-     */
-    public function imageUpload($request)
-    {
-        $image = $request['image_path'];
-
-        $input['images_name'] = str_slug($request['title']) . '.' . $image->getClientOriginalExtension();
-
-        $destinationPath = storage_path('app/public/images/trainings');
-
-        return $image->move($destinationPath, $input['images_name']);
-    }
-
+    return $image->move($destinationPath, $input['images_name']);
+  }
 }

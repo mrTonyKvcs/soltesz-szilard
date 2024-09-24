@@ -9,17 +9,27 @@ use Illuminate\Http\Request;
 
 class TrainingsController extends Controller
 {
-    public function index()
-    {
-    	$today = Carbon::now('Europe/London')->format('Y-m-d');
+  public function index()
+  {
+    $today = Carbon::now('Europe/London')->format('Y-m-d');
 
-        $dates = Date::where('started_at', '>=', $today)->orderBy('started_at')->get();
+    $trainingsWithDates = Training::whereHas('dates', function ($q) use ($today) {
+      $q
+        ->where('started_at', '>=', $today)
+        ->orderBy('started_at', 'desc');
+    });
 
-    	return view('trainings.index', compact('dates', 'today'));
-    }
+    $trainingsWithoutDates = Training::whereDoesntHave('dates');
 
-    public function show(Training $training)
-    {
-    	return view('trainings.show', compact('training'));
-    }
+    $trainings = $trainingsWithoutDates->union($trainingsWithDates)->get();
+
+    return view('trainings.index', compact('today', 'trainings'));
+  }
+
+  public function show($id)
+  {
+    $training = Training::find($id);
+
+    return view('trainings.show', compact('training'));
+  }
 }

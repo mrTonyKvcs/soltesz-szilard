@@ -11,9 +11,9 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
-                @if(session()->get('success'))
+                @if (session()->get('success'))
                     <div class="alert alert-success">
-                        {{ session()->get('success') }}  
+                        {{ session()->get('success') }}
                     </div><br />
                 @endif
                 @if (count($errors) > 0)
@@ -29,7 +29,8 @@
                     {{ csrf_field() }}
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input name="title" type="text" class="form-control" id="exampleInput1" aria-describedby="titleHelp" placeholder="Cím" required>
+                            <input name="title" type="text" class="form-control" id="exampleInput1"
+                                aria-describedby="titleHelp" placeholder="Cím" required>
                         </div>
                         <div class="form-group col-md-6">
                             <input name="locale" type="text" class="form-control" placeholder="Helyszín">
@@ -59,8 +60,9 @@
                         <label for="exampleFormControlFile1">Képfeltöltés: </label>
                         <input name="image_path" type="file" class="form-control-file" id="exampleFormControlFile1">
                     </div>
-                    
-                    <button type="submit" class="btn btn-success col-md-12 text-uppercase text-center">új esemény feldolgozása</button>
+
+                    <button type="submit" class="btn btn-success col-md-12 text-uppercase text-center">új esemény
+                        feldolgozása</button>
                 </form>
             </div>
         </div>
@@ -75,21 +77,27 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($dates as $date)
+                @foreach ($trainings as $training)
                     <tr>
                         <th scope="row">{{ $loop->index + 1 }}</th>
-                        <td>{{ $date->training->title }} @if($date->started_at < \Carbon\Carbon::now()) <small class="text-uppercase text-danger pl-3">lejárt esemény</small> @endif</td>
-                        <th scope="row">{{ $date->started_at->format('Y-m-d') }}</th>
+                        <td>{{ $training->title }} @if ($training->dates->first() !== null && $training->dates->first()->started_at < \Carbon\Carbon::now())
+                                <small class="text-uppercase text-danger pl-3">lejárt esemény</small>
+                            @endif
+                        </td>
+                        <th scope="row">
+                            {{ $training->dates->first() !== null ? $training->dates->first()->started_at->format('Y-m-d') : '-' }}
+                        </th>
                         <td class="text-center">
-                            <a href="{{ route('esemenyek.edit', $date->training->id) }}">
+                            <a href="{{ route('esemenyek.edit', $training->id) }}">
                                 <i class="fas fa-edit"></i>
                             </a>
                         </td>
                         <td class="text-center">
-                            <form action="{{ route('esemenyek.destroy', $date->training->id) }}" method="post">
+                            <form action="{{ route('esemenyek.destroy', $training->id) }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
-                                <button class="btn text-danger btn-sm" type="submit">                                <i class="fas fa-trash"></i> </button>
+                                <button class="btn text-danger btn-sm" type="submit"> <i class="fas fa-trash"></i>
+                                </button>
                             </form>
                         </td>
                     </tr>
