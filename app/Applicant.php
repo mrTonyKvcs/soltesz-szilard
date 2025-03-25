@@ -8,30 +8,30 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Applicant extends Model
 {
-    use SoftDeletes;
+  use SoftDeletes;
 
-    /**
-     * fillable
-     *
-     * @var string
-     */
-    protected $fillable = [ 'training_id', 'name', 'email', 'phone_number', 'description', 'about_me' ];
+  /**
+   * fillable
+   *
+   * @var string
+   */
+  protected $fillable = ['training_id', 'name', 'email', 'phone_number', 'description'];
 
-    /**
-     * dates
-     *
-     * @var mixed
-     */
-    protected $dates = [
-        'deleted_at'
-    ];
+  /**
+   * dates
+   *
+   * @var mixed
+   */
+  protected $dates = [
+    'deleted_at'
+  ];
 
-    /**
-     * training
-     *
-     */
-    public function training()
-    {
-        return $this->belongsTo(Training::class);
-    }
+  /**
+   * training
+   *
+   */
+  public function training()
+  {
+    return $this->belongsTo(Training::class);
+  }
 }

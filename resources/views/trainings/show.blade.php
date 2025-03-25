@@ -114,21 +114,21 @@
                                         {!! Form::textarea('description', null, [
                                             'class' => 'form-control',
                                             'rows' => 2,
-                                            'placeholder' => 'Röviden írd meg miért jelentkeztél? (3-4 mondat)',
+                                            'placeholder' => 'Miért jelentkezel? (3-4 rövid mondat)',
                                             'required' => 'required',
                                         ]) !!}
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <div class="col-md-8 col-md-offset-2">
-                                        {!! Form::textarea('about_me', null, [
-                                            'class' => 'form-control',
-                                            'rows' => 2,
-                                            'placeholder' => 'Mondj magadról pár gondolatot! (3-4 mondat)',
-                                            'required' => 'required',
-                                        ]) !!}
-                                    </div>
-                                </div>
+                                {{-- <div class="form-group"> --}}
+                                {{--    <div class="col-md-8 col-md-offset-2"> --}}
+                                {{--        {!! Form::textarea('about_me', null, [ --}}
+                                {{--            'class' => 'form-control', --}}
+                                {{--            'rows' => 2, --}}
+                                {{--            'placeholder' => 'Mondj magadról pár gondolatot! (3-4 mondat)', --}}
+                                {{--            'required' => 'required', --}}
+                                {{--        ]) !!} --}}
+                                {{--    </div> --}}
+                                {{-- </div> --}}
                                 <div class="form-group">
                                     <div class="col-md-9 col-md-offset-2">
                                         <button type="submit" class="btn btn-raised btn-primary">Jelentkezem</button>

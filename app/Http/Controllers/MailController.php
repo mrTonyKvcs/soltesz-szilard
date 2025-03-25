@@ -9,45 +9,44 @@ use Illuminate\Http\Request;
 
 class MailController extends Controller
 {
-    public function sendTenderToSupport(Request $request)
-    {
-        $this->validate( $request, [
-            'name'          => 'required',
-            'email'         => 'required',
-            'phone_number'  => 'required',
-            'description'   => 'required',
-            'about_me'      => 'required'
-        ]);
+  public function sendTenderToSupport(Request $request)
+  {
+    $this->validate($request, [
+      'name'          => 'required',
+      'email'         => 'required',
+      'phone_number'  => 'required',
+      'description'   => 'required',
+    ]);
 
-        Applicant::create($request->all());
+    Applicant::create($request->all());
 
-        \Mail::send('emails.tender', ['data' => $request], function ($m) use ($request) {
-            $m->to(env('MAILGUN_TO'))
-                ->subject('Jelentkezés: ' . $request->title)
-                ->from($request->email, $request->name);
-        });
+    \Mail::send('emails.tender', ['data' => $request], function ($m) use ($request) {
+      $m->to(env('MAILGUN_TO'))
+        ->subject('Jelentkezés: ' . $request->title)
+        ->from($request->email, $request->name);
+    });
 
-        $trainings = Training::all();
-    	$today = Carbon::now('Europe/London')->format('Y-M-d');
+    $trainings = Training::all();
+    $today = Carbon::now('Europe/London')->format('Y-M-d');
 
 
-        return redirect('esemenyek')->with('success', 'Sikeresen jelentkeztél az eseményre!');
-    }
+    return redirect('esemenyek')->with('success', 'Sikeresen jelentkeztél az eseményre!');
+  }
 
-    public function sendMailToSupport(Request $request)
-    {
-        $this->validate( $request, [
-            'name'          => 'required',
-            'email'         => 'required',
-            'message'       => 'required',
-        ]);
+  public function sendMailToSupport(Request $request)
+  {
+    $this->validate($request, [
+      'name'          => 'required',
+      'email'         => 'required',
+      'message'       => 'required',
+    ]);
 
-        \Mail::send('emails.contact', ['data' => $request], function ($m) use ($request) {
-            $m->to(env('MAILGUN_TO'))
-                ->subject('Weblap: Kapcsolat')
-                ->from($request->email, $request->name);
-        });
+    \Mail::send('emails.contact', ['data' => $request], function ($m) use ($request) {
+      $m->to(env('MAILGUN_TO'))
+        ->subject('Weblap: Kapcsolat')
+        ->from($request->email, $request->name);
+    });
 
-        return redirect('kapcsolat')->with('success', 'Sikeresen elküldted az üzenetet!');
-    }
+    return redirect('kapcsolat')->with('success', 'Sikeresen elküldted az üzenetet!');
+  }
 }
