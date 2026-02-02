@@ -21,7 +21,7 @@ class MailController extends Controller
     Applicant::create($request->all());
 
     \Mail::send('emails.tender', ['data' => $request], function ($m) use ($request) {
-      $m->to(env('MAILGUN_TO'))
+      $m->to('szilard.soltesz@gmail.com')
         ->subject('Jelentkezés: ' . $request->title)
         ->from($request->email, $request->name);
     });
@@ -42,7 +42,7 @@ class MailController extends Controller
     ]);
 
     \Mail::send('emails.contact', ['data' => $request], function ($m) use ($request) {
-      $m->to(env('MAILGUN_TO'))
+      $m->to('szilard.soltesz@gmail.com')
         ->subject('Weblap: Kapcsolat')
         ->from($request->email, $request->name);
     });
