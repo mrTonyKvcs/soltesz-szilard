@@ -1,4 +1,7 @@
 <?php
+
+use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 Route::get('sitemap.xml', 'SitemapsController@index');
 Route::group(
   [
@@ -37,28 +40,20 @@ Route::group(
     Route::post('contact', ['as'  => 'mail.contact', 'uses' => 'MailController@sendMailToSupport']);
   }
 );
-//Auth::routes();
-Route::group(['middleware' => ['web']], function () {
-  // Login Routes...
-  Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
-  Route::post('login', ['as' => 'login.post', 'uses' => 'Auth\LoginController@login']);
-  Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
-  // Password Reset Routes...
-  Route::get('password/reset', ['as' => 'password.reset', 'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm']);
-  Route::post('password/email', ['as' => 'password.email', 'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
-  Route::get('password/reset/{token}', ['as' => 'password.reset.token', 'uses' => 'Auth\ResetPasswordController@showResetForm']);
-  Route::post('password/reset', ['as' => 'password.reset.post', 'uses' => 'Auth\ResetPasswordController@reset']);
+Route::middleware('guest')->group(function () {
+    Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+    Route::post('login', 'Auth\LoginController@login')->middleware('throttle:admin-login')->name('login.post');
+    Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+    Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->middleware('throttle:password-reset')->name('password.email');
+    Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+    Route::post('password/reset', 'Auth\ResetPasswordController@reset')->middleware('throttle:password-reset')->name('password.update');
 });
+Route::post('logout', 'Auth\LoginController@logout')->middleware('auth')->name('logout');
 
-//Admin
-Route::get('admin', ['as' => 'admin.index', 'uses' => 'HomeController@index']);
-Route::resource('admin/olvasmanyok', 'Admin\BlogsController');
-Route::resource('admin/esemenyek', 'Admin\TrainingsController');
-Route::resource('admin/jelentkezok', 'Admin\ApplicantsController');
-
-if (version_compare(PHP_VERSION, '7.2.0', '>=')) {
-  // Ignores notices and reports all other kinds... and warnings
-  error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
-  // error_reporting(E_ALL ^ E_WARNING); // Maybe this is enough
-}
+Route::middleware('auth')->group(function () {
+    Route::get('admin', 'HomeController@index')->name('admin.index');
+    Route::resource('admin/olvasmanyok', 'Admin\BlogsController')->only(['index', 'store', 'edit', 'update', 'destroy']);
+    Route::resource('admin/esemenyek', 'Admin\TrainingsController')->only(['index', 'store', 'edit', 'update', 'destroy']);
+    Route::resource('admin/jelentkezok', 'Admin\ApplicantsController')->only(['index', 'destroy']);
+});

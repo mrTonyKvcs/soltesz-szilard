@@ -8,7 +8,7 @@
           </span>
           <h3 style="color: #99BCCC"><strong>coaching/segítő beszélgetés</strong></h3><br>
           <p class="">
-              {{ str_limit('Amikor felismerjük, hogy a rossz vagy fenyegető helyzetek ismétlődése összefügg, új perspektívák nyílhatnak meg előttünk.', 150) }}
+              {{ \Illuminate\Support\Str::limit('Amikor felismerjük, hogy a rossz vagy fenyegető helyzetek ismétlődése összefügg, új perspektívák nyílhatnak meg előttünk.', 150) }}
           </p>
           <button class="btn btn-info btn-raised" data-toggle="modal" data-target="#myModal"
               style="background: #99BCCC;">{{ trans('button.next') }}</button>
@@ -22,7 +22,7 @@
           </span>
           <h3 style="color: #537690;"><strong>vezetői támogatás/szervezeti tanácsadás</strong></h3><br>
           <p class="">
-              {{ str_limit('Az optimális munkahelyi szerephez fontos, hogy a dolgozó érzéseit figyelembe vegyék, személyiségét elfogadják, belső motivációit támogassák, és megfelelő információval lássák el. ', 150) }}
+              {{ \Illuminate\Support\Str::limit('Az optimális munkahelyi szerephez fontos, hogy a dolgozó érzéseit figyelembe vegyék, személyiségét elfogadják, belső motivációit támogassák, és megfelelő információval lássák el. ', 150) }}
           </p>
           <button class="btn btn-info btn-raised" data-toggle="modal" data-target="#myModal2"
               style="background: #537690;">{{ trans('button.next') }}</button>
@@ -36,7 +36,7 @@
           </span>
           <h3 class="" style="color: #265F8D;"><strong>szupervízió segítőknek</strong></h3>
           <p class="">
-              {{ str_limit('A segítői munka különleges kihívásokkal jár, ahol a hivatás gyakorlásakor a segítő – kliens kapcsolatot nemcsak a korai életévek kapcsolati mintázatai, hanem a segítő identitásának aktuális állapota és fejlettsége is erőteljesen meghatározza. ', 150) }}
+              {{ \Illuminate\Support\Str::limit('A segítői munka különleges kihívásokkal jár, ahol a hivatás gyakorlásakor a segítő – kliens kapcsolatot nemcsak a korai életévek kapcsolati mintázatai, hanem a segítő identitásának aktuális állapota és fejlettsége is erőteljesen meghatározza. ', 150) }}
           </p>
           <button class="btn btn-success btn-raised" data-toggle="modal" data-target="#myModal3"
               style="background: #265F8D;">{{ trans('button.next') }}</button>
@@ -50,7 +50,7 @@
           </span>
           <h3 class="" style="color: #5C717A"><strong>családállítás/rendszerállítás</strong></h3>
           <p class="">
-              {{ str_limit('A családállítás és rendszerállítás erőteljes és hatékony módszerek, amelyek segítenek feltárni az emberi kapcsolatok és többszemélyes rendszerek rejtett dinamikáit és összefüggéseit.', 150) }}
+              {{ \Illuminate\Support\Str::limit('A családállítás és rendszerállítás erőteljes és hatékony módszerek, amelyek segítenek feltárni az emberi kapcsolatok és többszemélyes rendszerek rejtett dinamikáit és összefüggéseit.', 150) }}
           </p>
           <button class="btn btn-danger btn-raised" data-toggle="modal" data-target="#myModal4"
               style="background: #5C717A">{{ trans('button.next') }}</button>

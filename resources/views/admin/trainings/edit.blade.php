@@ -14,7 +14,7 @@
             <div class="col-md-12">
                 @if(session()->get('success'))
                     <div class="alert alert-success">
-                        {{ session()->get('success') }}  
+                        {{ session()->get('success') }}
                     </div><br />
                 @endif
                 @if (count($errors) > 0)
@@ -47,23 +47,27 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        @foreach($training->dates as $date)
+                        @php($date = $training->dates->first())
                             <div class="form-group col-md-8">
-                                <input name="started_at" class="form-control" type="date" placeholder="Időpont" value="{{ $date->started_at->format('Y-m-d') }}">
+                                <input name="started_at" class="form-control" type="date" placeholder="Időpont" value="{{ $date?->started_at?->format('Y-m-d') }}">
                             </div>
                             <div class="form-group col-md-4">
-                                <input name="hour" class="form-control" type="time" placeholder="Időpont" value="{{ $date->hour }}">
+                                <input name="hour" class="form-control" type="time" placeholder="Időpont" value="{{ $date?->hour }}">
                             </div>
-                        @endforeach
+
                     </div>
                     <div class="form-group">
                         <textarea name="description" class="form-control" cols="30" rows="10" value="{{ $training->description }}">{{ $training->description }}</textarea>
                     </div>
                     <div class="form-group">
                         <div class="form-row">
-                            
+
                             <div class="col-md-6">
-                                <img class="img-fluid" src="/{{ $training->image_path }}" alt="">
+                                @if ($training->image_path && is_file(public_path($training->image_path)))
+                                    <img class="img-fluid" src="/{{ $training->image_path }}" alt="">
+                                @else
+                                    <span aria-hidden="true" class="d-inline-block"></span>
+                                @endif
                             </div>
                             <div class="col-md-6">
                                 <label for="exampleFormControlFile1">Képcsere: </label>

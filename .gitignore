@@ -8,3 +8,11 @@ Homestead.yaml
 tags
 .htpasswd
 /template
+
+/public/vendor
+/.phpunit.cache
+/test-results
+/playwright-report
+/.env.testing
+/.env.*.local
+/storage/framework/testing

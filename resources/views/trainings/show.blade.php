@@ -82,7 +82,8 @@
                                     </ul>
                                 </div>
                             @endif
-                            {!! Form::open(['class' => 'form-horizontal', 'route' => 'mail.tender']) !!}
+                            <form class="form-horizontal" action="{{ route('mail.tender') }}" method="POST">
+                            @csrf
                             <fieldset>
                                 <h2 class="color-primary no-mb text-center">Jelentkezés</h2>
                                 <hr>
@@ -96,39 +97,24 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-2">
-                                        {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Név', 'type' => 'text', 'required' => 'required']) }}
+                                        <input name="name" type="text" class="form-control" placeholder="Név" value="{{ old('name') }}" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-2">
-                                        {{ Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email', 'type' => 'text', 'required' => 'required']) }}
+                                        <input name="email" type="email" class="form-control" placeholder="Email" value="{{ old('email') }}" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-2">
-                                        {{ Form::text('phone_number', null, ['class' => 'form-control', 'placeholder' => 'Telefonszám', 'type' => 'text', 'required' => 'required']) }}
+                                        <input name="phone_number" type="tel" class="form-control" placeholder="Telefonszám" value="{{ old('phone_number') }}" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-2">
-                                        {!! Form::textarea('description', null, [
-                                            'class' => 'form-control',
-                                            'rows' => 2,
-                                            'placeholder' => 'Miért jelentkezel? (3-4 rövid mondat)',
-                                            'required' => 'required',
-                                        ]) !!}
+                                        <textarea name="description" class="form-control" rows="2" placeholder="Miért jelentkezel? (3-4 rövid mondat)" required>{{ old('description') }}</textarea>
                                     </div>
                                 </div>
-                                {{-- <div class="form-group"> --}}
-                                {{--    <div class="col-md-8 col-md-offset-2"> --}}
-                                {{--        {!! Form::textarea('about_me', null, [ --}}
-                                {{--            'class' => 'form-control', --}}
-                                {{--            'rows' => 2, --}}
-                                {{--            'placeholder' => 'Mondj magadról pár gondolatot! (3-4 mondat)', --}}
-                                {{--            'required' => 'required', --}}
-                                {{--        ]) !!} --}}
-                                {{--    </div> --}}
-                                {{-- </div> --}}
                                 <div class="form-group">
                                     <div class="col-md-9 col-md-offset-2">
                                         <button type="submit" class="btn btn-raised btn-primary">Jelentkezem</button>
@@ -136,7 +122,7 @@
                                     </div>
                                 </div>
                             </fieldset>
-                            {!! Form::close() !!}
+                            </form>
                         </div>
                     </div>
                 </article>

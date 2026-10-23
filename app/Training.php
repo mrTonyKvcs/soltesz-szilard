@@ -24,9 +24,7 @@ class Training extends Model
    *
    * @var mixed
    */
-  protected $dates = [
-    'deleted_at'
-  ];
+  protected $casts = ['deleted_at' => 'datetime'];
 
   public function getRouteKeyName()
   {

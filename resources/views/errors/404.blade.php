@@ -12,7 +12,7 @@
     <meta name="description" content="Material Style Theme">
     <link rel="shortcut icon" href="/img/favicon.png?v=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="{{ elixir('css/all.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/css/all-d3bede0f7c.css') }}">
     <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.min.js"></script>
         <script src="assets/js/respond.min.js"></script>
@@ -75,7 +75,7 @@
     {{--        </div> --}}
     {{--    </div> --}}
     {{-- </div> --}}
-    <script src="{{ elixir('js/all.js') }}"></script>
+    <script src="{{ asset('js/all.js') }}"></script>
 </body>
 
 </html>

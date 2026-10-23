@@ -22,9 +22,7 @@ class Date extends Model
      *
      * @var mixed
      */
-    protected $dates = [
-        'started_at', 'deleted_at'
-    ];
+    protected $casts = ['started_at' => 'date', 'deleted_at' => 'datetime'];
 
     /**
      * training

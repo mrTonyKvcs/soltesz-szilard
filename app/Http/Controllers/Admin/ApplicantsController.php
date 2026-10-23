@@ -14,7 +14,7 @@ class ApplicantsController extends Controller
      */
     public function index()
     {
-        $applicants = Applicant::all();
+        $applicants = Applicant::with(['training' => fn ($query) => $query->withTrashed()])->get();
 
         return view('admin.applicants.index', compact('applicants'));
     }
@@ -26,7 +26,7 @@ class ApplicantsController extends Controller
      */
     public function destroy($id)
     {
-        $applicant = Applicant::find($id);
+        $applicant = Applicant::findOrFail($id);
 
         $applicant->delete();
 

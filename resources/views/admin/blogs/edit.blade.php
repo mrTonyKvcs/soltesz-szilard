@@ -4,7 +4,7 @@
     <div class="row bg-light">
         <div class="container">
             <div class="col-md-12">
-                <h1 class="text-secondary text-uppercase text-center py-5">{{ $blog1->title }}</h1>
+                <h1 class="text-secondary text-uppercase text-center py-5">{{ $blog->title }}</h1>
             </div>
         </div>
     </div>
@@ -46,7 +46,11 @@
                         <div class="form-row">
                             
                             <div class="col-md-6">
-                                <img class="img-fluid" src="/{{ $blog->img_path }}" alt="">
+                                @if ($blog->img_path && is_file(public_path($blog->img_path)))
+                                    <img class="img-fluid" src="/{{ $blog->img_path }}" alt="">
+                                @else
+                                    <span aria-hidden="true" class="d-inline-block"></span>
+                                @endif
                             </div>
                             <div class="col-md-6">
                                 <label for="exampleFormControlFile1">Képcsere: </label>

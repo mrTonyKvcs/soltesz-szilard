@@ -50,11 +50,13 @@
                                     <i class="ms-timeline-point bg-info"></i>
                                     <div class="card card-info">
                                         @if ($training->image_path)
-                                            <div class="withripple zoom-img">
-                                                <a href="javascript:void(0);">
-                                                    <img src="/{{ $training->image_path }}" alt=""
-                                                        class="img-responsive" style="width: 100%;"> </a>
-                                            </div>
+                                            @if (is_file(public_path($training->image_path)))
+                                                <div class="withripple zoom-img">
+                                                    <a href="javascript:void(0);">
+                                                        <img src="/{{ $training->image_path }}" alt=""
+                                                            class="img-responsive" style="width: 100%;"> </a>
+                                                </div>
+                                            @endif
                                             <div class="card-block">
                                                 <div class="">
                                                     <h3 class="card-title" style=""><a class=""
@@ -65,19 +67,19 @@
                                                             csoport</small></h3>
                                                 </div>
                                                 {{-- <h4 class="color-success"><strong>{{ $training->title }}</strong></h4> --}}
-                                                <p>{!! str_limit(strip_tags($training->description), $limit = 550, $end = '...') !!}</p>
+                                                <p>{!! \Illuminate\Support\Str::limit(strip_tags($training->description), $limit = 550, $end = '...') !!}</p>
 
                                                 <a href="{{ route('trainings.show', $training->id) }}"
                                                     class="btn btn-raised btn-success">Tovább</a>
                                             </div>
                                         @else
                                             <div class="card-header">
-                                                <h3 class="card-title"><a
+                                                <h3 class="card-title"><a style="color: #042844"
                                                         href="{{ route('trainings.show', $training->id) }}">{{ $training->title }}</a>
                                                 </h3>
                                             </div>
                                             <div class="card-block">
-                                                <p>{!! str_limit(strip_tags($training->description), $limit = 550, $end = '...') !!}</p>
+                                                <p>{!! \Illuminate\Support\Str::limit(strip_tags($training->description), $limit = 550, $end = '...') !!}</p>
                                                 <div class="pull-right">
                                                     <a href="{{ route('trainings.show', $training->id) }}"
                                                         class="btn btn-raised btn-info">Tovább</a>

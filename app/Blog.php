@@ -13,7 +13,5 @@ class Blog extends Model
     protected $fillable = [
         'title', 'slug', 'description', 'img_path', 'published_at'
     ];
-    protected $date = [
-	    'deleted_at'
-    ];
+    protected $casts = ['deleted_at' => 'datetime'];
 }

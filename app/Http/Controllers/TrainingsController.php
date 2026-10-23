@@ -28,7 +28,7 @@ class TrainingsController extends Controller
 
   public function show($id)
   {
-    $training = Training::find($id);
+    $training = Training::with('dates')->findOrFail($id);
 
     return view('trainings.show', compact('training'));
   }

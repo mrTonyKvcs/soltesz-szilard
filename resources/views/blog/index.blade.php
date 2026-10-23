@@ -18,13 +18,15 @@
                             <div class="card-block card-block-big">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <img src="/{{ $blog->img_path }}" alt="" class="img-responsive mb-4">
+                                        @if (is_file(public_path($blog->img_path)))
+                                            <img src="/{{ $blog->img_path }}" alt="" class="img-responsive mb-4">
+                                        @endif
                                     </div>
                                     <div class="col-lg-6 mb-4">
                                         <h3 class="no-mt">
                                             <a href="{{ route('blog.show', $blog->slug) }}">{{ $blog->title }}</a>
                                         </h3>
-                                        <p>{!! str_limit(strip_tags($blog->description), 600) !!}</p>
+                                        <p>{!! \Illuminate\Support\Str::limit(strip_tags($blog->description), 600) !!}</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -52,7 +54,7 @@
                                         <h3 class="no-mt">
                                             <a href="{{ route('blog.show', $blog->slug) }}">{{ $blog->title }}</a>
                                         </h3>
-                                        <p>{!! str_limit(strip_tags($blog->description), 600) !!}</p>
+                                        <p>{!! \Illuminate\Support\Str::limit(strip_tags($blog->description), 600) !!}</p>
                                     </div>
                                 </div>
                                 <div class="row">
